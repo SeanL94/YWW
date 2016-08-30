@@ -35,14 +35,14 @@
         android:layout_width="match_parent"
         android:layout_height="650px"
         android:id="@+id/linearLayout1"
-        android:background="#FFFFFF"
         android:layout_gravity="bottom"
-        android:gravity="center_horizontal">
-        <ImageView
-            android:src="@drawable/columns"
-            android:layout_width="wrap_content"
-            android:layout_height="650px"
-            android:id="@+id/imageView1" />
+        android:gravity="center_horizontal"
+        android:background="@drawable/columns">
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="75px"
+            android:layout_height="550px"
+            android:id="@+id/progressBar1" />
     </LinearLayout>
 <!--This section implements a button that will be used to navigate to the data entry page-->
     <LinearLayout
