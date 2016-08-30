@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:gravity="bottom"
+    android:background="#FFFFFF">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1"
+        android:background="#FFFFFF"
+        android:layout_gravity="bottom" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:id="@+id/linearLayout2"
+        android:layout_gravity="bottom"
+        android:background="#5e5e5e">
+        <Button
+            android:text="community"
+            android:layout_width="260px"
+            android:layout_height="match_parent"
+            android:id="@+id/button1" />
+        <Button
+            android:text="health journey"
+            android:layout_width="260px"
+            android:layout_height="match_parent"
+            android:id="@+id/button1" />
+        <Button
+            android:text="profile"
+            android:layout_width="260px"
+            android:layout_height="match_parent"
+            android:id="@+id/button1" />
+    </LinearLayout>
+</LinearLayout>
