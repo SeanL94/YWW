@@ -95,6 +95,9 @@ namespace healthJourney.droid
 			// aapt resource value: 0x7f020002
 			public const int splash = 2130837506;
 			
+			// aapt resource value: 0x7f020003
+			public const int splashScreen = 2130837507;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();

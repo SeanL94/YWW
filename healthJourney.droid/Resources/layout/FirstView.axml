@@ -8,6 +8,7 @@
     android:minHeight="25px"
     android:gravity="bottom"
     android:background="#FFFFFF">
+<!--This section implements a toggle button that will be used to switch between weekly and overview views-->
     <LinearLayout
         android:orientation="horizontal"
         android:minWidth="25px"
@@ -26,6 +27,7 @@
             android:textOn="Weekly Goals"
             android:layout_marginBottom="25px" />
     </LinearLayout>
+<!--This section implements the images of the columns that will be used to display the user's progress-->
     <LinearLayout
         android:orientation="horizontal"
         android:minWidth="25px"
@@ -42,6 +44,7 @@
             android:layout_height="650px"
             android:id="@+id/imageView1" />
     </LinearLayout>
+<!--This section implements a button that will be used to navigate to the data entry page-->
     <LinearLayout
         android:orientation="horizontal"
         android:minWidth="25px"
@@ -59,6 +62,7 @@
             android:layout_height="match_parent"
             android:id="@+id/progressEntry" />
     </LinearLayout>
+<!--This section implements the navigation bar at the bottom of the page-->
     <LinearLayout
         android:orientation="horizontal"
         android:minWidth="25px"
