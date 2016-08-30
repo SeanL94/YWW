@@ -87,10 +87,13 @@ namespace healthJourney.droid
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			public const int Columns = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int splash = 2130837505;
+			public const int Icon = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int splash = 2130837506;
 			
 			static Drawable()
 			{
@@ -111,14 +114,29 @@ namespace healthJourney.droid
 			// aapt resource value: 0x7f040001
 			public const int MvxBindingTagUnique = 2130968577;
 			
-			// aapt resource value: 0x7f040004
-			public const int button1 = 2130968580;
-			
 			// aapt resource value: 0x7f040002
-			public const int linearLayout1 = 2130968578;
+			public const int ViewSliderSection = 2130968578;
+			
+			// aapt resource value: 0x7f040009
+			public const int button1 = 2130968585;
+			
+			// aapt resource value: 0x7f040005
+			public const int imageView1 = 2130968581;
+			
+			// aapt resource value: 0x7f040004
+			public const int linearLayout1 = 2130968580;
+			
+			// aapt resource value: 0x7f040008
+			public const int linearLayout2 = 2130968584;
+			
+			// aapt resource value: 0x7f040007
+			public const int progressEntry = 2130968583;
+			
+			// aapt resource value: 0x7f040006
+			public const int progressEntrySection = 2130968582;
 			
 			// aapt resource value: 0x7f040003
-			public const int linearLayout2 = 2130968579;
+			public const int toggleButton2 = 2130968579;
 			
 			static Id()
 			{

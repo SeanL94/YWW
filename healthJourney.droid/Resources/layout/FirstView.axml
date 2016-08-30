@@ -13,10 +13,52 @@
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="100px"
+        android:id="@+id/ViewSliderSection"
+        android:background="#FFFFFF"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal">
+        <ToggleButton
+            android:layout_width="300px"
+            android:layout_height="match_parent"
+            android:id="@+id/toggleButton2"
+            android:textOff="Overview"
+            android:textOn="Weekly Goals"
+            android:layout_marginBottom="25px" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="650px"
         android:id="@+id/linearLayout1"
         android:background="#FFFFFF"
-        android:layout_gravity="bottom" />
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:src="@drawable/columns"
+            android:layout_width="wrap_content"
+            android:layout_height="650px"
+            android:id="@+id/imageView1" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:id="@+id/progressEntrySection"
+        android:background="#FFFFFF"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20px">
+        <Button
+            android:text="Enter Your Progress"
+            android:layout_width="300px"
+            android:layout_height="match_parent"
+            android:id="@+id/progressEntry" />
+    </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
         android:minWidth="25px"
@@ -28,17 +70,17 @@
         android:background="#5e5e5e">
         <Button
             android:text="community"
-            android:layout_width="260px"
+            android:layout_width="266px"
             android:layout_height="match_parent"
             android:id="@+id/button1" />
         <Button
             android:text="health journey"
-            android:layout_width="260px"
+            android:layout_width="267px"
             android:layout_height="match_parent"
             android:id="@+id/button1" />
         <Button
             android:text="profile"
-            android:layout_width="260px"
+            android:layout_width="266px"
             android:layout_height="match_parent"
             android:id="@+id/button1" />
     </LinearLayout>
