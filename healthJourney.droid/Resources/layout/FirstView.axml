@@ -21,7 +21,7 @@
         <ToggleButton
             android:layout_width="300px"
             android:layout_height="match_parent"
-            android:id="@+id/toggleButton2"
+            android:id="@+id/viewToggle"
             android:textOff="Overview"
             android:textOn="Weekly Goals"
             android:layout_marginBottom="25px" />
@@ -72,16 +72,16 @@
             android:text="community"
             android:layout_width="266px"
             android:layout_height="match_parent"
-            android:id="@+id/button1" />
+            android:id="@+id/community" />
         <Button
             android:text="health journey"
             android:layout_width="267px"
             android:layout_height="match_parent"
-            android:id="@+id/button1" />
+            android:id="@+id/healthJourney" />
         <Button
             android:text="profile"
             android:layout_width="266px"
             android:layout_height="match_parent"
-            android:id="@+id/button1" />
+            android:id="@+id/profile" />
     </LinearLayout>
 </LinearLayout>

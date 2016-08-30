@@ -118,7 +118,10 @@ namespace healthJourney.droid
 			public const int ViewSliderSection = 2130968578;
 			
 			// aapt resource value: 0x7f040009
-			public const int button1 = 2130968585;
+			public const int community = 2130968585;
+			
+			// aapt resource value: 0x7f04000a
+			public const int healthJourney = 2130968586;
 			
 			// aapt resource value: 0x7f040005
 			public const int imageView1 = 2130968581;
@@ -129,6 +132,9 @@ namespace healthJourney.droid
 			// aapt resource value: 0x7f040008
 			public const int linearLayout2 = 2130968584;
 			
+			// aapt resource value: 0x7f04000b
+			public const int profile = 2130968587;
+			
 			// aapt resource value: 0x7f040007
 			public const int progressEntry = 2130968583;
 			
@@ -136,7 +142,7 @@ namespace healthJourney.droid
 			public const int progressEntrySection = 2130968582;
 			
 			// aapt resource value: 0x7f040003
-			public const int toggleButton2 = 2130968579;
+			public const int viewToggle = 2130968579;
 			
 			static Id()
 			{
