@@ -117,9 +117,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\SplashStyle.xml" />
-    <AndroidResource Include="Resources\drawable\splash.png" />
-    <AndroidResource Include="Resources\drawable\Columns.jpg" />
     <AndroidResource Include="Resources\drawable\splashScreen.jpg" />
+    <AndroidResource Include="Resources\drawable\columns4.png" />
+    <AndroidResource Include="Resources\drawable\diet.png" />
+    <AndroidResource Include="Resources\drawable\exercise.png" />
+    <AndroidResource Include="Resources\drawable\lifestyle.png" />
+    <AndroidResource Include="Resources\drawable\sleep.png" />
     <Content Include="ToDo-MvvmCross\_ Droid UI.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

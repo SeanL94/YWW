@@ -87,16 +87,25 @@ namespace healthJourney.droid
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Columns = 2130837504;
+			public const int columns4 = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int Icon = 2130837505;
+			public const int diet = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int splash = 2130837506;
+			public const int exercise = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int splashScreen = 2130837507;
+			public const int Icon = 2130837507;
+			
+			// aapt resource value: 0x7f020004
+			public const int lifestyle = 2130837508;
+			
+			// aapt resource value: 0x7f020005
+			public const int sleep = 2130837509;
+			
+			// aapt resource value: 0x7f020006
+			public const int splashScreen = 2130837510;
 			
 			static Drawable()
 			{
@@ -120,29 +129,38 @@ namespace healthJourney.droid
 			// aapt resource value: 0x7f040002
 			public const int ViewSliderSection = 2130968578;
 			
-			// aapt resource value: 0x7f040009
-			public const int community = 2130968585;
+			// aapt resource value: 0x7f04000c
+			public const int community = 2130968588;
 			
-			// aapt resource value: 0x7f04000a
-			public const int healthJourney = 2130968586;
+			// aapt resource value: 0x7f04000d
+			public const int healthJourney = 2130968589;
+			
+			// aapt resource value: 0x7f040005
+			public const int imageView1 = 2130968581;
+			
+			// aapt resource value: 0x7f040006
+			public const int imageView2 = 2130968582;
+			
+			// aapt resource value: 0x7f040007
+			public const int imageView3 = 2130968583;
+			
+			// aapt resource value: 0x7f040008
+			public const int imageView4 = 2130968584;
 			
 			// aapt resource value: 0x7f040004
 			public const int linearLayout1 = 2130968580;
 			
-			// aapt resource value: 0x7f040008
-			public const int linearLayout2 = 2130968584;
-			
 			// aapt resource value: 0x7f04000b
-			public const int profile = 2130968587;
+			public const int linearLayout2 = 2130968587;
 			
-			// aapt resource value: 0x7f040005
-			public const int progressBar1 = 2130968581;
+			// aapt resource value: 0x7f04000e
+			public const int profile = 2130968590;
 			
-			// aapt resource value: 0x7f040007
-			public const int progressEntry = 2130968583;
+			// aapt resource value: 0x7f04000a
+			public const int progressEntry = 2130968586;
 			
-			// aapt resource value: 0x7f040006
-			public const int progressEntrySection = 2130968582;
+			// aapt resource value: 0x7f040009
+			public const int progressEntrySection = 2130968585;
 			
 			// aapt resource value: 0x7f040003
 			public const int viewToggle = 2130968579;

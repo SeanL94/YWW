@@ -36,13 +36,36 @@
         android:layout_height="650px"
         android:id="@+id/linearLayout1"
         android:layout_gravity="bottom"
-        android:gravity="center_horizontal"
-        android:background="@drawable/columns">
-        <ProgressBar
-            style="?android:attr/progressBarStyleLarge"
-            android:layout_width="75px"
-            android:layout_height="550px"
-            android:id="@+id/progressBar1" />
+        android:gravity="left"
+        android:background="@drawable/columns4">
+        <ImageView
+            android:src="@drawable/exercise"
+            android:layout_width="wrap_content"
+            android:layout_height="460px"
+            android:id="@+id/imageView1"
+            android:layout_marginTop="100px"
+            android:layout_marginLeft="140px" />
+        <ImageView
+            android:src="@drawable/diet"
+            android:layout_width="wrap_content"
+            android:layout_height="460px"
+            android:id="@+id/imageView2"
+            android:layout_marginTop="100px"
+            android:layout_marginLeft="120px" />
+        <ImageView
+            android:src="@drawable/sleep"
+            android:layout_width="wrap_content"
+            android:layout_height="460px"
+            android:id="@+id/imageView3"
+            android:layout_marginTop="100px"
+            android:layout_marginLeft="115px" />
+        <ImageView
+            android:src="@drawable/lifestyle"
+            android:layout_width="wrap_content"
+            android:layout_height="460px"
+            android:id="@+id/imageView4"
+            android:layout_marginTop="100px"
+            android:layout_marginLeft="115px" />
     </LinearLayout>
 <!--This section implements a button that will be used to navigate to the data entry page-->
     <LinearLayout
