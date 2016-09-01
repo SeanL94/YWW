@@ -1,5 +1,6 @@
 using Android.App;
 using Android.OS;
+using Android.Widget;
 using MvvmCross.Droid.Views;
 
 namespace healthJourney.droid.Views
@@ -11,6 +12,11 @@ namespace healthJourney.droid.Views
         {
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.FirstView);
+
+            Button commbutton = FindViewById<Button>(Resource.Id.community);
+            commbutton.Click += delegate {
+                StartActivity(typeof(comm_Main));
+            };
         }
     }
 }
