@@ -19,6 +19,11 @@ namespace healthJourney.droid.Views
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.comm_main);
+
+            Button commbutton = FindViewById<Button>(Resource.Id.healthJourney);
+            commbutton.Click += delegate {
+                StartActivity(typeof(FirstView));
+            };
         }
     }
 }
