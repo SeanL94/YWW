@@ -20,7 +20,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="227.0dp"
-            android:id="@+id/button2"
+            android:id="@+id/sharingBtn"
             android:background="@drawable/comm_sharing_pic"
             android:text="Community Sharings"
             android:textSize="25.0dp"
@@ -28,7 +28,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="227.0dp"
-            android:id="@+id/button1"
+            android:id="@+id/adviceBtn"
             android:background="@drawable/professional_advice"
             android:text="Professional Advices"
             android:textSize="25.0dp" />

@@ -87,31 +87,34 @@ namespace healthJourney.droid
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int columns4 = 2130837504;
+			public const int bell = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int comm_sharing_pic = 2130837505;
+			public const int columns4 = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int diet = 2130837506;
+			public const int comm_sharing_pic = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int exercise = 2130837507;
+			public const int diet = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int Icon = 2130837508;
+			public const int exercise = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public const int lifestyle = 2130837509;
+			public const int Icon = 2130837509;
 			
 			// aapt resource value: 0x7f020006
-			public const int professional_advice = 2130837510;
+			public const int lifestyle = 2130837510;
 			
 			// aapt resource value: 0x7f020007
-			public const int sleep = 2130837511;
+			public const int professional_advice = 2130837511;
 			
 			// aapt resource value: 0x7f020008
-			public const int splashScreen = 2130837512;
+			public const int sleep = 2130837512;
+			
+			// aapt resource value: 0x7f020009
+			public const int splashScreen = 2130837513;
 			
 			static Drawable()
 			{
@@ -136,10 +139,7 @@ namespace healthJourney.droid
 			public const int ViewSliderSection = 2130968578;
 			
 			// aapt resource value: 0x7f040004
-			public const int button1 = 2130968580;
-			
-			// aapt resource value: 0x7f040003
-			public const int button2 = 2130968579;
+			public const int adviceBtn = 2130968580;
 			
 			// aapt resource value: 0x7f040006
 			public const int community = 2130968582;
@@ -147,35 +147,44 @@ namespace healthJourney.droid
 			// aapt resource value: 0x7f040007
 			public const int healthJourney = 2130968583;
 			
-			// aapt resource value: 0x7f04000b
-			public const int imageView1 = 2130968587;
-			
-			// aapt resource value: 0x7f04000c
-			public const int imageView2 = 2130968588;
-			
 			// aapt resource value: 0x7f04000d
-			public const int imageView3 = 2130968589;
+			public const int imageView1 = 2130968589;
 			
 			// aapt resource value: 0x7f04000e
-			public const int imageView4 = 2130968590;
+			public const int imageView2 = 2130968590;
 			
-			// aapt resource value: 0x7f04000a
-			public const int linearLayout1 = 2130968586;
+			// aapt resource value: 0x7f04000f
+			public const int imageView3 = 2130968591;
+			
+			// aapt resource value: 0x7f040010
+			public const int imageView4 = 2130968592;
+			
+			// aapt resource value: 0x7f04000c
+			public const int linearLayout1 = 2130968588;
 			
 			// aapt resource value: 0x7f040005
 			public const int linearLayout2 = 2130968581;
 			
+			// aapt resource value: 0x7f04000a
+			public const int newPostBtn = 2130968586;
+			
+			// aapt resource value: 0x7f040009
+			public const int notification = 2130968585;
+			
 			// aapt resource value: 0x7f040008
 			public const int profile = 2130968584;
 			
-			// aapt resource value: 0x7f040010
-			public const int progressEntry = 2130968592;
+			// aapt resource value: 0x7f040012
+			public const int progressEntry = 2130968594;
 			
-			// aapt resource value: 0x7f04000f
-			public const int progressEntrySection = 2130968591;
+			// aapt resource value: 0x7f040011
+			public const int progressEntrySection = 2130968593;
 			
-			// aapt resource value: 0x7f040009
-			public const int viewToggle = 2130968585;
+			// aapt resource value: 0x7f040003
+			public const int sharingBtn = 2130968579;
+			
+			// aapt resource value: 0x7f04000b
+			public const int viewToggle = 2130968587;
 			
 			static Id()
 			{

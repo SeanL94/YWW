@@ -18,11 +18,17 @@ namespace healthJourney.droid.Views
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            RequestWindowFeature(WindowFeatures.NoTitle);
             SetContentView(Resource.Layout.comm_main);
 
-            Button commbutton = FindViewById<Button>(Resource.Id.healthJourney);
-            commbutton.Click += delegate {
+            Button healthBtn = FindViewById<Button>(Resource.Id.healthJourney);
+            healthBtn.Click += delegate {
                 StartActivity(typeof(FirstView));
+            };
+
+            Button sharingBtn = FindViewById<Button>(Resource.Id.sharingBtn);
+            sharingBtn.Click += delegate {
+                StartActivity(typeof(comm_Sharing_Main));
             };
         }
     }

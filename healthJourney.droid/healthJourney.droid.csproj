@@ -89,6 +89,7 @@
     <Compile Include="Setup.cs" />
     <Compile Include="SplashScreen.cs" />
     <Compile Include="Views\comm_Main.cs" />
+    <Compile Include="Views\comm_Sharing_Main.cs" />
     <Compile Include="Views\FirstView.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -132,6 +133,7 @@
     <AndroidResource Include="Resources\drawable\sleep.png" />
     <AndroidResource Include="Resources\drawable\comm_sharing_pic.jpg" />
     <AndroidResource Include="Resources\drawable\professional_advice.jpg" />
+    <AndroidResource Include="Resources\drawable\bell.png" />
     <Content Include="ToDo-MvvmCross\_ Droid UI.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

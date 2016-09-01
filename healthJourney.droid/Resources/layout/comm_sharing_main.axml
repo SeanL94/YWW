@@ -2,6 +2,34 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:background="#FFFFFF">
+<!--This section implements the navigation bar at the bottom of the page-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:id="@+id/linearLayout2"
+        android:layout_gravity="bottom"
+        android:background="#5e5e5e">
+        <ImageButton
+            android:layout_width="266px"
+            android:layout_height="match_parent"
+            android:id="@+id/notification"
+            android:background="@drawable/bell" />
+        <Button
+            android:text="New Post"
+            android:layout_width="267px"
+            android:layout_height="match_parent"
+            android:id="@+id/newPostBtn" />
+        <Button
+            android:text="Community"
+            android:layout_width="266px"
+            android:layout_height="match_parent"
+            android:id="@+id/community"
+            android:background="#e3647d" />
+    </LinearLayout>
 </LinearLayout>
