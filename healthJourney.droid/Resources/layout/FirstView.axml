@@ -20,12 +20,61 @@
         android:layout_gravity="bottom"
         android:gravity="center_horizontal">
         <ToggleButton
-            android:layout_width="300px"
-            android:layout_height="match_parent"
-            android:id="@+id/viewToggle"
+            android:layout_width="200px"
+            android:layout_height="50px"
+            android:id="@+id/toggleButton1"
             android:textOff="Overview"
-            android:textOn="Weekly Goals"
-            android:layout_marginBottom="25px" />
+            android:textOn="Weekly Goals" />
+    </LinearLayout>
+<!--This section implements the names for each of the columns-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:id="@+id/columnNames"
+        android:gravity="left">
+        <TextView
+            android:text="Exercise"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="125px"
+            android:layout_height="match_parent"
+            android:id="@+id/exercise"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            android:paddingTop="15px"
+            android:layout_marginLeft="100px" />
+        <TextView
+            android:text="Diet"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="125px"
+            android:layout_height="match_parent"
+            android:id="@+id/exercise"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            android:paddingTop="15px"
+            android:layout_marginLeft="30px" />
+        <TextView
+            android:text="Sleep"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="125px"
+            android:layout_height="match_parent"
+            android:id="@+id/exercise"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            android:paddingTop="15px"
+            android:layout_marginLeft="40px" />
+        <TextView
+            android:text="Lifestyle"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="125px"
+            android:layout_height="match_parent"
+            android:id="@+id/exercise"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            android:paddingTop="15px"
+            android:layout_marginLeft="30px" />
     </LinearLayout>
 <!--This section implements the images of the columns that will be used to display the user's progress-->
     <LinearLayout
