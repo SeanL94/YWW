@@ -141,26 +141,32 @@ namespace healthJourney.droid
 			// aapt resource value: 0x7f040003
 			public const int button2 = 2130968579;
 			
+			// aapt resource value: 0x7f04000a
+			public const int columnNames = 2130968586;
+			
 			// aapt resource value: 0x7f040006
 			public const int community = 2130968582;
+			
+			// aapt resource value: 0x7f04000b
+			public const int exercise = 2130968587;
 			
 			// aapt resource value: 0x7f040007
 			public const int healthJourney = 2130968583;
 			
-			// aapt resource value: 0x7f04000b
-			public const int imageView1 = 2130968587;
-			
-			// aapt resource value: 0x7f04000c
-			public const int imageView2 = 2130968588;
-			
 			// aapt resource value: 0x7f04000d
-			public const int imageView3 = 2130968589;
+			public const int imageView1 = 2130968589;
 			
 			// aapt resource value: 0x7f04000e
-			public const int imageView4 = 2130968590;
+			public const int imageView2 = 2130968590;
 			
-			// aapt resource value: 0x7f04000a
-			public const int linearLayout1 = 2130968586;
+			// aapt resource value: 0x7f04000f
+			public const int imageView3 = 2130968591;
+			
+			// aapt resource value: 0x7f040010
+			public const int imageView4 = 2130968592;
+			
+			// aapt resource value: 0x7f04000c
+			public const int linearLayout1 = 2130968588;
 			
 			// aapt resource value: 0x7f040005
 			public const int linearLayout2 = 2130968581;
@@ -168,14 +174,14 @@ namespace healthJourney.droid
 			// aapt resource value: 0x7f040008
 			public const int profile = 2130968584;
 			
-			// aapt resource value: 0x7f040010
-			public const int progressEntry = 2130968592;
+			// aapt resource value: 0x7f040012
+			public const int progressEntry = 2130968594;
 			
-			// aapt resource value: 0x7f04000f
-			public const int progressEntrySection = 2130968591;
+			// aapt resource value: 0x7f040011
+			public const int progressEntrySection = 2130968593;
 			
 			// aapt resource value: 0x7f040009
-			public const int viewToggle = 2130968585;
+			public const int toggleButton1 = 2130968585;
 			
 			static Id()
 			{
