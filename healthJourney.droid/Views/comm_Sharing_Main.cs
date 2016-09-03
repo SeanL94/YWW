@@ -9,7 +9,10 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-
+/**
+ * Author Jia Xin Chan 9601902
+ * 
+ **/
 namespace healthJourney.droid.Views
 {
     [Activity(Label = "comm_Sharing_Main")]

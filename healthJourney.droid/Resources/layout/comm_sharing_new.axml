@@ -6,7 +6,8 @@
     android:minWidth="25px"
     android:background="#ffffff"
     android:minHeight="25px">
-<!-- This section is for title bar-->
+<!-- Author Jia Xin Chan 9601902 -->
+<!-- This section is for title bar -->
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -27,8 +28,8 @@
             android:paddingLeft="50.0dp"
             android:paddingTop="10.0dp" />
     </LinearLayout>
-<!-- Title bar section ended-->
-<!-- This section is for post img and text details-->
+<!-- END of Title bar section -->
+<!-- This section is for post image and content details-->
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -48,8 +49,8 @@
             android:textColor="@android:color/background_dark"
             android:textColorHint="@android:color/darker_gray" />
     </LinearLayout>
-<!-- Posting Img Details Ended-->
-<!-- Text layout for asking privacy-->
+<!-- END of posting content -->
+<!-- This section is for post privacy, Eg public or private-->
     <LinearLayout
         android:orientation="horizontal"
         android:minWidth="25px"
@@ -73,6 +74,8 @@
             android:textOn="Yes"
             android:textOff="No" />
     </LinearLayout>
+<!-- END of post privacy-->
+<!-- This section is for the logo and the post button -->
     <ImageView
         android:src="@drawable/splashscreen"
         android:layout_width="match_parent"
@@ -84,4 +87,5 @@
         android:layout_height="wrap_content"
         android:background="#e3647d"
         android:id="@+id/postBtn" />
+<!--END of logo and button -->
 </LinearLayout>

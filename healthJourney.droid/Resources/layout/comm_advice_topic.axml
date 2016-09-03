@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff">
+<!-- Author Jia Xin Chan 9601902 -->
 <!-- This section is for title bar-->
     <LinearLayout
         android:orientation="horizontal"
@@ -108,7 +109,7 @@
             </LinearLayout>
         </LinearLayout>
     <!-- End of User description section-->
-    <!--This Section is the post details part-->
+    <!--This Section is the post content part-->
         <TextView
             android:text="Hi there, after the cancer treatment, I feel tension all the time. I keep worrying that my cancer didn't fully recover/ I become very sensitive and my family is suffering my bad temper, I really feel bad for that. What should I do?"
             android:layout_width="match_parent"
@@ -124,7 +125,7 @@
             android:textColor="@android:color/darker_gray"
             android:paddingLeft="10.0dp"
             android:paddingTop="5.0dp" />
-    <!--End of Post Details Part-->
+    <!--End of Post contents part-->
     <!--User Comment Box-->
         <LinearLayout
             android:orientation="horizontal"

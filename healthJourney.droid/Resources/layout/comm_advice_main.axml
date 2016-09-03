@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:background="#ffffff"
     android:layout_height="match_parent">
+<!-- Author Jia Xin Chan 9601902 -->
 <!-- This section is for title bar-->
     <LinearLayout
         android:orientation="horizontal"
@@ -43,6 +44,7 @@
             android:layout_height="match_parent"
             android:id="@+id/searchBtn" />
     </LinearLayout>
+<!-- END of search bar -->
 <!-- This section is for topic records in row-->
     <LinearLayout
         android:orientation="vertical"
