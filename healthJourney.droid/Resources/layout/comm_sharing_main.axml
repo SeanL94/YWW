@@ -109,14 +109,61 @@
                     </LinearLayout>
                 </LinearLayout>
             <!-- END of user info section -->
-            <!-- This section is for the image of the post -->
-                <ImageView
+            <!-- The Post Image and button -->
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="350.0dp"
-                    android:id="@+id/postImage"
-                    android:background="@drawable/sunrise" />
+                    android:layout_height="250.0dp"
+                    android:id="@+id/frameLayout1">
+                    <ImageView
+                        android:src="@drawable/sunrise"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView1" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/btnLayout1">
+                        <ImageButton
+                            android:layout_width="60.0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.20"
+                            android:layout_gravity="right"
+                            android:id="@+id/loveBtn1"
+                            android:background="@drawable/love"
+                            android:layout_marginRight="10.0dp"
+                            android:layout_marginTop="10.0dp"
+                            android:layout_marginBottom="10.0dp" />
+                        <ImageButton
+                            android:layout_width="60.0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.20"
+                            android:layout_gravity="right"
+                            android:id="@+id/commentBtn1"
+                            android:background="@drawable/comment"
+                            android:layout_marginBottom="10.0dp"
+                            android:layout_marginRight="10.0dp"
+                            android:layout_marginTop="10.0dp" />
+                        <ImageButton
+                            android:layout_width="60.0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.20"
+                            android:id="@+id/shareButton1"
+                            android:layout_gravity="right"
+                            android:background="@drawable/share"
+                            android:layout_marginBottom="10.0dp"
+                            android:layout_marginRight="10.0dp"
+                            android:layout_marginTop="10.0dp" />
+                    </LinearLayout>
+                </FrameLayout>
             <!-- END of post image -->
             <!-- This section is for the user post text content -->
+                <AbsoluteLayout
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/absoluteLayout1" />
                 <LinearLayout
                     android:orientation="vertical"
                     android:minWidth="25px"
@@ -267,11 +314,53 @@
                 </LinearLayout>
             <!-- END of user info section -->
             <!-- This section is for the image of the post -->
-                <ImageView
+            <!-- The Post Image and button -->
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="350.0dp"
-                    android:id="@+id/postImage2"
-                    android:background="@drawable/exercise1" />
+                    android:layout_height="250.0dp"
+                    android:id="@+id/frameLayout2">
+                    <ImageView
+                        android:src="@drawable/exercise1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView2" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/linearLayout2">
+                        <ImageButton
+                            android:layout_width="60.0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.20"
+                            android:layout_gravity="right"
+                            android:id="@+id/loveBtn2"
+                            android:background="@drawable/love"
+                            android:layout_marginRight="10.0dp"
+                            android:layout_marginTop="10.0dp"
+                            android:layout_marginBottom="10.0dp" />
+                        <ImageButton
+                            android:layout_width="60.0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.20"
+                            android:layout_gravity="right"
+                            android:id="@+id/commentBtn2"
+                            android:background="@drawable/comment"
+                            android:layout_marginBottom="10.0dp"
+                            android:layout_marginRight="10.0dp"
+                            android:layout_marginTop="10.0dp" />
+                        <ImageButton
+                            android:layout_width="60.0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.20"
+                            android:id="@+id/shareButton2"
+                            android:layout_gravity="right"
+                            android:background="@drawable/share"
+                            android:layout_marginBottom="10.0dp"
+                            android:layout_marginRight="10.0dp"
+                            android:layout_marginTop="10.0dp" />
+                    </LinearLayout>
+                </FrameLayout>
             <!-- END of post image -->
             <!-- This section is for the user post text content -->
                 <LinearLayout

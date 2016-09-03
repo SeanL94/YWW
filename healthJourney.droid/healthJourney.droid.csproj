@@ -123,6 +123,9 @@
     <AndroidResource Include="Resources\layout\comm_advice_topic.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\layout1.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
@@ -156,6 +159,9 @@
     <AndroidResource Include="Resources\drawable\profilePic2.jpg" />
     <AndroidResource Include="Resources\drawable\profilePic3.jpg" />
     <AndroidResource Include="Resources\drawable\profilePic4.jpg" />
+    <AndroidResource Include="Resources\drawable\comment.png" />
+    <AndroidResource Include="Resources\drawable\love.png" />
+    <AndroidResource Include="Resources\drawable\share.png" />
     <Content Include="ToDo-MvvmCross\_ Droid UI.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
