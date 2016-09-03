@@ -12,28 +12,23 @@ using Android.Widget;
 
 namespace healthJourney.droid.Views
 {
-    [Activity(Label = "comm_Advice_Main")]
-    public class comm_Advice_Main : Activity
+    [Activity(Label = "comm_Advice_Topic")]
+    public class comm_Advice_Topic : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             RequestWindowFeature(WindowFeatures.NoTitle);
-            SetContentView(Resource.Layout.comm_advice_main);
+            SetContentView(Resource.Layout.comm_advice_topic);
 
             Button newPostbtn = FindViewById<Button>(Resource.Id.newPostBtn);
             newPostbtn.Click += delegate {
                 StartActivity(typeof(comm_Advice_New));
             };
 
-            Button bkBtn = FindViewById<Button>(Resource.Id.backBtn);
+            Button bkBtn = FindViewById<Button>(Resource.Id.bkBtn);
             bkBtn.Click += delegate {
-                StartActivity(typeof(comm_Main));
-            };
-
-            LinearLayout topicLayout = FindViewById<LinearLayout>(Resource.Id.topicLayout1);
-            topicLayout.Click += delegate {
-                StartActivity(typeof(comm_Advice_Topic));
+                StartActivity(typeof(comm_Advice_Main));
             };
         }
     }

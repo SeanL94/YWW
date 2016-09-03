@@ -24,7 +24,12 @@ namespace healthJourney.droid.Views
 
             Button newPostButton = FindViewById<Button>(Resource.Id.newThoughtsBtn);
             newPostButton.Click += delegate {
-                StartActivity(typeof(FirstView));
+                StartActivity(typeof(comm_Sharing_New));
+            };
+
+            Button bkButton = FindViewById<Button>(Resource.Id.bkBtn);
+            bkButton.Click += delegate {
+                StartActivity(typeof(comm_Main));
             };
         }
     }

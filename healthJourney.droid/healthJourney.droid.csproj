@@ -90,6 +90,7 @@
     <Compile Include="SplashScreen.cs" />
     <Compile Include="Views\comm_Advice_Main.cs" />
     <Compile Include="Views\comm_Advice_New.cs" />
+    <Compile Include="Views\comm_Advice_Topic.cs" />
     <Compile Include="Views\comm_Main.cs" />
     <Compile Include="Views\comm_Sharing_Main.cs" />
     <Compile Include="Views\comm_Sharing_New.cs" />
@@ -117,6 +118,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\comm_advice_new.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\comm_advice_topic.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

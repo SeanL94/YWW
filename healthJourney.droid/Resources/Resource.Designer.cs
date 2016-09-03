@@ -153,50 +153,71 @@ namespace healthJourney.droid
 			// aapt resource value: 0x7f040001
 			public const int MvxBindingTagUnique = 2130968577;
 			
-			// aapt resource value: 0x7f040025
-			public const int ViewSliderSection = 2130968613;
+			// aapt resource value: 0x7f04002b
+			public const int PostDetailTxt = 2130968619;
 			
-			// aapt resource value: 0x7f040027
-			public const int adviceBtn = 2130968615;
+			// aapt resource value: 0x7f040032
+			public const int ViewSliderSection = 2130968626;
+			
+			// aapt resource value: 0x7f040034
+			public const int adviceBtn = 2130968628;
 			
 			// aapt resource value: 0x7f040003
-			public const int bkBtn = 2130968579;
+			public const int backBtn = 2130968579;
+			
+			// aapt resource value: 0x7f040025
+			public const int bkBtn = 2130968613;
 			
 			// aapt resource value: 0x7f040018
 			public const int btmTabLayout = 2130968600;
 			
-			// aapt resource value: 0x7f040033
-			public const int btmUsrInfoLayout = 2130968627;
+			// aapt resource value: 0x7f040040
+			public const int btmUsrInfoLayout = 2130968640;
 			
-			// aapt resource value: 0x7f040044
-			public const int btmUsrInfoLayout2 = 2130968644;
+			// aapt resource value: 0x7f040051
+			public const int btmUsrInfoLayout2 = 2130968657;
 			
-			// aapt resource value: 0x7f040034
-			public const int btm_usrNameTxt = 2130968628;
+			// aapt resource value: 0x7f040041
+			public const int btm_usrNameTxt = 2130968641;
 			
-			// aapt resource value: 0x7f040045
-			public const int btm_usrNameTxt2 = 2130968645;
+			// aapt resource value: 0x7f040052
+			public const int btm_usrNameTxt2 = 2130968658;
 			
-			// aapt resource value: 0x7f040035
-			public const int btm_usrPostTxt = 2130968629;
+			// aapt resource value: 0x7f040042
+			public const int btm_usrPostTxt = 2130968642;
 			
-			// aapt resource value: 0x7f040046
-			public const int btm_usrPostTxt2 = 2130968646;
+			// aapt resource value: 0x7f040053
+			public const int btm_usrPostTxt2 = 2130968659;
 			
 			// aapt resource value: 0x7f04001c
 			public const int cancelBtn = 2130968604;
 			
-			// aapt resource value: 0x7f04004f
-			public const int columnNames = 2130968655;
+			// aapt resource value: 0x7f04005c
+			public const int columnNames = 2130968668;
 			
-			// aapt resource value: 0x7f040038
-			public const int commentUsrIdTxt = 2130968632;
+			// aapt resource value: 0x7f040030
+			public const int commentTxt = 2130968624;
 			
-			// aapt resource value: 0x7f04003b
-			public const int commentUsrIdTxt2 = 2130968635;
+			// aapt resource value: 0x7f04002e
+			public const int commentTxtLayout = 2130968622;
 			
-			// aapt resource value: 0x7f040049
-			public const int commentUsrIdTxt2_2 = 2130968649;
+			// aapt resource value: 0x7f040045
+			public const int commentUsrIdTxt = 2130968645;
+			
+			// aapt resource value: 0x7f040048
+			public const int commentUsrIdTxt2 = 2130968648;
+			
+			// aapt resource value: 0x7f040056
+			public const int commentUsrIdTxt2_2 = 2130968662;
+			
+			// aapt resource value: 0x7f040031
+			public const int comment_datetimeTxt = 2130968625;
+			
+			// aapt resource value: 0x7f04002f
+			public const int comment_usrName1 = 2130968623;
+			
+			// aapt resource value: 0x7f04002d
+			public const int comment_usrPic1 = 2130968621;
 			
 			// aapt resource value: 0x7f04001b
 			public const int community = 2130968603;
@@ -204,11 +225,11 @@ namespace healthJourney.droid
 			// aapt resource value: 0x7f04001f
 			public const int descText = 2130968607;
 			
-			// aapt resource value: 0x7f04004d
-			public const int editText = 2130968653;
+			// aapt resource value: 0x7f04005a
+			public const int editText = 2130968666;
 			
-			// aapt resource value: 0x7f040050
-			public const int exercise = 2130968656;
+			// aapt resource value: 0x7f04005d
+			public const int exercise = 2130968669;
 			
 			// aapt resource value: 0x7f040008
 			public const int forumLayout = 2130968584;
@@ -222,32 +243,32 @@ namespace healthJourney.droid
 			// aapt resource value: 0x7f040017
 			public const int headerTxt3 = 2130968599;
 			
-			// aapt resource value: 0x7f040029
-			public const int healthJourney = 2130968617;
+			// aapt resource value: 0x7f040036
+			public const int healthJourney = 2130968630;
 			
 			// aapt resource value: 0x7f040023
 			public const int imageView1 = 2130968611;
 			
-			// aapt resource value: 0x7f040052
-			public const int imageView2 = 2130968658;
+			// aapt resource value: 0x7f04005f
+			public const int imageView2 = 2130968671;
 			
-			// aapt resource value: 0x7f040053
-			public const int imageView3 = 2130968659;
+			// aapt resource value: 0x7f040060
+			public const int imageView3 = 2130968672;
 			
-			// aapt resource value: 0x7f040054
-			public const int imageView4 = 2130968660;
+			// aapt resource value: 0x7f040061
+			public const int imageView4 = 2130968673;
 			
-			// aapt resource value: 0x7f040051
-			public const int linearLayout1 = 2130968657;
+			// aapt resource value: 0x7f04005e
+			public const int linearLayout1 = 2130968670;
 			
-			// aapt resource value: 0x7f040028
-			public const int linearLayout2 = 2130968616;
+			// aapt resource value: 0x7f040035
+			public const int linearLayout2 = 2130968629;
 			
 			// aapt resource value: 0x7f04001a
 			public const int newPostBtn = 2130968602;
 			
-			// aapt resource value: 0x7f04004b
-			public const int newThoughtsBtn = 2130968651;
+			// aapt resource value: 0x7f040058
+			public const int newThoughtsBtn = 2130968664;
 			
 			// aapt resource value: 0x7f040019
 			public const int notification = 2130968601;
@@ -261,23 +282,23 @@ namespace healthJourney.droid
 			// aapt resource value: 0x7f040024
 			public const int postBtn = 2130968612;
 			
-			// aapt resource value: 0x7f040032
-			public const int postImage = 2130968626;
+			// aapt resource value: 0x7f04003f
+			public const int postImage = 2130968639;
 			
-			// aapt resource value: 0x7f040043
-			public const int postImage2 = 2130968643;
+			// aapt resource value: 0x7f040050
+			public const int postImage2 = 2130968656;
 			
-			// aapt resource value: 0x7f04004c
-			public const int postImg = 2130968652;
+			// aapt resource value: 0x7f040059
+			public const int postImg = 2130968665;
 			
 			// aapt resource value: 0x7f04001d
 			public const int postingDetailsLayout = 2130968605;
 			
-			// aapt resource value: 0x7f04002b
-			public const int postingScrollableLayout = 2130968619;
+			// aapt resource value: 0x7f040038
+			public const int postingScrollableLayout = 2130968632;
 			
-			// aapt resource value: 0x7f04002a
-			public const int profile = 2130968618;
+			// aapt resource value: 0x7f040037
+			public const int profile = 2130968631;
 			
 			// aapt resource value: 0x7f04000a
 			public const int profilePic1 = 2130968586;
@@ -288,11 +309,11 @@ namespace healthJourney.droid
 			// aapt resource value: 0x7f040014
 			public const int profilePic3 = 2130968596;
 			
-			// aapt resource value: 0x7f040056
-			public const int progressEntry = 2130968662;
+			// aapt resource value: 0x7f040063
+			public const int progressEntry = 2130968675;
 			
-			// aapt resource value: 0x7f040055
-			public const int progressEntrySection = 2130968661;
+			// aapt resource value: 0x7f040062
+			public const int progressEntrySection = 2130968674;
 			
 			// aapt resource value: 0x7f040006
 			public const int seachTxt = 2130968582;
@@ -303,8 +324,8 @@ namespace healthJourney.droid
 			// aapt resource value: 0x7f040007
 			public const int searchBtn = 2130968583;
 			
-			// aapt resource value: 0x7f040026
-			public const int sharingBtn = 2130968614;
+			// aapt resource value: 0x7f040033
+			public const int sharingBtn = 2130968627;
 			
 			// aapt resource value: 0x7f04001e
 			public const int subjectText = 2130968606;
@@ -318,38 +339,38 @@ namespace healthJourney.droid
 			// aapt resource value: 0x7f040004
 			public const int titleLabel = 2130968580;
 			
-			// aapt resource value: 0x7f04004e
-			public const int toggleButton1 = 2130968654;
-			
-			// aapt resource value: 0x7f040031
-			public const int top_likedCountTxt = 2130968625;
-			
-			// aapt resource value: 0x7f040042
-			public const int top_likedCountTxt2 = 2130968642;
-			
-			// aapt resource value: 0x7f04002d
-			public const int top_userInfoLayout = 2130968621;
+			// aapt resource value: 0x7f04005b
+			public const int toggleButton1 = 2130968667;
 			
 			// aapt resource value: 0x7f04003e
-			public const int top_userInfoLayout2 = 2130968638;
+			public const int top_likedCountTxt = 2130968638;
 			
-			// aapt resource value: 0x7f04002f
-			public const int top_usrInfoTxtLayout = 2130968623;
+			// aapt resource value: 0x7f04004f
+			public const int top_likedCountTxt2 = 2130968655;
 			
-			// aapt resource value: 0x7f040040
-			public const int top_usrInfoTxtLayout2 = 2130968640;
+			// aapt resource value: 0x7f04003a
+			public const int top_userInfoLayout = 2130968634;
 			
-			// aapt resource value: 0x7f040030
-			public const int top_usrNameTxt = 2130968624;
+			// aapt resource value: 0x7f04004b
+			public const int top_userInfoLayout2 = 2130968651;
 			
-			// aapt resource value: 0x7f040041
-			public const int top_usrNameTxt2 = 2130968641;
+			// aapt resource value: 0x7f04003c
+			public const int top_usrInfoTxtLayout = 2130968636;
 			
-			// aapt resource value: 0x7f04002e
-			public const int top_usrProfilePic = 2130968622;
+			// aapt resource value: 0x7f04004d
+			public const int top_usrInfoTxtLayout2 = 2130968653;
 			
-			// aapt resource value: 0x7f04003f
-			public const int top_usrProfilePic2 = 2130968639;
+			// aapt resource value: 0x7f04003d
+			public const int top_usrNameTxt = 2130968637;
+			
+			// aapt resource value: 0x7f04004e
+			public const int top_usrNameTxt2 = 2130968654;
+			
+			// aapt resource value: 0x7f04003b
+			public const int top_usrProfilePic = 2130968635;
+			
+			// aapt resource value: 0x7f04004c
+			public const int top_usrProfilePic2 = 2130968652;
 			
 			// aapt resource value: 0x7f04000b
 			public const int topicBar1 = 2130968587;
@@ -378,35 +399,53 @@ namespace healthJourney.droid
 			// aapt resource value: 0x7f040016
 			public const int topicSubject3 = 2130968598;
 			
-			// aapt resource value: 0x7f040037
-			public const int usrCommentRowLayout = 2130968631;
-			
-			// aapt resource value: 0x7f04003a
-			public const int usrCommentRowLayout2 = 2130968634;
-			
-			// aapt resource value: 0x7f040048
-			public const int usrCommentRowLayout2_2 = 2130968648;
-			
-			// aapt resource value: 0x7f040039
-			public const int usrCommentTxt = 2130968633;
-			
-			// aapt resource value: 0x7f04003c
-			public const int usrCommentTxt2 = 2130968636;
-			
-			// aapt resource value: 0x7f04004a
-			public const int usrCommentTxt2_2 = 2130968650;
+			// aapt resource value: 0x7f040026
+			public const int userInformationLayout = 2130968614;
 			
 			// aapt resource value: 0x7f04002c
-			public const int usrPostLayout = 2130968620;
+			public const int usrCommentBox1 = 2130968620;
 			
-			// aapt resource value: 0x7f04003d
-			public const int usrPostLayout2 = 2130968637;
-			
-			// aapt resource value: 0x7f040036
-			public const int wholeCommentLayout = 2130968630;
+			// aapt resource value: 0x7f040044
+			public const int usrCommentRowLayout = 2130968644;
 			
 			// aapt resource value: 0x7f040047
-			public const int wholeCommentLayout2 = 2130968647;
+			public const int usrCommentRowLayout2 = 2130968647;
+			
+			// aapt resource value: 0x7f040055
+			public const int usrCommentRowLayout2_2 = 2130968661;
+			
+			// aapt resource value: 0x7f040046
+			public const int usrCommentTxt = 2130968646;
+			
+			// aapt resource value: 0x7f040049
+			public const int usrCommentTxt2 = 2130968649;
+			
+			// aapt resource value: 0x7f040057
+			public const int usrCommentTxt2_2 = 2130968663;
+			
+			// aapt resource value: 0x7f04002a
+			public const int usrDetails = 2130968618;
+			
+			// aapt resource value: 0x7f040029
+			public const int usrName = 2130968617;
+			
+			// aapt resource value: 0x7f040027
+			public const int usrPic2 = 2130968615;
+			
+			// aapt resource value: 0x7f040039
+			public const int usrPostLayout = 2130968633;
+			
+			// aapt resource value: 0x7f04004a
+			public const int usrPostLayout2 = 2130968650;
+			
+			// aapt resource value: 0x7f040028
+			public const int ustInfoTxtLayout = 2130968616;
+			
+			// aapt resource value: 0x7f040043
+			public const int wholeCommentLayout = 2130968643;
+			
+			// aapt resource value: 0x7f040054
+			public const int wholeCommentLayout2 = 2130968660;
 			
 			static Id()
 			{
@@ -428,19 +467,22 @@ namespace healthJourney.droid
 			public const int comm_advice_new = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int comm_main = 2130903042;
+			public const int comm_advice_topic = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int comm_sharing_main = 2130903043;
+			public const int comm_main = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int comm_sharing_new = 2130903044;
+			public const int comm_sharing_main = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int FirstView = 2130903045;
+			public const int comm_sharing_new = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int SplashScreen = 2130903046;
+			public const int FirstView = 2130903046;
+			
+			// aapt resource value: 0x7f030007
+			public const int SplashScreen = 2130903047;
 			
 			static Layout()
 			{

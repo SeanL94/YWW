@@ -41,7 +41,7 @@
             android:id="@+id/postImg" />
         <EditText
             android:layout_width="fill_parent"
-            android:layout_height="150.0dp"
+            android:layout_height="170.0dp"
             android:id="@+id/editText"
             android:padding="10.0dp"
             android:hint="Enter your thoughts here.."

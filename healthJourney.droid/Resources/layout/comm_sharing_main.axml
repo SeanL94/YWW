@@ -3,17 +3,56 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="bottom"
     android:background="#FFFFFF">
+<!-- This section is for title bar-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:background="#e3647d"
+        android:id="@+id/titleBarLayout">
+        <Button
+            android:text="Back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/bkBtn" />
+        <TextView
+            android:text="Community Sharings"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/titleLabel"
+            android:paddingLeft="50.0dp"
+            android:paddingTop="10.0dp" />
+    </LinearLayout>
+<!-- END of title bar-->
+<!-- This section is for search bar-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seacrhBarLayout">
+        <EditText
+            android:layout_width="300.0dp"
+            android:layout_height="match_parent"
+            android:hint="Search.."
+            android:id="@+id/seachTxt"
+            android:background="@android:drawable/editbox_background" />
+        <Button
+            android:text="Search"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/searchBtn" />
+    </LinearLayout>
+<!-- End of Search Bar-->
 <!-- Below is the scrollable user post page -->
     <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="370.0dp">
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="fill_parent"
-            android:gravity="bottom"
+            android:layout_height="550.0dp"
             android:id="@+id/postingScrollableLayout">
         <!-- Below is the first user post page -->
             <LinearLayout
@@ -320,7 +359,6 @@
         android:layout_width="match_parent"
         android:layout_height="200px"
         android:id="@+id/btmTabLayout"
-        android:layout_gravity="bottom"
         android:background="#5e5e5e">
         <ImageButton
             android:layout_width="0dip"

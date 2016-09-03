@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:background="#ffffff"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#ffffff">
 <!-- This section is for title bar-->
     <LinearLayout
         android:orientation="horizontal"
@@ -15,7 +15,7 @@
             android:text="Back"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/backBtn" />
+            android:id="@+id/bkBtn" />
         <TextView
             android:text="Professional Advices"
             android:textAppearance="?android:attr/textAppearanceLarge"
@@ -26,131 +26,147 @@
             android:paddingTop="10.0dp" />
     </LinearLayout>
 <!-- END of title bar-->
-<!-- This section is for search bar-->
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/seacrhBarLayout">
-        <EditText
-            android:layout_width="300.0dp"
-            android:layout_height="match_parent"
-            android:hint="Search.."
-            android:id="@+id/seachTxt" />
-        <Button
-            android:text="Search"
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/searchBtn" />
-    </LinearLayout>
-<!-- This section is for topic records in row-->
+<!-- This section is for entire topic screen excluding title bar and buttons at bottom-->
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="370.0dp"
+        android:layout_height="430.0dp"
         android:id="@+id/forumLayout">
+    <!-- This section is for topic tab that will stay on top of screen-->
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="55.0dp"
+            android:layout_height="wrap_content"
             android:id="@+id/topicLayout1"
             android:padding="3.0dp">
             <ImageView
                 android:src="@drawable/profilepic2"
                 android:layout_width="50.0dp"
-                android:layout_height="50.0dp"
-                android:id="@+id/profilePic1" />
+                android:layout_height="60.0dp"
+                android:id="@+id/profilePic2"
+                android:paddingLeft="5.0dp" />
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="fill_parent"
-                android:layout_height="50.0dp"
+                android:layout_height="60.0dp"
                 android:id="@+id/topicBar1">
                 <TextView
-                    android:text="Say No to Pills!"
+                    android:text="I am 32, feeling tension all the time. Worrying my cancer treatment effect."
                     android:layout_width="fill_parent"
-                    android:layout_height="25.0dp"
+                    android:layout_height="wrap_content"
                     android:id="@+id/topicSubject1"
                     android:textColor="@android:color/background_dark"
+                    android:textStyle="bold"
                     android:paddingLeft="10.0dp"
                     android:paddingTop="3.0dp" />
                 <TextView
-                    android:text="The sample header of the paragraph"
+                    android:text="16th August 2016 16:32:04"
                     android:layout_width="fill_parent"
-                    android:layout_height="25.0dp"
+                    android:layout_height="wrap_content"
                     android:id="@+id/headerTxt1"
                     android:textColor="@android:color/darker_gray"
                     android:paddingLeft="10.0dp" />
             </LinearLayout>
         </LinearLayout>
-    <!-- END of Topic Record -->
-    <!-- FEW more records-->
-    <!-- This section is for topic records in row-->
+    <!-- End of Topic Bar-->
+    <!-- This section is for the information of the user who post this topic-->
         <LinearLayout
             android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
             android:layout_width="match_parent"
-            android:layout_height="55.0dp"
-            android:id="@+id/topicLayout2"
-            android:padding="3.0dp">
+            android:layout_height="wrap_content"
+            android:id="@+id/userInformationLayout">
             <ImageView
-                android:src="@drawable/profilepic3"
-                android:layout_width="50.0dp"
-                android:layout_height="50.0dp"
-                android:id="@+id/profilePic2" />
+                android:src="@drawable/profilepic2"
+                android:layout_width="60.0dp"
+                android:layout_height="60.0dp"
+                android:id="@+id/usrPic2"
+                android:paddingLeft="5.0dp" />
             <LinearLayout
                 android:orientation="vertical"
-                android:layout_width="fill_parent"
-                android:layout_height="50.0dp"
-                android:id="@+id/topicBar2">
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/ustInfoTxtLayout">
                 <TextView
-                    android:text="Healthy Yoga for Everyone"
+                    android:text="User_91264"
                     android:layout_width="fill_parent"
-                    android:layout_height="25.0dp"
-                    android:id="@+id/topicSubject2"
+                    android:layout_height="30.0dp"
+                    android:textStyle="bold"
+                    android:id="@+id/usrName"
                     android:textColor="@android:color/background_dark"
                     android:paddingLeft="10.0dp"
-                    android:paddingTop="3.0dp" />
+                    android:paddingTop="7.0dp" />
                 <TextView
-                    android:text="The sample header of the paragraph"
+                    android:text="32, Breast Cancer Patient"
                     android:layout_width="fill_parent"
-                    android:layout_height="25.0dp"
-                    android:id="@+id/headerTxt2"
+                    android:layout_height="30.0dp"
+                    android:id="@+id/usrDetails"
                     android:textColor="@android:color/darker_gray"
-                    android:paddingLeft="10.0dp" />
+                    android:paddingLeft="10.0dp"
+                    android:paddingTop="5.0dp" />
             </LinearLayout>
         </LinearLayout>
-    <!-- END of Topic Record -->
-    <!-- This section is for topic records in row-->
+    <!-- End of User description section-->
+    <!--This Section is the post details part-->
+        <TextView
+            android:text="Hi there, after the cancer treatment, I feel tension all the time. I keep worrying that my cancer didn't fully recover/ I become very sensitive and my family is suffering my bad temper, I really feel bad for that. What should I do?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/PostDetailTxt"
+            android:textColor="@android:color/background_dark"
+            android:padding="5.0dp" />
+        <TextView
+            android:text="Post By 16th August 2016      16:32:04"
+            android:layout_width="fill_parent"
+            android:layout_height="25.0dp"
+            android:id="@+id/headerTxt1"
+            android:textColor="@android:color/darker_gray"
+            android:paddingLeft="10.0dp"
+            android:paddingTop="5.0dp" />
+    <!--End of Post Details Part-->
+    <!--User Comment Box-->
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="55.0dp"
-            android:id="@+id/topicLayout3"
-            android:padding="3.0dp">
+            android:layout_height="wrap_content"
+            android:id="@+id/usrCommentBox1">
             <ImageView
                 android:src="@drawable/profilepic4"
                 android:layout_width="50.0dp"
                 android:layout_height="50.0dp"
-                android:id="@+id/profilePic3" />
+                android:id="@+id/comment_usrPic1"
+                android:paddingLeft="5.0dp" />
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="fill_parent"
-                android:layout_height="50.0dp"
-                android:id="@+id/topicBar3">
+                android:layout_height="wrap_content"
+                android:id="@+id/commentTxtLayout">
                 <TextView
-                    android:text="3 Ways To Avoid Insomnia"
+                    android:text="Dr. Jane"
                     android:layout_width="fill_parent"
                     android:layout_height="25.0dp"
-                    android:id="@+id/topicSubject3"
+                    android:id="@+id/comment_usrName1"
                     android:textColor="@android:color/background_dark"
-                    android:paddingLeft="10.0dp"
-                    android:paddingTop="3.0dp" />
+                    android:paddingLeft="5.0dp"
+                    android:paddingTop="3.0dp"
+                    android:textStyle="bold" />
                 <TextView
-                    android:text="The sample header of the paragraph"
-                    android:layout_width="fill_parent"
-                    android:layout_height="25.0dp"
-                    android:id="@+id/headerTxt3"
+                    android:text="Hi User_91264, it is normal to be tension and worrying after the treatment. (Some other comments)"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/commentTxt"
+                    android:textColor="@android:color/background_dark"
+                    android:paddingLeft="5.0dp" />
+                <TextView
+                    android:text="Posted by: 16th August 2016 16:52:43"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/comment_datetimeTxt"
                     android:textColor="@android:color/darker_gray"
-                    android:paddingLeft="10.0dp" />
+                    android:paddingLeft="5.0dp" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
