@@ -12,23 +12,23 @@ using Android.Widget;
 
 namespace healthJourney.droid.Views
 {
-    [Activity(Label = "comm_Sharing_New")]
-    public class comm_Sharing_New : Activity
+    [Activity(Label = "comm_Advice_New")]
+    public class comm_Advice_New : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             RequestWindowFeature(WindowFeatures.NoTitle);
-            SetContentView(Resource.Layout.comm_sharing_new);
+            SetContentView(Resource.Layout.comm_advice_new);
 
             Button cancelButton = FindViewById<Button>(Resource.Id.cancelBtn);
             cancelButton.Click += delegate {
-                StartActivity(typeof(comm_Sharing_Main));
+                StartActivity(typeof(comm_Advice_Main));
             };
 
             Button postBtn = FindViewById<Button>(Resource.Id.postBtn);
             postBtn.Click += delegate {
-                StartActivity(typeof(comm_Sharing_Main));
+                StartActivity(typeof(comm_Advice_Main));
             };
         }
     }
