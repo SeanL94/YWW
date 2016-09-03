@@ -21,9 +21,10 @@ namespace healthJourney.droid.Views
             RequestWindowFeature(WindowFeatures.NoTitle);
             SetContentView(Resource.Layout.comm_sharing_main);
 
+
             Button newPostButton = FindViewById<Button>(Resource.Id.newThoughtsBtn);
             newPostButton.Click += delegate {
-                StartActivity(typeof(comm_Sharing_New));
+                StartActivity(typeof(FirstView));
             };
         }
     }

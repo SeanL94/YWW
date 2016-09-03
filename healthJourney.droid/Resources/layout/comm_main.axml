@@ -10,7 +10,7 @@
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="460.0dp"
         android:id="@+id/ViewSliderSection"
         android:background="#FFFFFF"
         android:layout_gravity="bottom"
@@ -44,19 +44,22 @@
         android:background="#5e5e5e">
         <Button
             android:text="community"
-            android:layout_width="266px"
+            android:layout_width="0dip"
             android:layout_height="match_parent"
+            android:layout_weight="0.33"
             android:id="@+id/community"
             android:background="#e3647d" />
         <Button
             android:text="health journey"
-            android:layout_width="267px"
+            android:layout_width="0dip"
             android:layout_height="match_parent"
+            android:layout_weight="0.34"
             android:id="@+id/healthJourney" />
         <Button
             android:text="profile"
-            android:layout_width="266px"
+            android:layout_width="0dip"
             android:layout_height="match_parent"
+            android:layout_weight="0.33"
             android:id="@+id/profile" />
     </LinearLayout>
 </LinearLayout>

@@ -69,11 +69,19 @@
         <ToggleButton
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
-            android:id="@+id/permissionBtn" />
+            android:id="@+id/permissionBtn"
+            android:textOn="Yes"
+            android:textOff="No" />
     </LinearLayout>
     <ImageView
         android:src="@drawable/splashscreen"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="250.0dp"
         android:id="@+id/imageView1" />
+    <Button
+        android:text="Post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e3647d"
+        android:id="@+id/button1" />
 </LinearLayout>

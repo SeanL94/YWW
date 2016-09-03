@@ -323,19 +323,22 @@
         android:layout_gravity="bottom"
         android:background="#5e5e5e">
         <ImageButton
-            android:layout_width="266px"
+            android:layout_width="0dip"
             android:layout_height="match_parent"
+            android:layout_weight="0.33"
             android:id="@+id/notification"
             android:background="@drawable/bell" />
         <Button
             android:text="New Thoughts"
-            android:layout_width="267px"
+            android:layout_width="0dip"
             android:layout_height="match_parent"
+            android:layout_weight="0.34"
             android:id="@+id/newThoughtsBtn" />
         <Button
             android:text="Community"
-            android:layout_width="266px"
+            android:layout_width="0dip"
             android:layout_height="match_parent"
+            android:layout_weight="0.33"
             android:id="@+id/community"
             android:background="#e3647d" />
     </LinearLayout>

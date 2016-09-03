@@ -20,7 +20,7 @@ namespace healthJourney.droid.Views
             base.OnCreate(savedInstanceState);
             RequestWindowFeature(WindowFeatures.NoTitle);
             SetContentView(Resource.Layout.comm_main);
-
+            
             Button healthBtn = FindViewById<Button>(Resource.Id.healthJourney);
             healthBtn.Click += delegate {
                 StartActivity(typeof(FirstView));
@@ -29,6 +29,11 @@ namespace healthJourney.droid.Views
             Button sharingBtn = FindViewById<Button>(Resource.Id.sharingBtn);
             sharingBtn.Click += delegate {
                 StartActivity(typeof(comm_Sharing_Main));
+            };
+
+            Button adviceBtn = FindViewById<Button>(Resource.Id.adviceBtn);
+            adviceBtn.Click += delegate {
+                StartActivity(typeof(comm_Advice_Main));
             };
         }
     }
