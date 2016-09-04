@@ -28,6 +28,10 @@ namespace healthJourney.droid.Views
             healthBtn.Click += delegate {
                 StartActivity(typeof(FirstView));
             };
+            Button profileBtn = FindViewById<Button>(Resource.Id.profile);
+            profileBtn.Click += delegate {
+                StartActivity(typeof(profile_main));
+            };
 
             Button sharingBtn = FindViewById<Button>(Resource.Id.sharingBtn);
             sharingBtn.Click += delegate {

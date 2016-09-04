@@ -17,6 +17,10 @@ namespace healthJourney.droid.Views
             commbutton.Click += delegate {
                 StartActivity(typeof(comm_Main));
             };
+            Button profileBtn = FindViewById<Button>(Resource.Id.profile);
+            profileBtn.Click += delegate {
+                StartActivity(typeof(profile_main));
+            };
         }
     }
 }

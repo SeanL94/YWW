@@ -95,6 +95,8 @@
     <Compile Include="Views\comm_Sharing_Main.cs" />
     <Compile Include="Views\comm_Sharing_New.cs" />
     <Compile Include="Views\FirstView.cs" />
+    <Compile Include="Views\profile_edit.cs" />
+    <Compile Include="Views\profile_main.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
@@ -124,6 +126,12 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\layout1.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\profile_main.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\profile_edit.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
