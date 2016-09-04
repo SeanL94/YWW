@@ -8,12 +8,12 @@ using MvvmCross.Droid.Views;
 namespace healthJourney.droid.Views
 {
     [Activity(Label = "View for FirstViewModel")]
-    public class FirstView : MvxActivity
+    public class overview_progress : MvxActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            SetContentView(Resource.Layout.FirstView);
+            SetContentView(Resource.Layout.overview_progress);
 
             Button commbutton = FindViewById<Button>(Resource.Id.community);
             commbutton.Click += delegate {
@@ -25,7 +25,7 @@ namespace healthJourney.droid.Views
             };
             Button overviewbtn = FindViewById<Button>(Resource.Id.toggleButton1);
             overviewbtn.Click += delegate {
-                StartActivity(typeof(overview_progress));
+                StartActivity(typeof(FirstView));
             };
         }
     }

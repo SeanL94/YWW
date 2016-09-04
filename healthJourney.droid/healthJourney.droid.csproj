@@ -94,6 +94,7 @@
     <Compile Include="Views\comm_Main.cs" />
     <Compile Include="Views\comm_Sharing_Main.cs" />
     <Compile Include="Views\comm_Sharing_New.cs" />
+    <Compile Include="Views\overview_progress.cs" />
     <Compile Include="Views\FirstView.cs" />
     <Compile Include="Views\profile_edit.cs" />
     <Compile Include="Views\profile_main.cs" />
@@ -134,6 +135,9 @@
     <AndroidResource Include="Resources\layout\profile_edit.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\overview_progress.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
@@ -170,6 +174,8 @@
     <AndroidResource Include="Resources\drawable\comment.png" />
     <AndroidResource Include="Resources\drawable\love.png" />
     <AndroidResource Include="Resources\drawable\share.png" />
+    <AndroidResource Include="Resources\drawable\columns1.png" />
+    <AndroidResource Include="Resources\drawable\flowers1.png" />
     <Content Include="ToDo-MvvmCross\_ Droid UI.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
