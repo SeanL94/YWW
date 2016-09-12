@@ -94,6 +94,7 @@
     <Compile Include="Views\comm_Main.cs" />
     <Compile Include="Views\comm_Sharing_Main.cs" />
     <Compile Include="Views\comm_Sharing_New.cs" />
+    <Compile Include="Views\progress_entry.cs" />
     <Compile Include="Views\overview_progress.cs" />
     <Compile Include="Views\FirstView.cs" />
     <Compile Include="Views\profile_edit.cs" />
@@ -136,6 +137,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\overview_progress.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\progress_entry.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:local="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -15,14 +14,14 @@
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="100px"
+        android:layout_height="80dp"
         android:id="@+id/ViewSliderSection"
         android:background="#FFFFFF"
         android:layout_gravity="bottom"
         android:gravity="center_horizontal">
         <ToggleButton
-            android:layout_width="200px"
-            android:layout_height="50px"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
             android:id="@+id/toggleButton1"
             android:textOff="Weekly Goals"
             android:textOn="Overview" />
@@ -39,36 +38,36 @@
         <TextView
             android:text="YOUR PROGRESS"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="300px"
+            android:layout_width="220dp"
             android:layout_height="match_parent"
             android:id="@+id/yourProgress"
             android:textColor="#000000"
             android:gravity="center_horizontal"
-            android:paddingTop="15px"
-            android:layout_marginLeft="250px"
-            android:textSize="30px" />
+            android:paddingTop="10dp"
+            android:layout_marginLeft="200dp"
+            android:textSize="24dp" />
     </LinearLayout>
 <!--This section implements the images of the columns that will be used to display the user's progress-->
     <LinearLayout
         android:orientation="horizontal"
         android:minWidth="25px"
         android:minHeight="25px"
-        android:layout_width="200px"
-        android:layout_height="650px"
+        android:layout_width="150dp"
+        android:layout_height="500dp"
         android:id="@+id/linearLayout1"
         android:layout_gravity="bottom"
         android:gravity="bottom"
         android:background="@drawable/columns1"
-        android:layout_marginLeft="300px">
+        android:layout_marginLeft="230dp">
         <ImageView
             android:layout_width="170px"
-            android:layout_height="300px"
+            android:layout_height="250dp"
             android:id="@+id/imageView1"
-            android:layout_marginTop="80px"
+            android:layout_marginTop="60dp"
             android:cropToPadding="true"
             android:background="@drawable/flowers1"
-            android:layout_marginLeft="15px"
-            android:layout_marginBottom="90px" />
+            android:layout_marginLeft="13dp"
+            android:layout_marginBottom="60dp" />
     </LinearLayout>
 <!--This section implements a button that will be used to navigate to the data entry page-->
     <LinearLayout
@@ -81,17 +80,17 @@
         android:background="#FFFFFF"
         android:layout_gravity="bottom"
         android:gravity="center_horizontal"
-        android:layout_marginBottom="20px">
+        android:layout_marginBottom="3dp">
         <TextView
             android:text="You have completed 21 Goals! Well Done"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="410px"
+            android:layout_width="350dp"
             android:layout_height="match_parent"
             android:id="@+id/goalCount"
             android:textColor="#000000"
             android:gravity="center_horizontal"
-            android:paddingTop="15px"
-            android:textSize="30px" />
+            android:paddingTop="10dp"
+            android:textSize="23dp" />
     </LinearLayout>
 <!--This section implements the navigation bar at the bottom of the page-->
     <LinearLayout
@@ -105,19 +104,22 @@
         android:background="#5e5e5e">
         <Button
             android:text="community"
-            android:layout_width="266px"
+            android:layout_width="0dip"
             android:layout_height="match_parent"
+            android:layout_weight="0.33"
             android:id="@+id/community" />
         <Button
             android:text="health journey"
-            android:layout_width="267px"
+            android:layout_width="0dip"
             android:layout_height="match_parent"
+            android:layout_weight="0.34"
             android:id="@+id/healthJourney"
             android:background="#e3647d" />
         <Button
             android:text="profile"
-            android:layout_width="266px"
+            android:layout_width="0dip"
             android:layout_height="match_parent"
+            android:layout_weight="0.33"
             android:id="@+id/profile" />
     </LinearLayout>
 </LinearLayout>

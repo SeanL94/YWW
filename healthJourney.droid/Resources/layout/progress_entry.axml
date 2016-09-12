@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:gravity="top"
+    android:background="#FFFFFF">
+<!--Author: Sean Little | n9106201-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:id="@+id/titleLayout"
+        android:background="#D3D3D3">
+        <TextView
+            android:text="Your Goals"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/title"
+            android:gravity="center"
+            android:textColor="#494341"
+            android:textSize="140px"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="800px"
+        android:id="@+id/progressEntryLayout"
+        android:gravity="top">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dietGoal"
+            android:background="#e3647d"
+            android:textColor="#494341"
+            android:textSize="45px"
+            android:text="Keep daily intake of energy under 8,700 KJs" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20px"
+            android:text="What was your daily intake today (KJs)?"
+            android:textSize="35px"
+            android:textColor="#494341"
+            android:background="#e3647d" />
+        <EditText
+            android:inputType="number"
+            android:layout_width="150px"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText1"
+            android:layout_marginLeft="650px"
+            android:background="#e3647d"
+            android:textSize="35px"
+            android:text="_____ KJs"
+            android:gravity="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1"
+        android:background="#D3D3D3"
+        android:gravity="center">
+        <Button
+            android:text="Cancel"
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancelButton"
+            android:layout_marginRight="50px" />
+        <Button
+            android:text="Enter"
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:id="@+id/enterButton" />
+    </LinearLayout>
+</LinearLayout>

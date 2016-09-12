@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:local="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -147,19 +146,22 @@
         android:background="#5e5e5e">
         <Button
             android:text="community"
-            android:layout_width="266px"
+            android:layout_width="0dip"
             android:layout_height="match_parent"
+            android:layout_weight="0.33"
             android:id="@+id/community" />
         <Button
             android:text="health journey"
-            android:layout_width="267px"
+            android:layout_width="0dip"
             android:layout_height="match_parent"
+            android:layout_weight="0.34"
             android:id="@+id/healthJourney"
             android:background="#e3647d" />
         <Button
             android:text="profile"
-            android:layout_width="266px"
+            android:layout_width="0dip"
             android:layout_height="match_parent"
+            android:layout_weight="0.33"
             android:id="@+id/profile" />
     </LinearLayout>
 </LinearLayout>

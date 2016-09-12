@@ -222,6 +222,9 @@ namespace healthJourney.droid
 			// aapt resource value: 0x7f04001c
 			public const int cancelBtn = 2130968604;
 			
+			// aapt resource value: 0x7f04008b
+			public const int cancelButton = 2130968715;
+			
 			// aapt resource value: 0x7f040065
 			public const int columnNames = 2130968677;
 			
@@ -264,8 +267,17 @@ namespace healthJourney.droid
 			// aapt resource value: 0x7f040078
 			public const int detail_btn_section = 2130968696;
 			
+			// aapt resource value: 0x7f040089
+			public const int dietGoal = 2130968713;
+			
 			// aapt resource value: 0x7f040063
 			public const int editText = 2130968675;
+			
+			// aapt resource value: 0x7f04008a
+			public const int editText1 = 2130968714;
+			
+			// aapt resource value: 0x7f04008c
+			public const int enterButton = 2130968716;
 			
 			// aapt resource value: 0x7f040066
 			public const int exercise = 2130968678;
@@ -384,6 +396,9 @@ namespace healthJourney.droid
 			// aapt resource value: 0x7f04006b
 			public const int progressEntry = 2130968683;
 			
+			// aapt resource value: 0x7f040088
+			public const int progressEntryLayout = 2130968712;
+			
 			// aapt resource value: 0x7f04006a
 			public const int progressEntrySection = 2130968682;
 			
@@ -414,11 +429,17 @@ namespace healthJourney.droid
 			// aapt resource value: 0x7f040021
 			public const int textView1 = 2130968609;
 			
+			// aapt resource value: 0x7f040087
+			public const int title = 2130968711;
+			
 			// aapt resource value: 0x7f040002
 			public const int titleBarLayout = 2130968578;
 			
 			// aapt resource value: 0x7f040004
 			public const int titleLabel = 2130968580;
+			
+			// aapt resource value: 0x7f040086
+			public const int titleLayout = 2130968710;
 			
 			// aapt resource value: 0x7f040064
 			public const int toggleButton1 = 2130968676;
@@ -611,7 +632,10 @@ namespace healthJourney.droid
 			public const int profile_main = 2130903050;
 			
 			// aapt resource value: 0x7f03000b
-			public const int SplashScreen = 2130903051;
+			public const int progress_entry = 2130903051;
+			
+			// aapt resource value: 0x7f03000c
+			public const int SplashScreen = 2130903052;
 			
 			static Layout()
 			{
