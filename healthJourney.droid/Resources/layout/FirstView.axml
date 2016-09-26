@@ -87,33 +87,33 @@
         android:gravity="left"
         android:background="@drawable/columns4">
         <ImageView
-            android:src="@drawable/exercise"
-            android:layout_width="wrap_content"
+            android:src="@drawable/flowers0"
+            android:layout_width="55dp"
             android:layout_height="200dp"
             android:id="@+id/imageView1"
             android:layout_marginTop="30dp"
-            android:layout_marginLeft="55dp" />
+            android:layout_marginLeft="45dp" />
         <ImageView
-            android:src="@drawable/diet"
-            android:layout_width="wrap_content"
+            android:src="@drawable/flowers25"
+            android:layout_width="55dp"
             android:layout_height="200dp"
             android:id="@+id/imageView2"
             android:layout_marginTop="30dp"
-            android:layout_marginLeft="40dp" />
+            android:layout_marginLeft="20dp" />
         <ImageView
-            android:src="@drawable/sleep"
-            android:layout_width="wrap_content"
+            android:src="@drawable/flowers25"
+            android:layout_width="55dp"
             android:layout_height="200dp"
             android:id="@+id/imageView3"
             android:layout_marginTop="30dp"
-            android:layout_marginLeft="40dp" />
+            android:layout_marginLeft="15dp" />
         <ImageView
-            android:src="@drawable/lifestyle"
-            android:layout_width="wrap_content"
+            android:src="@drawable/flowers0"
+            android:layout_width="55dp"
             android:layout_height="200dp"
             android:id="@+id/imageView4"
             android:layout_marginTop="30dp"
-            android:layout_marginLeft="30dp" />
+            android:layout_marginLeft="15dp" />
     </LinearLayout>
 <!--This section implements a button that will be used to navigate to the data entry page-->
     <LinearLayout

@@ -179,7 +179,11 @@
     <AndroidResource Include="Resources\drawable\love.png" />
     <AndroidResource Include="Resources\drawable\share.png" />
     <AndroidResource Include="Resources\drawable\columns1.png" />
-    <AndroidResource Include="Resources\drawable\flowers1.png" />
+    <AndroidResource Include="Resources\drawable\flowers0.png" />
+    <AndroidResource Include="Resources\drawable\flowers25.png" />
+    <AndroidResource Include="Resources\drawable\flowers50.png" />
+    <AndroidResource Include="Resources\drawable\flowers75.png" />
+    <AndroidResource Include="Resources\drawable\flowers100.png" />
     <Content Include="ToDo-MvvmCross\_ Droid UI.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

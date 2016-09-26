@@ -26,7 +26,7 @@
             android:textOff="Weekly Goals"
             android:textOn="Overview" />
     </LinearLayout>
-<!--This section implements the names for each of the columns-->
+<!--This section implements the names for the column-->
     <LinearLayout
         android:orientation="horizontal"
         android:minWidth="25px"
@@ -47,7 +47,7 @@
             android:layout_marginLeft="80dp"
             android:textSize="24dp" />
     </LinearLayout>
-<!--This section implements the images of the columns that will be used to display the user's progress-->
+<!--This section implements the image of the column that will be used to display the user's progress-->
     <LinearLayout
         android:orientation="horizontal"
         android:minWidth="25px"
@@ -62,11 +62,11 @@
         android:layout_marginRight="100dp">
         <ImageView
             android:layout_width="120dp"
-            android:layout_height="100dp"
+            android:layout_height="190dp"
             android:id="@+id/imageView1"
             android:layout_marginTop="80dp"
             android:cropToPadding="true"
-            android:background="@drawable/flowers1"
+            android:background="@drawable/flowers50"
             android:layout_marginLeft="20dp"
             android:layout_marginBottom="60dp" />
     </LinearLayout>
