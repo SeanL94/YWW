@@ -94,14 +94,14 @@
             android:layout_marginTop="30dp"
             android:layout_marginLeft="45dp" />
         <ImageView
-            android:src="@drawable/flowers25"
+            android:src="@drawable/flowers0"
             android:layout_width="55dp"
             android:layout_height="200dp"
             android:id="@+id/imageView2"
             android:layout_marginTop="30dp"
             android:layout_marginLeft="20dp" />
         <ImageView
-            android:src="@drawable/flowers25"
+            android:src="@drawable/flowers0"
             android:layout_width="55dp"
             android:layout_height="200dp"
             android:id="@+id/imageView3"
