@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Set your own goals"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/textView1" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/exercise_btn_section"
+        android:layout_marginBottom="0.0dp">
+        <Button
+            android:text="Exercise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/exerciseBtn" />
+        <TextView xmlns:tools="http://schemas.android.com/tools"
+            android:text="This area contains the exercises"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/exercise"
+            android:phoneNumber="true"
+            android:visibility="gone" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/diet_btn_section"
+        android:layout_marginBottom="0.0dp">
+        <Button
+            android:text="Diet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dietBtn" />
+        <TextView xmlns:tools="http://schemas.android.com/tools"
+            android:text="This area contains the diet plan"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/diet"
+            android:phoneNumber="true"
+            android:visibility="gone" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sleep_btn_section"
+        android:layout_marginBottom="0.0dp">
+        <Button
+            android:text="Sleep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sleepBtn" />
+        <TextView xmlns:tools="http://schemas.android.com/tools"
+            android:text="This area contains the sleep plan"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sleep"
+            android:phoneNumber="true"
+            android:visibility="gone" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lifestyle_btn_section"
+        android:layout_marginBottom="0.0dp">
+        <Button
+            android:text="Lifestyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lifestyleBtn" />
+        <TextView xmlns:tools="http://schemas.android.com/tools"
+            android:text="This area contains the lifestyle"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lifestyle"
+            android:phoneNumber="true"
+            android:visibility="gone" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:id="@+id/linearLayout2"
+        android:layout_gravity="bottom"
+        android:background="#5e5e5e">
+        <Button
+            android:text="community"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:id="@+id/community" />
+        <Button
+            android:text="health journey"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.34"
+            android:id="@+id/healthJourney" />
+        <Button
+            android:text="profile"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:id="@+id/profile"
+            android:background="#e3647d" />
+    </LinearLayout>
+</LinearLayout>
