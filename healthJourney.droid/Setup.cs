@@ -2,6 +2,9 @@ using Android.Content;
 using MvvmCross.Droid.Platform;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform.Platform;
+using YWW.core.Interfaces;
+using healthJourney.droid.Database;
+using MvvmCross.Platform;
 
 namespace healthJourney.droid
 {
@@ -9,6 +12,12 @@ namespace healthJourney.droid
     {
         public Setup(Context applicationContext) : base(applicationContext)
         {
+        }
+
+        protected override void InitializeFirstChance()
+        {
+            Mvx.LazyConstructAndRegisterSingleton<ISqlite, SqliteDroid>();
+            base.InitializeFirstChance();
         }
 
         protected override IMvxApplication CreateApp()
