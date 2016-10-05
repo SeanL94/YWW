@@ -31,8 +31,10 @@
         android:layout_width="match_parent"
         android:layout_height="350dp"
         android:id="@+id/progressEntryLayout"
-        android:gravity="top">
-        <TextView
+        android:gravity="top"
+        android:minWidth="25px"
+        android:minHeight="25px">
+    <!--<TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/dietGoal"
@@ -58,7 +60,17 @@
             android:background="#e3647d"
             android:textSize="15dp"
             android:text="_____ KJs"
-            android:gravity="center" />
+            android:gravity="center" />-->
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/GoalList"
+            android:paddingBottom="30dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="20dp" />
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"

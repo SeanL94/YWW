@@ -174,6 +174,9 @@ namespace healthJourney.droid
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f040098
+			public const int GoalList = 2130968728;
+			
 			// aapt resource value: 0x7f040000
 			public const int MvvmCrossTagId = 2130968576;
 			
@@ -237,8 +240,8 @@ namespace healthJourney.droid
 			// aapt resource value: 0x7f04001c
 			public const int cancelBtn = 2130968604;
 			
-			// aapt resource value: 0x7f04009a
-			public const int cancelButton = 2130968730;
+			// aapt resource value: 0x7f040099
+			public const int cancelButton = 2130968729;
 			
 			// aapt resource value: 0x7f040065
 			public const int columnNames = 2130968677;
@@ -288,23 +291,17 @@ namespace healthJourney.droid
 			// aapt resource value: 0x7f04006f
 			public const int dietBtn = 2130968687;
 			
-			// aapt resource value: 0x7f040098
-			public const int dietGoal = 2130968728;
-			
 			// aapt resource value: 0x7f04006e
 			public const int diet_btn_section = 2130968686;
 			
 			// aapt resource value: 0x7f040063
 			public const int editText = 2130968675;
 			
-			// aapt resource value: 0x7f040099
-			public const int editText1 = 2130968729;
-			
 			// aapt resource value: 0x7f04007f
 			public const int edit_info_section = 2130968703;
 			
-			// aapt resource value: 0x7f04009b
-			public const int enterButton = 2130968731;
+			// aapt resource value: 0x7f04009a
+			public const int enterButton = 2130968730;
 			
 			// aapt resource value: 0x7f040066
 			public const int exercise = 2130968678;

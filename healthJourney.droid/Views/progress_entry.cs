@@ -1,7 +1,11 @@
 using Android.App;
 using Android.OS;
+using Android.Views;
 using Android.Widget;
 using MvvmCross.Droid.Views;
+using System.Collections.ObjectModel;
+using System.Runtime.InteropServices;
+using static healthJourney.droid.Resource;
 
 //Author: Sean Little | n9106201
 
@@ -13,9 +17,12 @@ namespace healthJourney.droid.Views
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            SetContentView(Resource.Layout.progress_entry);
+            RequestWindowFeature(WindowFeatures.NoTitle);
+            SetContentView(Layout.progress_entry);
 
-            Button enterButton = FindViewById<Button>(Resource.Id.enterButton);
+            //ListView GoalLV = FindViewById<ListView>(Id.GoalList);
+
+            Button enterButton = FindViewById<Button>(Id.enterButton);
             enterButton.Click += delegate {
                 StartActivity(typeof(FirstView));
             };
@@ -24,5 +31,9 @@ namespace healthJourney.droid.Views
                 StartActivity(typeof(FirstView));
             };
         }
+        public string GoalQuestion = "How many kms have you run?";
+
+
+
     }
 }

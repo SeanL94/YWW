@@ -1,5 +1,6 @@
 using Android.App;
 using Android.OS;
+using Android.Views;
 using Android.Widget;
 using MvvmCross.Droid.Views;
 
@@ -13,6 +14,7 @@ namespace healthJourney.droid.Views
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
+            RequestWindowFeature(WindowFeatures.NoTitle);
             SetContentView(Resource.Layout.overview_progress);
 
             Button commbutton = FindViewById<Button>(Resource.Id.community);
