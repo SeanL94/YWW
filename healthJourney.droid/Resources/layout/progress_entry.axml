@@ -60,12 +60,6 @@
             android:textSize="15dp"
             android:gravity="center"
             local:MvxBind="Text goalEntry, Mode=TwoWay" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            local:MvxBind="Text goalProgress, Mode=TwoWay"
-            android:textColor="#000000" />
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"

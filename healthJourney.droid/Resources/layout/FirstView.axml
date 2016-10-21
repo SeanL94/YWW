@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -86,13 +87,14 @@
         android:layout_gravity="bottom"
         android:gravity="left"
         android:background="@drawable/columns4">
+      <!--android:src="@drawable/flowers0"-->
         <ImageView
-            android:src="@drawable/flowers0"
             android:layout_width="55dp"
             android:layout_height="200dp"
             android:id="@+id/imageView1"
             android:layout_marginTop="30dp"
-            android:layout_marginLeft="45dp" />
+            android:layout_marginLeft="45dp"
+            local:MvxBind="DrawableName dietProgress, Mode=TwoWay"/>
         <ImageView
             android:src="@drawable/flowers0"
             android:layout_width="55dp"
