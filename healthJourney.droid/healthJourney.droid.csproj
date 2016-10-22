@@ -103,6 +103,7 @@
     <Compile Include="Views\comm_Main.cs" />
     <Compile Include="Views\comm_Sharing_Main.cs" />
     <Compile Include="Views\comm_Sharing_New.cs" />
+    <Compile Include="Views\healthPlanConfig.cs" />
     <Compile Include="Views\progress_entry.cs" />
     <Compile Include="Views\overview_progress.cs" />
     <Compile Include="Views\FirstView.cs" />

@@ -152,18 +152,6 @@
             android:id="@+id/user_plan"
             android:phoneNumber="true"
             android:visibility="gone" />
-        <LinearLayout
-            android:orientation="vertical"
-            android:minWidth="25dp"
-            android:minHeight="25dp"
-            android:layout_width="match_parent"
-            android:layout_height="195dp"
-            android:id="@+id/linearLayout3">
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/space1" />
-        </LinearLayout>
     </LinearLayout>
 <!-- End of content section-->
 <!--This section implements the navigation bar at the bottom of the page-->

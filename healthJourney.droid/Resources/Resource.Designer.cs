@@ -239,8 +239,8 @@ namespace healthJourney.droid
 			// aapt resource value: 0x7f05001c
 			public const int cancelBtn = 2131034140;
 			
-			// aapt resource value: 0x7f050099
-			public const int cancelButton = 2131034265;
+			// aapt resource value: 0x7f050097
+			public const int cancelButton = 2131034263;
 			
 			// aapt resource value: 0x7f050065
 			public const int columnNames = 2131034213;
@@ -296,14 +296,14 @@ namespace healthJourney.droid
 			// aapt resource value: 0x7f050063
 			public const int editText = 2131034211;
 			
-			// aapt resource value: 0x7f050098
-			public const int editText1 = 2131034264;
+			// aapt resource value: 0x7f050096
+			public const int editText1 = 2131034262;
 			
 			// aapt resource value: 0x7f05007f
 			public const int edit_info_section = 2131034239;
 			
-			// aapt resource value: 0x7f05009a
-			public const int enterButton = 2131034266;
+			// aapt resource value: 0x7f050098
+			public const int enterButton = 2131034264;
 			
 			// aapt resource value: 0x7f050066
 			public const int exercise = 2131034214;
@@ -371,9 +371,6 @@ namespace healthJourney.droid
 			// aapt resource value: 0x7f050035
 			public const int linearLayout2 = 2131034165;
 			
-			// aapt resource value: 0x7f050093
-			public const int linearLayout3 = 2131034259;
-			
 			// aapt resource value: 0x7f050041
 			public const int loveBtn1 = 2131034177;
 			
@@ -440,8 +437,8 @@ namespace healthJourney.droid
 			// aapt resource value: 0x7f05006b
 			public const int progressEntry = 2131034219;
 			
-			// aapt resource value: 0x7f050097
-			public const int progressEntryLayout = 2131034263;
+			// aapt resource value: 0x7f050095
+			public const int progressEntryLayout = 2131034261;
 			
 			// aapt resource value: 0x7f05006a
 			public const int progressEntrySection = 2131034218;
@@ -476,17 +473,14 @@ namespace healthJourney.droid
 			// aapt resource value: 0x7f050071
 			public const int sleep_btn_section = 2131034225;
 			
-			// aapt resource value: 0x7f050094
-			public const int space1 = 2131034260;
-			
 			// aapt resource value: 0x7f05001e
 			public const int subjectText = 2131034142;
 			
 			// aapt resource value: 0x7f050021
 			public const int textView1 = 2131034145;
 			
-			// aapt resource value: 0x7f050096
-			public const int title = 2131034262;
+			// aapt resource value: 0x7f050094
+			public const int title = 2131034260;
 			
 			// aapt resource value: 0x7f050002
 			public const int titleBarLayout = 2131034114;
@@ -494,8 +488,8 @@ namespace healthJourney.droid
 			// aapt resource value: 0x7f050004
 			public const int titleLabel = 2131034116;
 			
-			// aapt resource value: 0x7f050095
-			public const int titleLayout = 2131034261;
+			// aapt resource value: 0x7f050093
+			public const int titleLayout = 2131034259;
 			
 			// aapt resource value: 0x7f050064
 			public const int toggleButton1 = 2131034212;
