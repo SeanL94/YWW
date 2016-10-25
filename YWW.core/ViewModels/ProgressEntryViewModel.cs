@@ -12,6 +12,10 @@ namespace YWW.core.ViewModels
     public class ProgressEntryViewModel
         : MvxViewModel
     {
+        public delegate void MyEventAction(string msg);
+        public event MyEventAction SuccessEvent;
+
+        private string Success = "Congratulations on completing your goal!";
         private string _goal = "Keep daily intake under 9'000 kjs";
         private string _goalQuestion = "What was your daily intake today (KJs)?";
         public string Goal
@@ -91,6 +95,10 @@ namespace YWW.core.ViewModels
                 if (dietIntake < 9000)
                 {
                     GoalCounter = GoalCounter + 1;
+                }
+                if (GoalCounter == 5)
+                {
+                    SuccessEvent(Success);
                 }
                 ShowViewModel<FirstViewModel>(new { GoalCounter });
             });
