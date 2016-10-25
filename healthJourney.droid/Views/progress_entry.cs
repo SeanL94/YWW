@@ -23,11 +23,11 @@ namespace healthJourney.droid.Views
             RequestWindowFeature(WindowFeatures.NoTitle);
             SetContentView(Layout.progress_entry);
 
-            Button enterButton = FindViewById<Button>(Id.enterButton);
-            enterButton.Click += delegate
-            {
-                StartActivity(typeof(FirstView));
-            };
+            //Button enterButton = FindViewById<Button>(Id.enterButton);
+            //enterButton.Click += delegate
+            //{
+            //    StartActivity(typeof(FirstView));
+            //};
             Button cancelButton = FindViewById<Button>(Resource.Id.cancelButton);
             cancelButton.Click += delegate
             {

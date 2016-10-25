@@ -14,11 +14,12 @@ namespace healthJourney.droid.Views
 {
     class healthPlanConfig
     {
-        protected override void onCreate(Bundle savedInstanceState)
-        {
-            base.OnCreate(savedInstanceState);
-            RequestWindowFeature(WindowFeatures.NoTitle);
-            SetContentView(Resource.Layout.healthPlanConfig);
-        }
+        //[MvxViewFor(typeof(HealthPlanViewModel))]
+        //protected override void OnCreate(Bundle bundle)
+        //{
+        //    base.OnCreate(bundle);
+        //    RequestWindowFeature(WindowFeatures.NoTitle);
+        //    SetContentView(Resource.Layout.healthPlanConfig);
+        //}   
     }
 }
