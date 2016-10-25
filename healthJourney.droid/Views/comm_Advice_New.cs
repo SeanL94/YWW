@@ -1,22 +1,20 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 using Android.App;
-using Android.Content;
 using Android.OS;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using MvvmCross.Core.ViewModels;
+using MvvmCross.Droid.Views;
+using YWW.core.ViewModels;
 /**
- * Author Jia Xin Chan 9601902
- * 
- **/
+* Author Jia Xin Chan 9601902
+* 
+**/
 namespace healthJourney.droid.Views
 {
+    [MvxViewFor(typeof(PostViewModel))]
     [Activity(Label = "comm_Advice_New")]
-    public class comm_Advice_New : Activity
+    public class comm_Advice_New : MvxActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -34,5 +32,6 @@ namespace healthJourney.droid.Views
                 StartActivity(typeof(comm_Advice_Main));
             };
         }
+
     }
 }

@@ -5,6 +5,7 @@ using MvvmCross.Platform.Platform;
 using YWW.core.Interfaces;
 using healthJourney.droid.Database;
 using MvvmCross.Platform;
+using YWW.core.Database;
 
 namespace healthJourney.droid
 {
@@ -17,6 +18,7 @@ namespace healthJourney.droid
         protected override void InitializeFirstChance()
         {
             Mvx.LazyConstructAndRegisterSingleton<ISqlite, SqliteDroid>();
+            Mvx.LazyConstructAndRegisterSingleton<IPostDatabase, PostDatabase>();
             base.InitializeFirstChance();
         }
 

@@ -9,12 +9,13 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using MvvmCross.Droid.Views;
 
 namespace healthJourney.droid.Views
 {
-    class healthPlanConfig
+    public class healthPlanConfig : MvxActivity
     {
-        protected override void onCreate(Bundle savedInstanceState)
+        protected  void onCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             RequestWindowFeature(WindowFeatures.NoTitle);

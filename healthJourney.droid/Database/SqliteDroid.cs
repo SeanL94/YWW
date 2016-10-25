@@ -20,7 +20,7 @@ namespace healthJourney.droid.Database
     {
         public SQLiteConnection GetConnection()
         {
-            var sqliteFilename = "LocationSQLite.db3";
+            var sqliteFilename = "data.db3";
             string documentsPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal); // Documents folder
             var path = Path.Combine(documentsPath, sqliteFilename);
             // Create the connection
