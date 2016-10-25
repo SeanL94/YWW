@@ -29,10 +29,10 @@ namespace healthJourney.droid.Views
             overviewbtn.Click += delegate {
                 StartActivity(typeof(overview_progress));
             };
-            Button progressEntry = FindViewById<Button>(Resource.Id.progressEntry);
-            progressEntry.Click += delegate {
-                StartActivity(typeof(progress_entry));
-            };
+            //Button progressEntry = FindViewById<Button>(Resource.Id.progressEntry);
+            //progressEntry.Click += delegate {
+            //    StartActivity(typeof(progress_entry));
+            //};
         }
     }
 }

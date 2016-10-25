@@ -9,17 +9,17 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using MvvmCross.Droid.Views;
 
 namespace healthJourney.droid.Views
 {
-    public class healthPlanConfig : MvxActivity
+    class healthPlanConfig
     {
-        protected  void onCreate(Bundle savedInstanceState)
-        {
-            base.OnCreate(savedInstanceState);
-            RequestWindowFeature(WindowFeatures.NoTitle);
-            SetContentView(Resource.Layout.healthPlanConfig);
-        }
+        //[MvxViewFor(typeof(HealthPlanViewModel))]
+        //protected override void OnCreate(Bundle bundle)
+        //{
+        //    base.OnCreate(bundle);
+        //    RequestWindowFeature(WindowFeatures.NoTitle);
+        //    SetContentView(Resource.Layout.healthPlanConfig);
+        //}   
     }
 }

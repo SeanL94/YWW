@@ -47,7 +47,6 @@ namespace YWW.core.ViewModels
             set
             {
                 SetProperty(ref _goalentry, value);
-                //goalProgress = _goalentry;
             }
         }
 
@@ -59,7 +58,6 @@ namespace YWW.core.ViewModels
                 if (value != null && value != _goalentry)
                 {
                     _goalentry = value;
-                    //RaisePropertyChanged(() => goalProgress);
                 }
             }
         }
@@ -68,11 +66,33 @@ namespace YWW.core.ViewModels
 
         public ICommand ButtonCommand { get; private set; }
 
+        public void Init(int Counter)
+        {
+            this.goalCounter = Counter;
+        }
+
+        private int dietIntake;
+        private int goalCounter;
+        public int GoalCounter
+        {
+            get { return goalCounter; }
+            set
+            {
+                goalCounter = value;
+            }
+        }
+
         public ProgressEntryViewModel()
         {
             ButtonCommand = new MvxCommand(() =>
             {
-                RaisePropertyChanged(() => goalProgress);
+                dietIntake = int.Parse(goalProgress);
+
+                if (dietIntake < 9000)
+                {
+                    GoalCounter = GoalCounter + 1;
+                }
+                ShowViewModel<FirstViewModel>(new { GoalCounter });
             });
         }
     }
