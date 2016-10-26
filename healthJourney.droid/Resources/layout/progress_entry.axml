@@ -52,12 +52,12 @@
             local:MvxBind="Text goalQuestion, Mode=OneWay" />
         <EditText
             android:inputType="number"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
             android:id="@+id/editText1"
-            android:layout_marginLeft="280dp"
+            android:layout_marginLeft="260dp"
             android:background="#e3647d"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:gravity="center"
             local:MvxBind="Text goalEntry, Mode=TwoWay" />
     </LinearLayout>
@@ -75,12 +75,14 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:id="@+id/cancelButton"
-            android:layout_marginRight="25dp" />
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp" />
         <Button
             android:text="Enter"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:id="@+id/enterButton"
-            local:MvxBind="Click ButtonCommand" />
+            local:MvxBind="Click ButtonCommand"
+            android:layout_marginTop="25dp" />
     </LinearLayout>
 </LinearLayout>

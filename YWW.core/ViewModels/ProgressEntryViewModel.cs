@@ -16,6 +16,11 @@ namespace YWW.core.ViewModels
         public event MyEventAction SuccessEvent;
 
         private string Success = "Congratulations on completing your goal!";
+        private string goalAchieved = "Well Done! You've achieved your goal for the day!";
+        private string goalFailed = "Unfortunately you have not met your goal today. Try again tomorrow";
+        private string valueMissing = "Please enter in a value";
+
+        private int goalTotalCounter;
         private string _goal = "Keep daily intake under 9'000 kjs";
         private string _goalQuestion = "What was your daily intake today (KJs)?";
         public string Goal
@@ -90,17 +95,36 @@ namespace YWW.core.ViewModels
         {
             ButtonCommand = new MvxCommand(() =>
             {
-                dietIntake = int.Parse(goalProgress);
+                if (goalProgress == null)
+                {
+                    SuccessEvent(valueMissing);
+                }
+                else if (goalProgress != null)
+                {
+                    dietIntake = int.Parse(goalProgress);
 
-                if (dietIntake < 9000)
-                {
-                    GoalCounter = GoalCounter + 1;
+                    if (dietIntake < 9000)
+                    {
+                        GoalCounter = GoalCounter + 1;
+                        SuccessEvent(goalAchieved);
+                    }
+                    if (dietIntake == 0)
+                    {
+                        SuccessEvent(valueMissing);
+                    }
+                    if (dietIntake > 9000)
+                    {
+                        SuccessEvent(goalFailed);
+                    }
+                    if (GoalCounter == 5)
+                    {
+                        SuccessEvent(Success);
+                        goalTotalCounter = goalTotalCounter + 1;
+                    }
+
+                    ShowViewModel<FirstViewModel>(new { GoalCounter, goalTotalCounter });
                 }
-                if (GoalCounter == 5)
-                {
-                    SuccessEvent(Success);
-                }
-                ShowViewModel<FirstViewModel>(new { GoalCounter });
+                
             });
         }
     }

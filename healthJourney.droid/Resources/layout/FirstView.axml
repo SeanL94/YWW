@@ -15,6 +15,7 @@
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
+        android:layout_marginBottom="50dp"
         android:layout_height="40dp"
         android:id="@+id/ViewSliderSection"
         android:background="#FFFFFF"
@@ -25,7 +26,8 @@
             android:layout_height="40dp"
             android:id="@+id/toggleButton1"
             android:textOff="Overview"
-            android:textOn="Weekly Goals" />
+            android:textOn="Weekly Goals"
+            local:MvxBind="Click GoalOverview" />
     </LinearLayout>
 <!--This section implements the names for each of the columns-->
     <LinearLayout
@@ -134,7 +136,7 @@
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:id="@+id/progressEntry"
-            local:MvxBind="Click EnterProgress"/>
+            local:MvxBind="Click EnterProgress" />
     </LinearLayout>
 <!--This section implements the navigation bar at the bottom of the page-->
     <LinearLayout

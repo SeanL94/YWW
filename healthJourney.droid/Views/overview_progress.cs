@@ -2,13 +2,16 @@ using Android.App;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
+using MvvmCross.Core.ViewModels;
 using MvvmCross.Droid.Views;
+using YWW.core.ViewModels;
 
 //Author: Sean Little | n9106201
 
 namespace healthJourney.droid.Views
 {
-    [Activity(Label = "View for FirstViewModel")]
+    [MvxViewFor(typeof(OverviewProgressViewModel))]
+    [Activity(Label = "View for OverviewProgressViewModel")]
     public class overview_progress : MvxActivity
     {
         protected override void OnCreate(Bundle bundle)

@@ -30,14 +30,7 @@ namespace healthJourney.droid.Views
             profileBtn.Click += delegate {
                 StartActivity(typeof(profile_main));
             };
-            Button overviewbtn = FindViewById<Button>(Resource.Id.toggleButton1);
-            overviewbtn.Click += delegate {
-                StartActivity(typeof(overview_progress));
-            };
-            //Button progressEntry = FindViewById<Button>(Resource.Id.progressEntry);
-            //progressEntry.Click += delegate {
-            //    StartActivity(typeof(progress_entry));
-            //};
+
         }
 
         private void FVM_Event (string msg)

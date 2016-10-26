@@ -10,12 +10,17 @@ namespace YWW.core.ViewModels
         public event MyEventAction Event;
 
         private int Counter;
+        private int _goalTotalCounter;
 
         private string selectNewGoal = "You currently have no goals. Please select one.";
 
-        public void Init(int GoalCounter)
+        public void Init(int GoalCounter, int goalTotalCounter)
         {
             this.Counter = GoalCounter;
+            if (goalTotalCounter != 0)
+            {
+                this._goalTotalCounter = goalTotalCounter;
+            }
         }
         //private int Counter = 1;
         private string _dietProgress;
@@ -69,6 +74,8 @@ namespace YWW.core.ViewModels
 
         public ICommand EnterProgress { get; private set; }
 
+        public ICommand GoalOverview { get; private set; }
+
         public FirstViewModel()
         {
             EnterProgress = new MvxCommand(() =>
@@ -82,6 +89,12 @@ namespace YWW.core.ViewModels
                     Event(selectNewGoal);
                 }
             });
+
+            GoalOverview = new MvxCommand(() =>
+            {
+                ShowViewModel<OverviewProgressViewModel>(new { _goalTotalCounter });
+            });
+
         }
         
     }
