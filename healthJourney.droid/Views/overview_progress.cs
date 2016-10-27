@@ -28,10 +28,6 @@ namespace healthJourney.droid.Views
             profileBtn.Click += delegate {
                 StartActivity(typeof(profile_main));
             };
-            //Button overviewbtn = FindViewById<Button>(Resource.Id.toggleButton1);
-            //overviewbtn.Click += delegate {
-            //    StartActivity(typeof(FirstView));
-            };
         }
     }
 }

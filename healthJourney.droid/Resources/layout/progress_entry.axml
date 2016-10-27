@@ -1,89 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:minWidth="25px"
-    android:minHeight="25px"
-    android:gravity="top"
     android:background="#FFFFFF">
 <!--Author: Sean Little | n9106201-->
+<!--Your Goals Title-->
     <LinearLayout
-        android:orientation="horizontal"
-        android:minWidth="25px"
-        android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:id="@+id/titleLayout"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:orientation="horizontal"
         android:background="#D3D3D3">
         <TextView
             android:text="Your Goals"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/title"
+            android:layout_height="wrap_content"
             android:gravity="center"
             android:textColor="#494341"
             android:textSize="50.0dp"
             android:textStyle="bold" />
     </LinearLayout>
+<!--Goal Title-->
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:id="@+id/progressEntryLayout"
-        android:gravity="top"
-        android:minWidth="25px"
-        android:minHeight="25px">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#e3647d">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
             local:MvxBind="Text Goal, Mode=OneWay"
             android:textColor="#000000" />
+    </LinearLayout>
+<!--Goal Question and Goal Entry-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:gravity="top"
+        android:orientation="horizontal">
         <TextView
-            android:layout_height="35dp"
+            android:layout_height="wrap_content"
             android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_marginTop="15dp"
-            android:textSize="15dp"
-            android:textColor="#494341"
-            android:background="#e3647d"
-            local:MvxBind="Text goalQuestion, Mode=OneWay" />
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:paddingRight="25dp"
+            local:MvxBind="Text goalQuestion, Mode=OneWay"
+            android:textColor="#000000" />
         <EditText
+            android:layout_marginTop="30dp"
             android:inputType="number"
             android:layout_width="60dp"
-            android:layout_height="30dp"
-            android:id="@+id/editText1"
-            android:layout_marginLeft="260dp"
-            android:background="#e3647d"
+            android:layout_height="40dp"
+            android:background="#D3D3D3"
+            android:hint="0"
             android:textSize="20dp"
             android:gravity="center"
             local:MvxBind="Text goalEntry, Mode=TwoWay" />
     </LinearLayout>
+<!--Cancel and Save Buttons-->
     <LinearLayout
-        android:orientation="horizontal"
-        android:minWidth="25px"
-        android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:id="@+id/linearLayout1"
-        android:background="#D3D3D3"
-        android:gravity="center_horizontal">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#D3D3D3">
+        <Space
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
         <Button
             android:text="Cancel"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:id="@+id/cancelButton"
             local:MvxBind="Click CancelButton"
-            android:layout_marginRight="25dp"
+            android:layout_marginBottom="25dp"
             android:layout_marginTop="25dp" />
+        <Space
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
         <Button
             android:text="Enter"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:id="@+id/enterButton"
             local:MvxBind="Click ButtonCommand"
+            android:layout_marginBottom="25dp"
             android:layout_marginTop="25dp" />
+        <Space
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
     </LinearLayout>
 </LinearLayout>
