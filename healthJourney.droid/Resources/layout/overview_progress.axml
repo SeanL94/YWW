@@ -26,7 +26,8 @@
             android:layout_height="50dp"
             android:id="@+id/toggleButton1"
             android:textOff="Weekly Goals"
-            android:textOn="Overview" />
+            android:textOn="Overview"
+            local:MvxBind="Click weeklyGoals"/>
     </LinearLayout>
 <!--This section implements the names for the column-->
     <LinearLayout
@@ -59,7 +60,6 @@
         android:id="@+id/linearLayout1"
         android:layout_gravity="bottom"
         android:gravity="bottom"
-        android:background="@drawable/columns1"
         android:layout_marginLeft="150dp"
         android:layout_marginRight="100dp">
         <ImageView
@@ -93,7 +93,7 @@
             android:gravity="center_horizontal"
             android:paddingTop="10dp"
             android:textSize="18dp"
-            local:MvxBind="Text GoalStatement"/>
+            local:MvxBind="Text GoalStatement" />
     </LinearLayout>
 <!--This section implements the navigation bar at the bottom of the page-->
     <LinearLayout

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace YWW.core.ViewModels
 {
@@ -13,6 +14,16 @@ namespace YWW.core.ViewModels
         private string _goalTotal;
         private int goalTotalCounter;
         private string _goalCountText;
+
+        public ICommand weeklyGoals { get; private set; }
+
+        public OverviewProgressViewModel()
+        {
+            weeklyGoals = new MvxCommand(() =>
+            {
+                ShowViewModel<FirstViewModel>();
+            });
+        }
 
         public void Init(int _goalTotalCounter)
         {

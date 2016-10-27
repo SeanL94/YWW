@@ -75,6 +75,8 @@ namespace YWW.core.ViewModels
 
         public ICommand ButtonCommand { get; private set; }
 
+        public ICommand CancelButton { get; private set; }
+
         public void Init(int Counter)
         {
             this.goalCounter = Counter;
@@ -124,7 +126,11 @@ namespace YWW.core.ViewModels
 
                     ShowViewModel<FirstViewModel>(new { GoalCounter, goalTotalCounter });
                 }
-                
+
+            });
+            CancelButton = new MvxCommand(() =>
+            {
+                ShowViewModel<FirstViewModel>(new { GoalCounter, goalTotalCounter });
             });
         }
     }

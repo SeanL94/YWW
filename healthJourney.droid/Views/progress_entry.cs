@@ -33,11 +33,11 @@ namespace healthJourney.droid.Views
             //{
             //    StartActivity(typeof(FirstView));
             //};
-            Button cancelButton = FindViewById<Button>(Resource.Id.cancelButton);
-            cancelButton.Click += delegate
-            {
-                StartActivity(typeof(FirstView));
-            };
+            //Button cancelButton = FindViewById<Button>(Resource.Id.cancelButton);
+            //cancelButton.Click += delegate
+            //{
+            //    StartActivity(typeof(FirstView));
+            //};
         }
 
         private void pevm_Success_Event(string msg)
