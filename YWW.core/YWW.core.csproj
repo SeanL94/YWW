@@ -44,6 +44,8 @@
     <Compile Include="ViewModels\FirstViewModel.cs" />
     <Compile Include="ViewModels\OverviewProgressViewModel.cs" />
     <Compile Include="ViewModels\PostViewModel.cs" />
+    <Compile Include="ViewModels\ProfileEditViewModel.cs" />
+    <Compile Include="ViewModels\ProfileMainViewModel.cs" />
     <Compile Include="ViewModels\ProgressEntryViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
