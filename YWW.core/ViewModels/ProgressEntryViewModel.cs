@@ -5,6 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using YWW.core.Database;
+using YWW.core.Interfaces;
+using YWW.core.Models;
 using static Android.Provider.Settings;
 
 namespace YWW.core.ViewModels
@@ -12,6 +15,7 @@ namespace YWW.core.ViewModels
     public class ProgressEntryViewModel
         : MvxViewModel
     {
+        private readonly IGoalDatabase goalDatabase;
         public delegate void MyEventAction(string msg);
         public event MyEventAction SuccessEvent;
 
@@ -77,24 +81,20 @@ namespace YWW.core.ViewModels
 
         public ICommand CancelButton { get; private set; }
 
-        public void Init(int Counter)
-        {
-            this.goalCounter = Counter;
-        }
-
+        //public void Init(int Counter)
+        //{
+        //    this.goalCounter = Counter;
+        //}
+        int counter = 0;
         private int dietIntake;
-        private int goalCounter;
-        public int GoalCounter
-        {
-            get { return goalCounter; }
-            set
-            {
-                goalCounter = value;
-            }
-        }
+        private int GoalCounter = 0;
+        
 
-        public ProgressEntryViewModel()
+        public ProgressEntryViewModel(IGoalDatabase goalDatabase)
         {
+           this.goalDatabase = goalDatabase;
+            getGoalCounter();
+            
             ButtonCommand = new MvxCommand(() =>
             {
                 if (goalProgress == null)
@@ -123,15 +123,38 @@ namespace YWW.core.ViewModels
                         SuccessEvent(Success);
                         goalTotalCounter = goalTotalCounter + 1;
                     }
-
-                    ShowViewModel<FirstViewModel>(new { GoalCounter, goalTotalCounter });
+                    InsertGoal();
+                    ShowViewModel<FirstViewModel>();
                 }
 
             });
             CancelButton = new MvxCommand(() =>
             {
-                ShowViewModel<FirstViewModel>(new { GoalCounter, goalTotalCounter });
+                ShowViewModel<FirstViewModel>(new {goalTotalCounter });
             });
         }
+
+        public async void InsertGoal()
+        {
+           var newGoal = (new Goals
+            {
+                GoalCounter = GoalCounter,
+            });
+            if(counter == 0)
+                await goalDatabase.InsertGoals(newGoal);
+            else
+                await goalDatabase.UpdateGoals(newGoal);
+        }
+
+        public async void getGoalCounter()
+        {
+            var goals = await goalDatabase.GetGoals();
+            foreach (var goal in goals)
+            {
+                counter++;
+                GoalCounter = goal.GoalCounter;
+            }
+        }
+
     }
 }

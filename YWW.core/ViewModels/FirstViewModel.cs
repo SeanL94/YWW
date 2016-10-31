@@ -1,28 +1,55 @@
 using MvvmCross.Core.ViewModels;
 using System.Windows.Input;
+using YWW.core.Interfaces;
 
 namespace YWW.core.ViewModels
 {
     public class FirstViewModel 
         : MvxViewModel
     {
+        private readonly IGoalDatabase goalDatabase;
         public delegate void MyEventAction(string msg);
         public event MyEventAction Event;
 
         private int Counter;
         private int _goalTotalCounter;
+        public int GoalTotalCounter
+        {
+            get
+            {
+                if (Counter != 5)
+                {
+                    _goalTotalCounter = 0;
+                    return _goalTotalCounter;
+                }
+                if (Counter == 5)
+                {
+                    _goalTotalCounter = 1;
+                    return _goalTotalCounter;
+                }
+                else
+                {
+                    _goalTotalCounter = 0;
+                    return _goalTotalCounter;
+                }
+            }
+            set
+            {
+                SetProperty(ref _goalTotalCounter, value);
+                RaisePropertyChanged(() => GoalTotalCounter);
+            }
+        }
 
         private string selectNewGoal = "You currently have no goals. Please select one.";
 
-        public void Init(int GoalCounter, int goalTotalCounter)
-        {
-            this.Counter = GoalCounter;
-            if (goalTotalCounter != 0)
-            {
-                this._goalTotalCounter = goalTotalCounter;
-            }
-        }
-        //private int Counter = 1;
+        //public void Init(int goalTotalCounter)
+        //{
+        //    //this.Counter = GoalCounter;
+        //    if (goalTotalCounter != 0)
+        //    {
+        //        this._goalTotalCounter = goalTotalCounter;
+        //    }
+        //}
         private string _dietProgress;
 
         public string dietProgress
@@ -76,8 +103,10 @@ namespace YWW.core.ViewModels
 
         public ICommand GoalOverview { get; private set; }
 
-        public FirstViewModel()
+        public FirstViewModel(IGoalDatabase goalDatabase)
         {
+            this.goalDatabase = goalDatabase;
+            GetGoalCounter();
             EnterProgress = new MvxCommand(() =>
             {
                 if (Counter != 5)
@@ -92,10 +121,18 @@ namespace YWW.core.ViewModels
 
             GoalOverview = new MvxCommand(() =>
             {
-                ShowViewModel<OverviewProgressViewModel>(new { _goalTotalCounter });
+                ShowViewModel<OverviewProgressViewModel>(new { GoalTotalCounter });
             });
 
         }
-        
+        public async void GetGoalCounter()
+        {
+            var goals = await goalDatabase.GetGoals();
+            foreach (var goal in goals)
+            {
+                Counter = goal.GoalCounter;
+            }
+        }
+
     }
 }

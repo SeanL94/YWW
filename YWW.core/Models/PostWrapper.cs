@@ -10,7 +10,7 @@ namespace YWW.core.Models
     {
         public PostWrapper(Post post)
         {
-            SubjectTitle = "SunjectTitle";//post.SubjectTitle;
+            SubjectTitle = post.SubjectTitle;
             Contents = post.Contents;
         }
             

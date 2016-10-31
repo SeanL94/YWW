@@ -25,9 +25,9 @@ namespace YWW.core.ViewModels
             });
         }
 
-        public void Init(int _goalTotalCounter)
+        public void Init(int GoalTotalCounter)
         {
-            this.goalTotalCounter = _goalTotalCounter;
+            this.goalTotalCounter = GoalTotalCounter;
         }
 
         public string GoalTotal
