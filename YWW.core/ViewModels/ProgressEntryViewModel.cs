@@ -12,6 +12,15 @@ namespace YWW.core.ViewModels
     public class ProgressEntryViewModel
         : MvxViewModel
     {
+        public delegate void MyEventAction(string msg);
+        public event MyEventAction SuccessEvent;
+
+        private string Success = "Congratulations on completing your goal!";
+        private string goalAchieved = "Well Done! You've achieved your goal for the day!";
+        private string goalFailed = "Unfortunately you have not met your goal today. Try again tomorrow";
+        private string valueMissing = "Please enter in a value";
+
+        private int goalTotalCounter;
         private string _goal = "Keep daily intake under 9'000 kjs";
         private string _goalQuestion = "What was your daily intake today (KJs)?";
         public string Goal
@@ -66,6 +75,8 @@ namespace YWW.core.ViewModels
 
         public ICommand ButtonCommand { get; private set; }
 
+        public ICommand CancelButton { get; private set; }
+
         public void Init(int Counter)
         {
             this.goalCounter = Counter;
@@ -86,13 +97,40 @@ namespace YWW.core.ViewModels
         {
             ButtonCommand = new MvxCommand(() =>
             {
-                dietIntake = int.Parse(goalProgress);
-
-                if (dietIntake < 9000)
+                if (goalProgress == null)
                 {
-                    GoalCounter = GoalCounter + 1;
+                    SuccessEvent(valueMissing);
                 }
-                ShowViewModel<FirstViewModel>(new { GoalCounter });
+                else if (goalProgress != null)
+                {
+                    dietIntake = int.Parse(goalProgress);
+
+                    if (dietIntake < 9000)
+                    {
+                        GoalCounter = GoalCounter + 1;
+                        SuccessEvent(goalAchieved);
+                    }
+                    if (dietIntake == 0)
+                    {
+                        SuccessEvent(valueMissing);
+                    }
+                    if (dietIntake > 9000)
+                    {
+                        SuccessEvent(goalFailed);
+                    }
+                    if (GoalCounter == 5)
+                    {
+                        SuccessEvent(Success);
+                        goalTotalCounter = goalTotalCounter + 1;
+                    }
+
+                    ShowViewModel<FirstViewModel>(new { GoalCounter, goalTotalCounter });
+                }
+
+            });
+            CancelButton = new MvxCommand(() =>
+            {
+                ShowViewModel<FirstViewModel>(new { GoalCounter, goalTotalCounter });
             });
         }
     }

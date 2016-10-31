@@ -6,18 +6,21 @@ namespace YWW.core.ViewModels
     public class FirstViewModel 
         : MvxViewModel
     {
+        public delegate void MyEventAction(string msg);
+        public event MyEventAction Event;
+
         private int Counter;
+        private int _goalTotalCounter;
 
-        private string Success = "Congratulations on completing your goal!";
+        private string selectNewGoal = "You currently have no goals. Please select one.";
 
-        //public FirstViewModel(int GoalCounter)
-        //{
-        //    Counter = GoalCounter;
-        //}
-
-        public void Init(int GoalCounter)
+        public void Init(int GoalCounter, int goalTotalCounter)
         {
             this.Counter = GoalCounter;
+            if (goalTotalCounter != 0)
+            {
+                this._goalTotalCounter = goalTotalCounter;
+            }
         }
         //private int Counter = 1;
         private string _dietProgress;
@@ -54,7 +57,6 @@ namespace YWW.core.ViewModels
                 else if (Counter == 5)
                 {
                     _dietProgress = "@drawable/flowers0";
-                    Counter = 0;
                     return _dietProgress;
                 }
                 else
@@ -72,6 +74,8 @@ namespace YWW.core.ViewModels
 
         public ICommand EnterProgress { get; private set; }
 
+        public ICommand GoalOverview { get; private set; }
+
         public FirstViewModel()
         {
             EnterProgress = new MvxCommand(() =>
@@ -82,9 +86,15 @@ namespace YWW.core.ViewModels
                 }
                 if (Counter == 5)
                 {
-                    //display text to select a new goal
+                    Event(selectNewGoal);
                 }
             });
+
+            GoalOverview = new MvxCommand(() =>
+            {
+                ShowViewModel<OverviewProgressViewModel>(new { _goalTotalCounter });
+            });
+
         }
         
     }

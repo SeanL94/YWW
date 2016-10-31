@@ -17,25 +17,34 @@ namespace healthJourney.droid.Views
     [Activity(Label = "View for ProgressEntryViewModel")]
     public class progress_entry : MvxActivity
     {
+        public ProgressEntryViewModel pevm
+        {
+            get { return base.ViewModel as ProgressEntryViewModel; }
+        }
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
             RequestWindowFeature(WindowFeatures.NoTitle);
             SetContentView(Layout.progress_entry);
+            pevm.SuccessEvent += pevm_Success_Event;
 
             //Button enterButton = FindViewById<Button>(Id.enterButton);
             //enterButton.Click += delegate
             //{
             //    StartActivity(typeof(FirstView));
             //};
-            Button cancelButton = FindViewById<Button>(Resource.Id.cancelButton);
-            cancelButton.Click += delegate
-            {
-                StartActivity(typeof(FirstView));
-            };
+            //Button cancelButton = FindViewById<Button>(Resource.Id.cancelButton);
+            //cancelButton.Click += delegate
+            //{
+            //    StartActivity(typeof(FirstView));
+            //};
         }
 
-
+        private void pevm_Success_Event(string msg)
+        {
+            var SuccessToast = Toast.MakeText(this, msg, ToastLength.Long);
+            SuccessToast.Show();
+        }
 
     }
 }

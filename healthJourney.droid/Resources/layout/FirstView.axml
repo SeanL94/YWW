@@ -1,150 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:minWidth="25px"
-    android:minHeight="25px"
-    android:gravity="bottom"
     android:background="#FFFFFF">
 <!--Author: Sean Little | n9106201-->
 <!--This section implements a toggle button that will be used to switch between weekly and overview views-->
     <LinearLayout
-        android:orientation="horizontal"
-        android:minWidth="25px"
-        android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:id="@+id/ViewSliderSection"
-        android:background="#FFFFFF"
-        android:layout_gravity="bottom"
-        android:gravity="center_horizontal">
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:orientation="horizontal">
+        <Space
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
         <ToggleButton
-            android:layout_width="180dp"
-            android:layout_height="40dp"
             android:id="@+id/toggleButton1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
             android:textOff="Overview"
-            android:textOn="Weekly Goals" />
+            android:textOn="Weekly Goals"
+            android:textSize="16dp"
+            local:MvxBind="Click GoalOverview" />
+        <Space
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
     </LinearLayout>
 <!--This section implements the names for each of the columns-->
     <LinearLayout
-        android:orientation="horizontal"
-        android:minWidth="25px"
-        android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:id="@+id/columnNames"
-        android:gravity="left">
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="25dp"
+        android:orientation="horizontal">
         <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:text="Exercise"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/exercise"
+            android:textSize="20dp"
             android:textColor="#000000"
-            android:gravity="center_horizontal"
-            android:paddingTop="10dp"
-            android:layout_marginLeft="40dp" />
+            android:gravity="center" />
         <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:text="Diet"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/exercise"
+            android:textSize="20dp"
             android:textColor="#000000"
-            android:gravity="center_horizontal"
-            android:paddingTop="10dp"
-            android:layout_marginLeft="20dp" />
+            android:gravity="center" />
         <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:text="Sleep"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/exercise"
+            android:textSize="20dp"
             android:textColor="#000000"
-            android:gravity="center_horizontal"
-            android:paddingTop="10dp"
-            android:layout_marginLeft="35dp" />
+            android:gravity="center" />
         <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:text="Lifestyle"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="110dp"
-            android:layout_height="match_parent"
-            android:id="@+id/exercise"
+            android:textSize="20dp"
             android:textColor="#000000"
-            android:gravity="center_horizontal"
-            android:paddingTop="10dp" />
+            android:gravity="center" />
     </LinearLayout>
 <!--This section implements the images of the columns that will be used to display the user's progress-->
     <LinearLayout
-        android:orientation="horizontal"
-        android:minWidth="25px"
-        android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="260dp"
-        android:id="@+id/linearLayout1"
-        android:layout_gravity="bottom"
-        android:gravity="left"
-        android:background="@drawable/columns4">
-    <!--android:src="@drawable/flowers0"-->
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:orientation="horizontal"
+        android:gravity="center">
         <ImageView
-            android:src="@drawable/flowers0"
-            android:layout_width="55dp"
-            android:layout_height="200dp"
-            android:id="@+id/imageView1"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="45dp" />
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:src="@drawable/flowers0" />
         <ImageView
-            android:layout_width="55dp"
-            android:layout_height="200dp"
-            android:id="@+id/imageView2"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="20dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
             local:MvxBind="DrawableName dietProgress, Mode=TwoWay" />
         <ImageView
-            android:src="@drawable/flowers0"
-            android:layout_width="55dp"
-            android:layout_height="200dp"
-            android:id="@+id/imageView3"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="15dp" />
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:src="@drawable/flowers0" />
         <ImageView
-            android:src="@drawable/flowers0"
-            android:layout_width="55dp"
-            android:layout_height="200dp"
-            android:id="@+id/imageView4"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="15dp" />
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:src="@drawable/flowers0" />
     </LinearLayout>
 <!--This section implements a button that will be used to navigate to the data entry page-->
     <LinearLayout
-        android:orientation="horizontal"
-        android:minWidth="25px"
-        android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:id="@+id/progressEntrySection"
-        android:background="#FFFFFF"
-        android:layout_gravity="bottom"
-        android:gravity="center_horizontal"
-        android:layout_marginBottom="10dp">
+        android:layout_height="wrap_content"
+        android:paddingBottom="25dp"
+        android:orientation="horizontal">
+        <Space
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
         <Button
-            android:text="Enter Your Progress"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
             android:id="@+id/progressEntry"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Enter Your Progress"
+            android:textSize="16dip"
             local:MvxBind="Click EnterProgress" />
+        <Space
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
     </LinearLayout>
-<!--This section implements the navigation bar at the bottom of the page-->
     <LinearLayout
-        android:orientation="horizontal"
-        android:minWidth="25px"
-        android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="200px"
-        android:id="@+id/linearLayout2"
-        android:layout_gravity="bottom"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
         android:background="#5e5e5e">
         <Button
             android:text="community"

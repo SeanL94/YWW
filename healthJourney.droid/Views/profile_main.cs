@@ -9,14 +9,18 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using MvvmCross.Core.ViewModels;
+using YWW.core.ViewModels;
+using MvvmCross.Droid.Views;
 /**
- * Author Lisa-Marie Assmann 9533818
- * 
- **/
+* Author Lisa-Marie Assmann 9533818
+* 
+**/
 namespace healthJourney.droid.Views
 {
-    [Activity(Label = "profile_main")]
-    public class profile_main : Activity
+    [MvxViewFor(typeof(ProfileMainViewModel))]
+    [Activity(Label = "View for ProfileMainViewModel")]
+    public class profile_main : MvxActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -24,15 +28,6 @@ namespace healthJourney.droid.Views
             RequestWindowFeature(WindowFeatures.NoTitle);
             SetContentView(Resource.Layout.profile_main);
 
-            Button profileEditbtn = FindViewById<Button>(Resource.Id.profileEditBtn);
-            profileEditbtn.Click += delegate
-            {
-                StartActivity(typeof(profile_edit));
-            };
-            Button healthBtn = FindViewById<Button>(Resource.Id.healthJourney);
-            healthBtn.Click += delegate {
-                StartActivity(typeof(FirstView));
-            };
             Button commBtn = FindViewById<Button>(Resource.Id.community);
             commBtn.Click += delegate {
                 StartActivity(typeof(comm_Main));
@@ -74,19 +69,6 @@ namespace healthJourney.droid.Views
                 else
                 {
                     userSocial.Visibility = ViewStates.Gone;
-                };
-            };
-            Button showPlanbtn = FindViewById<Button>(Resource.Id.userPlanBtn);
-            TextView userPlan = FindViewById<TextView>(Resource.Id.user_plan);
-            showPlanbtn.Click += delegate
-            {
-                if (userPlan.Visibility == ViewStates.Gone)
-                {
-                    userPlan.Visibility = ViewStates.Visible;
-                }
-                else
-                {
-                    userPlan.Visibility = ViewStates.Gone;
                 };
             };
         }

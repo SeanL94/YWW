@@ -1,18 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+﻿
 using Android.App;
-using Android.Content;
 using Android.OS;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using MvvmCross.Core.ViewModels;
+using MvvmCross.Droid.Views;
+using YWW.core.ViewModels;
+
 namespace healthJourney.droid.Views
 {
-    [Activity(Label = "profile_edit")]
-    public class profile_edit : Activity
+    [MvxViewFor(typeof(ProfileEditViewModel))]
+    [Activity(Label = "View for ProfileEditViewModel")]
+    public class profile_edit : MvxActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -20,5 +19,6 @@ namespace healthJourney.droid.Views
             RequestWindowFeature(WindowFeatures.NoTitle);
             SetContentView(Resource.Layout.profile_edit);
         }
-     }
+
+    }
 }
