@@ -82,22 +82,30 @@
         <ImageView
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="300dp"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
             android:src="@drawable/flowers0" />
         <ImageView
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="300dp"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
             local:MvxBind="DrawableName dietProgress, Mode=TwoWay" />
         <ImageView
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="300dp"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
             android:src="@drawable/flowers0" />
         <ImageView
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="300dp"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
             android:src="@drawable/flowers0" />
     </LinearLayout>
 <!--This section implements a button that will be used to navigate to the data entry page-->

@@ -54,7 +54,9 @@
         android:gravity="center">
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="300dp"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
             local:MvxBind="DrawableName GoalTotal" />
     </LinearLayout>
 <!--This section implements a textual description of the number of goals completed so far-->
@@ -82,24 +84,24 @@
         android:layout_height="70dp"
         android:orientation="horizontal"
         android:background="#5e5e5e">
-      <Button
-          android:text="community"
-          android:layout_width="0dip"
-          android:layout_height="match_parent"
-          android:layout_weight="0.33"
-          android:id="@+id/community" />
-      <Button
-          android:text="health journey"
-          android:layout_width="0dip"
-          android:layout_height="match_parent"
-          android:layout_weight="0.34"
-          android:id="@+id/healthJourney"
-          android:background="#e3647d" />
-      <Button
-          android:text="profile"
-          android:layout_width="0dip"
-          android:layout_height="match_parent"
-          android:layout_weight="0.33"
-          android:id="@+id/profile" />
+        <Button
+            android:text="community"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:id="@+id/community" />
+        <Button
+            android:text="health journey"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.34"
+            android:id="@+id/healthJourney"
+            android:background="#e3647d" />
+        <Button
+            android:text="profile"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:id="@+id/profile" />
     </LinearLayout>
 </LinearLayout>
