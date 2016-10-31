@@ -12,7 +12,7 @@ using YWW.core.ViewModels;
 **/
 namespace healthJourney.droid.Views
 {
-    [MvxViewFor(typeof(PostViewModel))]
+    [MvxViewFor(typeof(InsertPostViewModel))]
     [Activity(Label = "comm_Advice_New")]
     public class comm_Advice_New : MvxActivity
     {

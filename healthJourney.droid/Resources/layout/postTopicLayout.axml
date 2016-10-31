@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!-- This section is for topic records in row-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="55.0dp"
+        android:id="@+id/topicLayout1"
+        android:padding="3.0dp">
+        <ImageView
+            android:src="@drawable/profilepic2"
+            android:layout_width="50.0dp"
+            android:layout_height="50.0dp"
+            android:id="@+id/profilePic1" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dp"
+            android:id="@+id/topicBar1">
+            <TextView
+                android:text="Say No to Pills!"
+                android:layout_width="fill_parent"
+                android:layout_height="25.0dp"
+                android:id="@+id/topicSubject1"
+                android:textColor="@android:color/background_dark"
+                android:paddingLeft="10.0dp"
+                android:paddingTop="3.0dp"
+                local:MvxBind="Text SubjectTitle" />
+            <TextView
+                android:text="The sample header of the paragraph"
+                android:layout_width="fill_parent"
+                android:layout_height="25.0dp"
+                android:id="@+id/headerTxt1"
+                android:textColor="@android:color/darker_gray"
+                android:paddingLeft="10.0dp"
+                local:MvxBind="Text Contents" />
+        </LinearLayout>
+    </LinearLayout>
+<!-- END of Topic Record -->
+</LinearLayout>

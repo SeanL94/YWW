@@ -134,7 +134,7 @@
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:id="@+id/progressEntry"
-            local:MvxBind="Click EnterProgress"/>
+            local:MvxBind="Click EnterProgress" />
     </LinearLayout>
 <!--This section implements the navigation bar at the bottom of the page-->
     <LinearLayout

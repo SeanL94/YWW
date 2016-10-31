@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:local="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -39,7 +40,8 @@
             android:src="@android:drawable/ic_menu_gallery"
             android:layout_width="50.0dp"
             android:layout_height="50.0dp"
-            android:id="@+id/postImg" />
+            android:id="@+id/postImg"
+            local:MvxBind="{'ImageUrl':{'Path':'ImgSrc'}}"/>
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="170.0dp"
@@ -51,14 +53,14 @@
     </LinearLayout>
 <!-- END of posting content -->
 <!-- This section is for post privacy, Eg public or private-->
-    <LinearLayout
+<!--    <LinearLayout
         android:orientation="horizontal"
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="50.0dp"
         android:id="@+id/permissionLayout">
-        <TextView
+              <TextView
             android:text="Do you want to make it public?"
             android:layout_width="300.0dp"
             android:layout_height="match_parent"
@@ -73,7 +75,7 @@
             android:id="@+id/permissionBtn"
             android:textOn="Yes"
             android:textOff="No" />
-    </LinearLayout>
+    </LinearLayout>-->
 <!-- END of post privacy-->
 <!-- This section is for the logo and the post button -->
     <ImageView
@@ -86,6 +88,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#e3647d"
-        android:id="@+id/postBtn" />
+        android:id="@+id/postBtn" 
+        local:MvxBind="Click thoughtButton"/>
 <!--END of logo and button -->
 </LinearLayout>

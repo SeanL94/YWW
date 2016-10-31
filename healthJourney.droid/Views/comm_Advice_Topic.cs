@@ -9,14 +9,16 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using MvvmCross.Droid.Views;
+using YWW.core.ViewModels;
 /**
- * Author Jia Xin Chan 9601902
- * 
- **/
+* Author Jia Xin Chan 9601902
+* 
+**/
 namespace healthJourney.droid.Views
 {
     [Activity(Label = "comm_Advice_Topic")]
-    public class comm_Advice_Topic : Activity
+    public class comm_Advice_Topic : MvxActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -33,6 +35,8 @@ namespace healthJourney.droid.Views
             bkBtn.Click += delegate {
                 StartActivity(typeof(comm_Advice_Main));
             };
+
+            
         }
     }
 }

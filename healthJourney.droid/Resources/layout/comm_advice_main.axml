@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:background="#ffffff"
@@ -51,6 +52,13 @@
         android:layout_width="match_parent"
         android:layout_height="370.0dp"
         android:id="@+id/forumLayout">
+        <MvxListView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            local:MvxBind="ItemsSource Posts"
+            local:MvxItemTemplate="@layout/posttopiclayout" />
+    <!--
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -84,9 +92,15 @@
                     android:paddingLeft="10.0dp" />
             </LinearLayout>
         </LinearLayout>
+    -->
     <!-- END of Topic Record -->
+    <!--
+    -->
     <!-- FEW more records-->
+    <!--
+    -->
     <!-- This section is for topic records in row-->
+    <!--
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -120,8 +134,12 @@
                     android:paddingLeft="10.0dp" />
             </LinearLayout>
         </LinearLayout>
+    -->
     <!-- END of Topic Record -->
+    <!--
+    -->
     <!-- This section is for topic records in row-->
+    <!--
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -154,7 +172,7 @@
                     android:textColor="@android:color/darker_gray"
                     android:paddingLeft="10.0dp" />
             </LinearLayout>
-        </LinearLayout>
+        </LinearLayout>-->
     </LinearLayout>
 <!-- END of Topic Record -->
 <!--This section implements the navigation bar at the bottom of the page-->

@@ -6,12 +6,14 @@ using YWW.core.Models;
 
 namespace YWW.core.ViewModels
 {
-    public class PostViewModel : MvxViewModel
+    public class InsertPostViewModel : MvxViewModel
     {
         
         private readonly IPostDatabase postDatabase;
         public ICommand postButton { get; private set; }
-        public PostViewModel(IPostDatabase postDatabase)
+        
+
+        public InsertPostViewModel(IPostDatabase postDatabase)
         {
             this.postDatabase = postDatabase;
             postButton = new MvxCommand(InsertPost);
@@ -63,18 +65,9 @@ namespace YWW.core.ViewModels
                 PostDateTime = now,
                 SubjectTitle = this.SubjectLine
             });
-            //await postDatabase.InsertPost(newPost);
+            await postDatabase.InsertPost(newPost);
         }
 
-        public async void GetPosts()
-        {
-            //var samplePost = new Post();
-            //await postDatabase.InsertPost(samplePost);
-            var posts = await postDatabase.GetPosts();
-            foreach (var post in posts)
-            {
-                
-            }
-        }
+        
     }
 }
