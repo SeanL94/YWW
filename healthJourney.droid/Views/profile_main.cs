@@ -58,19 +58,6 @@ namespace healthJourney.droid.Views
                     userHistory.Visibility = ViewStates.Gone;
                 };
             };
-            Button showGroupsbtn = FindViewById<Button>(Resource.Id.userGroupsBtn);
-            TextView userSocial = FindViewById<TextView>(Resource.Id.user_social);
-            showGroupsbtn.Click += delegate
-            {
-                if (userSocial.Visibility == ViewStates.Gone)
-                {
-                    userSocial.Visibility = ViewStates.Visible;
-                }
-                else
-                {
-                    userSocial.Visibility = ViewStates.Gone;
-                };
-            };
         }
     }
 }
