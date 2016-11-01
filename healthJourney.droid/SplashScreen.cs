@@ -4,6 +4,7 @@ using MvvmCross.Droid.Views;
 
 namespace healthJourney.droid
 {
+    //author: Sean Little | n9106201
     [Activity(
         Label = "Younger Women's Wellness"
         , MainLauncher = true

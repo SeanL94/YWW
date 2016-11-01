@@ -4,181 +4,204 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     android:minWidth="25px"
     android:minHeight="25px">
+  <TextView
+      android:text="Edit your profile"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textColor="#000000"
+      android:background="#e3647d"
+      android:gravity="center_horizontal"
+      android:id="@+id/textView1" />
+  <LinearLayout
+      android:orientation="horizontal"
+      android:minWidth="25dp"
+      android:minHeight="25dp"
+      android:layout_width="match_parent"
+      android:layout_height="115.5dp"
+      android:id="@+id/profile_edit_section">
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="100.0dp"
+        android:layout_height="100.0dp"
+        android:id="@+id/profileImg"
+        local:MvxBind="{'ImageUrl':{'Path':'ImgSrc'}}" />
     <TextView
-        android:text="Edit your profile"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_width="match_parent"
+        android:text="Click on the picture icon to choose an image from your files as your profile picture"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#000000"
         android:gravity="center_horizontal"
-        android:id="@+id/textView1" />
+        android:id="@+id/pictureView" />
+  </LinearLayout>
+  <LinearLayout
+      android:orientation="vertical"
+      android:minWidth="25dp"
+      android:minHeight="25dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/edit_info_section"
+      android:layout_marginBottom="0.0dp">
+    <EditText
+        android:hint="First Name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="20dp"
+        local:MvxBind="Text FirstName, Mode=OneWayToSource" />
+    <EditText
+        android:hint="Last Name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="20dp"
+        local:MvxBind="Text LastName, Mode=OneWayToSource" />
     <LinearLayout
         android:orientation="horizontal"
         android:minWidth="25dp"
         android:minHeight="25dp"
         android:layout_width="match_parent"
-        android:layout_height="115.5dp"
-        android:id="@+id/profile_edit_section">
-        <ImageView
-            android:src="@android:drawable/ic_menu_gallery"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#FFFFFF"
-            android:id="@+id/porfile_pic"
-            android:paddingLeft="55dp"
-            android:paddingRight="55dp"
-            android:paddingTop="55dp"
-            android:paddingBottom="55dp" />
-        <Button
-            android:text="Tacke a picture"
-            android:layout_width="60dp"
-            android:layout_height="40dp"
-            android:background="#ffffff"
-            android:textColor="#000000"
-            android:id="@+id/profileEditBtn"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp" />
+        android:layout_height="wrap_content"
+        android:id="@+id/birthday_section">
+      <TextView
+          android:text="Your Birthday: "
+          android:textAppearance="?android:attr/textAppearanceLarge"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#000000"
+          android:gravity="center_horizontal"
+          android:id="@+id/EditBirthdayView" />
+      <EditText
+          android:hint="dd"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="20dp"
+          android:textColor="#000000"
+          android:textColorHint="#000000"
+          local:MvxBind="Text Day, Mode=OneWayToSource" />
+      <TextView
+          android:text="/"
+          android:textAppearance="?android:attr/textAppearanceLarge"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#000000"
+          android:gravity="center_horizontal"
+          android:id="@+id/filler1" />
+      <EditText
+          android:hint="mm"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="20dp"
+          android:textColor="#000000"
+          android:textColorHint="#000000"
+          local:MvxBind="Text Month, Mode=OneWayToSource" />
+      <TextView
+          android:text="/"
+          android:textAppearance="?android:attr/textAppearanceLarge"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#000000"
+          android:gravity="center_horizontal"
+          android:id="@+id/filler2" />
+      <EditText
+          android:hint="yyyy "
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="20dp"
+          android:textColor="#000000"
+          android:textColorHint="#000000"
+          local:MvxBind="Text Year, Mode=OneWayToSource" />
     </LinearLayout>
+    <EditText
+        android:hint="Hobbys"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        local:MvxBind="Text Hobbies, Mode=OneWayToSource" />
+    <EditText
+        android:hint="Interests"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        local:MvxBind="Text Interests, Mode=OneWayToSource" />
+    <TextView
+        android:text="Your Birthday: "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:gravity="center_horizontal"
+        android:id="@+id/EditAddressView" />
     <LinearLayout
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:minWidth="25dp"
         android:minHeight="25dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/edit_info_section"
-        android:layout_marginBottom="0.0dp">
-        <EditText
-            android:hint="First Name"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            local:MvxBind="Text FirstName, Mode=OneWayToSource" />
-        <EditText
-            android:hint="Last Name"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            local:MvxBind="Text LastName, Mode=OneWayToSource" />
-        <LinearLayout
-            android:orientation="horizontal"
-            android:minWidth="25dp"
-            android:minHeight="25dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/birthday_section">
-            <TextView
-                android:text="Your Birthday: "
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:id="@+id/EditBirthdayView" />
-            <EditText
-                android:hint="dd"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20dp"
-                local:MvxBind="Text Day, Mode=OneWayToSource" />
-            <TextView
-                android:text="/"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:id="@+id/filler1" />
-            <EditText
-                android:hint="mm"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20dp"
-                local:MvxBind="Text Month, Mode=OneWayToSource" />
-            <TextView
-                android:text="/"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:id="@+id/filler2" />
-            <EditText
-                android:hint="yyyy "
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20dp"
-                local:MvxBind="Text Year, Mode=OneWayToSource" />
-        </LinearLayout>
-        <EditText
-            android:hint="Hobbys"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            local:MvxBind="Text Hobbies, Mode=OneWayToSource" />
-        <EditText
-            android:hint="Interests"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            local:MvxBind="Text Interests, Mode=OneWayToSource" />
-        <TextView
-            android:text="Your Birthday: "
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:id="@+id/EditAddressView" />
-        <LinearLayout
-            android:orientation="horizontal"
-            android:minWidth="25dp"
-            android:minHeight="25dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:weightSum="1"
-            android:gravity="center"
-            android:id="@+id/address_section1">
-            <EditText
-                android:hint="Street"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:textSize="20dp"
-                local:MvxBind="Text Street, Mode=OneWayToSource" />
-            <EditText
-                android:hint="City"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:textSize="20dp"
-                local:MvxBind="Text City, Mode=OneWayToSource" />
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:minWidth="25dp"
-            android:minHeight="25dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:weightSum="1"
-            android:gravity="center"
-            android:id="@+id/address_section2">
-            <EditText
-                android:hint="Postcoad"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:textSize="20dp"
-                local:MvxBind="Text Postcoad, Mode=OneWayToSource" />
-            <EditText
-                android:hint="Suburb"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:textSize="20dp"
-                local:MvxBind="Text Suburb, Mode=OneWayToSource" />
-        </LinearLayout>
+        android:weightSum="1"
+        android:gravity="center"
+        android:id="@+id/address_section1">
+      <EditText
+          android:hint="Street"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.5"
+          android:textSize="20dp"
+          android:textColor="#000000"
+          android:textColorHint="#000000"
+          local:MvxBind="Text Street, Mode=OneWayToSource" />
+      <EditText
+          android:hint="City"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.5"
+          android:textSize="20dp"
+          android:textColor="#000000"
+          android:textColorHint="#000000"
+          local:MvxBind="Text City, Mode=OneWayToSource" />
     </LinearLayout>
-    <Button
-        android:text="Save"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/saveBtn"
-        local:MvxBind="Click Save" />
+        android:weightSum="1"
+        android:gravity="center"
+        android:id="@+id/address_section2">
+      <EditText
+          android:hint="Postcoad"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.5"
+          android:textSize="20dp"
+          android:textColor="#000000"
+          android:textColorHint="#000000"
+          local:MvxBind="Text Postcoad, Mode=OneWayToSource" />
+      <EditText
+          android:hint="Suburb"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.5"
+          android:textSize="20dp"
+          android:textColor="#000000"
+          android:textColorHint="#000000"
+          local:MvxBind="Text Suburb, Mode=OneWayToSource" />
+    </LinearLayout>
+  </LinearLayout>
+  <Button
+      android:text="Save"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/saveBtn"
+      local:MvxBind="Click Save" />
 </LinearLayout>

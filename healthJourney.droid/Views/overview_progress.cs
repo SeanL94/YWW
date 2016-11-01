@@ -20,6 +20,7 @@ namespace healthJourney.droid.Views
             RequestWindowFeature(WindowFeatures.NoTitle);
             SetContentView(Resource.Layout.overview_progress);
 
+            //The following is used to navigate to the Communication and Profile pages
             Button commbutton = FindViewById<Button>(Resource.Id.community);
             commbutton.Click += delegate {
                 StartActivity(typeof(comm_Main));

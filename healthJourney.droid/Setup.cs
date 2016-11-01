@@ -19,7 +19,7 @@ namespace healthJourney.droid
         {
             Mvx.LazyConstructAndRegisterSingleton<ISqlite, SqliteDroid>();
             Mvx.LazyConstructAndRegisterSingleton<IPostDatabase, PostDatabase>();
-            Mvx.LazyConstructAndRegisterSingleton<IThoughtDatabase, ThoughtDatabase>();
+            Mvx.LazyConstructAndRegisterSingleton<IGoalDatabase, GoalDatabase>();
             base.InitializeFirstChance();
         }
 
