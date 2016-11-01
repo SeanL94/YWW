@@ -10,7 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="55.0dp"
         android:id="@+id/topicLayout1"
-        android:padding="3.0dp">
+        android:padding="3.0dp"
+        android:clickable="true"
+        local:MvxBind="Click TopicClick">
         <ImageView
             android:src="@drawable/profilepic2"
             android:layout_width="50.0dp"

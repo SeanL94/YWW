@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+  <!-- This section is first user post page -->
+  <LinearLayout
+      android:orientation="vertical"
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="match_parent"
+      android:layout_height="550.0dp"
+      android:id="@+id/usrPostLayout"
+      android:gravity="bottom"
+      android:background="#FFFFFF"
+      android:layout_marginTop="0.0dp">
+    <!-- This section is the user header include user info -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:id="@+id/top_userInfoLayout">
+      <!-- This section is for the top user profile picture -->
+      <ImageView
+          android:layout_width="50.0dp"
+          android:layout_height="match_parent"
+          android:id="@+id/top_usrProfilePic"
+          android:background="@drawable/profilepic" />
+      <!-- This section is for the user info section, including top username and the love count bar -->
+      <LinearLayout
+          android:orientation="vertical"
+          android:minWidth="25px"
+          android:minHeight="25px"
+          android:layout_width="fill_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/top_usrInfoTxtLayout">
+        <!-- This section is for user name -->
+        <TextView
+            android:text="Johanna Doe"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="25.0dp"
+            android:id="@+id/top_usrNameTxt"
+            android:textSize="20.0dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark" />
+        <!-- This section is for the love count -->
+        <TextView
+            android:text="1, 435, 123 people loved it!"
+            android:layout_width="match_parent"
+            android:layout_height="25.0dp"
+            android:id="@+id/top_likedCountTxt"
+            android:textSize="18.0dp"
+            android:textColor="@android:color/background_dark" />
+      </LinearLayout>
+    </LinearLayout>
+    <!-- END of user info section -->
+    <!-- The Post Image and button -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250.0dp"
+        android:id="@+id/frameLayout1">
+      <ImageView
+          android:src="@drawable/sunrise"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/imageView1" />
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/btnLayout1">
+        <ImageButton
+            android:layout_width="60.0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.20"
+            android:layout_gravity="right"
+            android:id="@+id/loveBtn1"
+            android:background="@drawable/love"
+            android:layout_marginRight="10.0dp"
+            android:layout_marginTop="10.0dp"
+            android:layout_marginBottom="10.0dp" />
+        <ImageButton
+            android:layout_width="60.0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.20"
+            android:layout_gravity="right"
+            android:id="@+id/commentBtn1"
+            android:background="@drawable/comment"
+            android:layout_marginBottom="10.0dp"
+            android:layout_marginRight="10.0dp"
+            android:layout_marginTop="10.0dp" />
+        <ImageButton
+            android:layout_width="60.0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.20"
+            android:id="@+id/shareButton1"
+            android:layout_gravity="right"
+            android:background="@drawable/share"
+            android:layout_marginBottom="10.0dp"
+            android:layout_marginRight="10.0dp"
+            android:layout_marginTop="10.0dp" />
+      </LinearLayout>
+    </FrameLayout>
+    <!-- END of post image -->
+    <!-- This section is for the user post text content -->
+    <AbsoluteLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/absoluteLayout1" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="70.0dp"
+        android:id="@+id/btmUsrInfoLayout">
+      <TextView
+          android:text="Johanna Doe"
+          android:layout_width="match_parent"
+          android:layout_height="25.0dp"
+          android:id="@+id/btm_usrNameTxt"
+          android:textSize="18.0dp"
+          android:textColor="@android:color/background_dark"
+          android:textStyle="bold"
+          android:paddingLeft="5.0dp"
+          android:paddingRight="5.0dp"
+          android:paddingTop="1.5dp" />
+      <TextView
+          android:text="It's another beautiful day! #Day21"
+          android:layout_width="match_parent"
+          android:layout_height="25.0dp"
+          android:id="@+id/btm_usrPostTxt"
+          android:textSize="18.0dp"
+          android:textColor="@android:color/background_dark"
+          android:paddingLeft="5.0dp"
+          android:paddingRight="5.0dp" 
+          local:MvxBind="Text Contents"/>
+    </LinearLayout>
+    <!-- END of user post text content -->
+    <!-- This section is for the comment part -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="80.0dp"
+        android:id="@+id/wholeCommentLayout">
+      <!-- The first comment user -->
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="30.0dp"
+          android:id="@+id/usrCommentRowLayout">
+        <TextView
+            android:text="An..63"
+            android:layout_width="60.0dp"
+            android:layout_height="25.0dp"
+            android:id="@+id/commentUsrIdTxt"
+            android:textSize="15.0dp"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:paddingLeft="5.0dp"
+            android:paddingRight="5.0dp"
+            android:paddingTop="1.5dp" />
+        <TextView
+            android:text="Like the view so much"
+            android:layout_width="fill_parent"
+            android:layout_height="25.0dp"
+            android:id="@+id/usrCommentTxt"
+            android:textSize="18.0dp"
+            android:textColor="@android:color/background_dark"
+            android:paddingLeft="5.0dp"
+            android:paddingRight="5.0dp" />
+      </LinearLayout>
+      <!-- End of first comment user -->
+      <!-- The second comment user -->
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="30.0dp"
+          android:id="@+id/usrCommentRowLayout2">
+        <TextView
+            android:text="Sy..de"
+            android:layout_width="60.0dp"
+            android:layout_height="25.0dp"
+            android:id="@+id/commentUsrIdTxt2"
+            android:textSize="15.0dp"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:paddingLeft="5.0dp"
+            android:paddingRight="5.0dp"
+            android:paddingTop="1.5dp" />
+        <TextView
+            android:text="It is amazing!"
+            android:layout_width="fill_parent"
+            android:layout_height="25.0dp"
+            android:id="@+id/usrCommentTxt2"
+            android:textSize="18.0dp"
+            android:textColor="@android:color/background_dark"
+            android:paddingLeft="5.0dp"
+            android:paddingRight="5.0dp" />
+      </LinearLayout>
+      <!-- END of second comment user-->
+    </LinearLayout>
+    <!-- END of comment part-->
+  </LinearLayout>
+  <!-- END of first user post -->
+</LinearLayout>

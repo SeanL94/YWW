@@ -1,4 +1,5 @@
-﻿using MvvmCross.Core.ViewModels;
+﻿using Android.Graphics;
+using MvvmCross.Core.ViewModels;
 using System;
 using System.Windows.Input;
 using YWW.core.Interfaces;
@@ -8,32 +9,49 @@ namespace YWW.core.ViewModels
 {
     public class ThoughtViewModel : MvxViewModel
     {
-        private readonly IPostDatabase postDatabase;
+        private readonly IThoughtDatabase thoughtDatabase;
+
         public ICommand thoughtButton { get; private set; }
-        public ThoughtViewModel(IPostDatabase postDatabase)
+        public ThoughtViewModel(IThoughtDatabase thoughtDatabase)
         {
-            this.postDatabase = postDatabase;
+            this.thoughtDatabase = thoughtDatabase;
             thoughtButton = new MvxCommand(InsertThought);
         }
 
-        private string _imageURL;
-        public string ImageUrl
+        private string image;
+        public string Image
         {
-            get { return _imageURL; }
+            get { return image; }
             set
             {
-                _imageURL = value;
-                RaisePropertyChanged(() => ImageUrl);
+                image = value;
+                RaisePropertyChanged(() => Image);
             }
         }
 
-        public object Bytes { get; set; }
+        private string _content;
+        public string Content
+        {
+            get { return _content; }
+            set
+            {
+                _content = value;
+                RaisePropertyChanged(() => Content);
+            }
+        }
+
 
         public async void InsertThought()
         {
             DateTime now = DateTime.Now.ToLocalTime();
-            string temp = this.ImageUrl;
-            //await postDatabase.InsertThought(thought);
+            string temp = this.Image;
+           var newThought = (new Thought
+            {
+                AuthorID = "1",
+               ThoughtDateTime = now,
+               Contents = this.Content
+           });
+            await thoughtDatabase.InsertThought(newThought);
         }
     }
 }

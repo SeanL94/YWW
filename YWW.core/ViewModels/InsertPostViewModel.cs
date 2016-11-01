@@ -61,9 +61,9 @@ namespace YWW.core.ViewModels
                 Type = "admin",
                 Categories = "Advices",
                 Privacy = privacy,
-                Contents = this.Content,
+                Contents = "Some other contents.",//this.Content,
                 PostDateTime = now,
-                SubjectTitle = this.SubjectLine
+                SubjectTitle = "Eg: Get rid of smoking.",//this.SubjectLine
             });
             await postDatabase.InsertPost(newPost);
         }

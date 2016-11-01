@@ -23,6 +23,7 @@ namespace healthJourney.droid.Views
     [Activity(Label = "comm_Sharing_New")]
     public class comm_Sharing_New : MvxActivity
     {
+        public string ImageURL;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -62,6 +63,8 @@ namespace healthJourney.droid.Views
                 var imageView =
                     FindViewById<ImageView>(Resource.Id.postImg);
                 imageView.SetImageURI(data.Data);
+                ImageURL = data.Data.ToString();
+                //ISet<>
             }
         }
     }

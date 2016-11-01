@@ -36,17 +36,26 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="Database\PostDatabase.cs" />
+    <Compile Include="Database\ThoughtDatabase.cs" />
     <Compile Include="Interfaces\IPostDatabase.cs" />
     <Compile Include="Interfaces\ISqlite.cs" />
+    <Compile Include="Interfaces\IThoughtDatabase.cs" />
     <Compile Include="Models\Comment.cs" />
     <Compile Include="Models\Post.cs" />
+    <Compile Include="Models\PostWrapper.cs" />
+    <Compile Include="Models\Thought.cs" />
+    <Compile Include="Models\ThoughtWrapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\FirstViewModel.cs" />
+    <Compile Include="ViewModels\InsertPostViewModel.cs" />
     <Compile Include="ViewModels\OverviewProgressViewModel.cs" />
-    <Compile Include="ViewModels\PostViewModel.cs" />
+    <Compile Include="ViewModels\PostContentViewModel.cs" />
+    <Compile Include="ViewModels\PostTopicViewModel.cs" />
     <Compile Include="ViewModels\ProfileEditViewModel.cs" />
     <Compile Include="ViewModels\ProfileMainViewModel.cs" />
     <Compile Include="ViewModels\ProgressEntryViewModel.cs" />
+    <Compile Include="ViewModels\ThoughtMainViewModel.cs" />
+    <Compile Include="ViewModels\ThoughtViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Mono.Android">
