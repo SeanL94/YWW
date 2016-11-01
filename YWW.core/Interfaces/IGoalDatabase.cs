@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using YWW.core.Models;
-
+//Author: Sean Little | n9106201
 namespace YWW.core.Interfaces
 {
     public interface IGoalDatabase

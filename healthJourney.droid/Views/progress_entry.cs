@@ -13,6 +13,7 @@ using static healthJourney.droid.Resource;
 
 namespace healthJourney.droid.Views
 {
+    //The following section is used in conjunction with the toast methods
     [MvxViewFor(typeof(ProgressEntryViewModel))]
     [Activity(Label = "View for ProgressEntryViewModel")]
     public class progress_entry : MvxActivity
@@ -21,23 +22,15 @@ namespace healthJourney.droid.Views
         {
             get { return base.ViewModel as ProgressEntryViewModel; }
         }
+        
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
             RequestWindowFeature(WindowFeatures.NoTitle);
             SetContentView(Layout.progress_entry);
-            pevm.SuccessEvent += pevm_Success_Event;
 
-            //Button enterButton = FindViewById<Button>(Id.enterButton);
-            //enterButton.Click += delegate
-            //{
-            //    StartActivity(typeof(FirstView));
-            //};
-            //Button cancelButton = FindViewById<Button>(Resource.Id.cancelButton);
-            //cancelButton.Click += delegate
-            //{
-            //    StartActivity(typeof(FirstView));
-            //};
+            //Also used for the toast method
+            pevm.SuccessEvent += pevm_Success_Event;
         }
 
         private void pevm_Success_Event(string msg)

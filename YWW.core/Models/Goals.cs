@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+//Author: Sean Little | n9106201
 namespace YWW.core.Models
 {
     [Table("goals")]
