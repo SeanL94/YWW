@@ -21,11 +21,21 @@ namespace healthJourney.droid.Views
     [Activity(Label = "Health Plan")]
     public class healthPlanConfig : MvxActivity
     {
+        public HealthPlanViewModel hpvm
+        {
+            get { return base.ViewModel as HealthPlanViewModel; }
+        }
+        private void hpvm_Event(string msg)
+        {
+            var messageToast = Toast.MakeText(this, msg, ToastLength.Long);
+            messageToast.Show();
+        }
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             RequestWindowFeature(WindowFeatures.NoTitle);
             SetContentView(Resource.Layout.healthPlanConfig);
+            hpvm.Event += hpvm_Event;
 
             Button commBtn = FindViewById<Button>(Resource.Id.community);
             commBtn.Click += delegate {
