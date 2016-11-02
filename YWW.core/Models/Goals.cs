@@ -13,5 +13,6 @@ namespace YWW.core.Models
         [PrimaryKey, AutoIncrement]
         public int Goalid { get; set; }
         public int GoalCounter { get; set; }
+        public int GoalStatus { get; set; }
     }
 }

@@ -19,7 +19,7 @@
             android:layout_height="match_parent"
             android:id="@+id/backBtn" />
         <TextView
-            android:text="Professional Advices"
+            android:text="Professional Advice"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
@@ -38,12 +38,16 @@
             android:layout_width="300.0dp"
             android:layout_height="match_parent"
             android:hint="Search.."
-            android:id="@+id/seachTxt" />
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:id="@+id/seachTxt"
+            local:MvxBind="Text SearchTerm" />
         <Button
             android:text="Search"
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
-            android:id="@+id/searchBtn" />
+            android:id="@+id/searchBtn"
+            local:MvxBind="Click SearchBtn" />
     </LinearLayout>
 <!-- END of search bar -->
 <!-- This section is for topic records in row-->
@@ -51,138 +55,21 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="370.0dp"
+        android:layout_weight="1"
         android:id="@+id/forumLayout">
         <MvxListView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textSize="40dp"
-            local:MvxBind="ItemsSource Posts"
+            local:MvxBind="ItemsSource Posts; ItemClick SelectTopicCommand"
             local:MvxItemTemplate="@layout/posttopiclayout" />
-    <!--
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="55.0dp"
-            android:id="@+id/topicLayout1"
-            android:padding="3.0dp">
-            <ImageView
-                android:src="@drawable/profilepic2"
-                android:layout_width="50.0dp"
-                android:layout_height="50.0dp"
-                android:id="@+id/profilePic1" />
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="fill_parent"
-                android:layout_height="50.0dp"
-                android:id="@+id/topicBar1">
-                <TextView
-                    android:text="Say No to Pills!"
-                    android:layout_width="fill_parent"
-                    android:layout_height="25.0dp"
-                    android:id="@+id/topicSubject1"
-                    android:textColor="@android:color/background_dark"
-                    android:paddingLeft="10.0dp"
-                    android:paddingTop="3.0dp" />
-                <TextView
-                    android:text="The sample header of the paragraph"
-                    android:layout_width="fill_parent"
-                    android:layout_height="25.0dp"
-                    android:id="@+id/headerTxt1"
-                    android:textColor="@android:color/darker_gray"
-                    android:paddingLeft="10.0dp" />
-            </LinearLayout>
-        </LinearLayout>
-    -->
-    <!-- END of Topic Record -->
-    <!--
-    -->
-    <!-- FEW more records-->
-    <!--
-    -->
-    <!-- This section is for topic records in row-->
-    <!--
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="55.0dp"
-            android:id="@+id/topicLayout2"
-            android:padding="3.0dp">
-            <ImageView
-                android:src="@drawable/profilepic3"
-                android:layout_width="50.0dp"
-                android:layout_height="50.0dp"
-                android:id="@+id/profilePic2" />
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="fill_parent"
-                android:layout_height="50.0dp"
-                android:id="@+id/topicBar2">
-                <TextView
-                    android:text="Healthy Yoga for Everyone"
-                    android:layout_width="fill_parent"
-                    android:layout_height="25.0dp"
-                    android:id="@+id/topicSubject2"
-                    android:textColor="@android:color/background_dark"
-                    android:paddingLeft="10.0dp"
-                    android:paddingTop="3.0dp" />
-                <TextView
-                    android:text="The sample header of the paragraph"
-                    android:layout_width="fill_parent"
-                    android:layout_height="25.0dp"
-                    android:id="@+id/headerTxt2"
-                    android:textColor="@android:color/darker_gray"
-                    android:paddingLeft="10.0dp" />
-            </LinearLayout>
-        </LinearLayout>
-    -->
-    <!-- END of Topic Record -->
-    <!--
-    -->
-    <!-- This section is for topic records in row-->
-    <!--
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="55.0dp"
-            android:id="@+id/topicLayout3"
-            android:padding="3.0dp">
-            <ImageView
-                android:src="@drawable/profilepic4"
-                android:layout_width="50.0dp"
-                android:layout_height="50.0dp"
-                android:id="@+id/profilePic3" />
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="fill_parent"
-                android:layout_height="50.0dp"
-                android:id="@+id/topicBar3">
-                <TextView
-                    android:text="3 Ways To Avoid Insomnia"
-                    android:layout_width="fill_parent"
-                    android:layout_height="25.0dp"
-                    android:id="@+id/topicSubject3"
-                    android:textColor="@android:color/background_dark"
-                    android:paddingLeft="10.0dp"
-                    android:paddingTop="3.0dp" />
-                <TextView
-                    android:text="The sample header of the paragraph"
-                    android:layout_width="fill_parent"
-                    android:layout_height="25.0dp"
-                    android:id="@+id/headerTxt3"
-                    android:textColor="@android:color/darker_gray"
-                    android:paddingLeft="10.0dp" />
-            </LinearLayout>
-        </LinearLayout>-->
     </LinearLayout>
 <!-- END of Topic Record -->
 <!--This section implements the navigation bar at the bottom of the page-->
     <LinearLayout
-        android:orientation="horizontal"
-        android:minWidth="25px"
-        android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="200px"
-        android:id="@+id/btmTabLayout"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
         android:background="#5e5e5e">
         <ImageButton
             android:layout_width="0dip"

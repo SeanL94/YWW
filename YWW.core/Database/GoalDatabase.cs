@@ -42,5 +42,12 @@ namespace YWW.core.Database
             database.Commit();
             return num;
         }
+        public async Task<int> SetStatus(int status)
+        {
+            Goals goal = database.Table<Goals>().First();
+            var num = database.Insert(goal.GoalStatus);
+            database.Commit();
+            return num;
+        }
     }
 }

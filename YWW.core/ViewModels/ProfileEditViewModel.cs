@@ -6,20 +6,52 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using YWW.core.Interfaces;
+using YWW.core.Models;
+//Author: Lisa-Marie | n9533818
 
 namespace YWW.core.ViewModels
 {
     public class ProfileEditViewModel : MvxViewModel
     {
+        //initialising user database and save button
+        private IUserDatabase localdb;
         public ICommand Save { get; private set; }
-        public ProfileEditViewModel()
+        public ProfileEditViewModel(IUserDatabase db)
         {
+            localdb = db;
+            //MvxCommand to save user information in db and going to ProfileMain 
             Save = new MvxCommand(() =>
             {
-                ShowViewModel<ProfileMainViewModel>(new { FullName, Birthday, Hobbies, Interests, Address });
+                InsertUser();
+                ShowViewModel<ProfileMainViewModel>();
             });
         }
-        private string _firstName;
+        //creating new user
+        public async void InsertUser()
+        {
+            var newUser = (new User
+            {
+                FirstName = FirstName,
+                LastName = LastName,
+                Day = Day,
+                Month = Month,
+                Year = Year,
+                Hobbies = Hobbies,
+                Interests = Interests,
+                Street = Street,
+                City = City,
+                Postcoad = Postcoad,
+                Suburb = Suburb,
+                ImageURL = ImageURL
+            });
+            //If the database is empty create a new one otherwise call the update methode
+            if (localdb.Equals(null))
+                await localdb.CreateUser(newUser);
+            else
+                await localdb.UpdateUser(newUser);
+        }
+        private string _firstName = "";
         public string FirstName
         {
             get { return _firstName; }
@@ -33,7 +65,7 @@ namespace YWW.core.ViewModels
                 }
             }
         }
-        private string _lastName;
+        private string _lastName = "";
         public string LastName
         {
             get { return _lastName; }
@@ -51,7 +83,7 @@ namespace YWW.core.ViewModels
         {
             get { return string.Format(@"{0} {1}", _firstName, _lastName); }
         }
-        private string _day;
+        private string _day = "";
         public string Day
         {
             get { return _day; }
@@ -65,7 +97,7 @@ namespace YWW.core.ViewModels
                 }
             }
         }
-        private string _month;
+        private string _month = "";
         public string Month
         {
             get { return _month; }
@@ -79,7 +111,7 @@ namespace YWW.core.ViewModels
                 }
             }
         }
-        private string _year;
+        private string _year = "";
         public string Year
         {
             get { return _year; }
@@ -98,7 +130,7 @@ namespace YWW.core.ViewModels
             get { return string.Format(@"{0} / {1} / {2}", _day, _month, _year); }
         }
 
-        private string _hobbies;
+        private string _hobbies = "";
         public string Hobbies
         {
             get { return _hobbies; }
@@ -111,7 +143,7 @@ namespace YWW.core.ViewModels
                 }
             }
         }
-        private string _interests;
+        private string _interests = "";
         public string Interests
         {
             get { return _interests; }
@@ -124,7 +156,7 @@ namespace YWW.core.ViewModels
                 }
             }
         }
-        private string _street;
+        private string _street = "";
         public string Street
         {
             get { return _street; }
@@ -138,7 +170,7 @@ namespace YWW.core.ViewModels
                 }
             }
         }
-        private string _city;
+        private string _city = "";
         public string City
         {
             get { return _city; }
@@ -152,7 +184,7 @@ namespace YWW.core.ViewModels
                 }
             }
         }
-        private string _postcoad;
+        private string _postcoad = "";
         public string Postcoad
         {
             get { return _postcoad; }
@@ -166,10 +198,10 @@ namespace YWW.core.ViewModels
                 }
             }
         }
-        private string _suburb;
+        private string _suburb = "";
         public string Suburb
         {
-            get { return _postcoad; }
+            get { return _suburb; }
             set
             {
                 if (value != null && value != _suburb)
@@ -183,6 +215,16 @@ namespace YWW.core.ViewModels
         public string Address
         {
             get { return string.Format(@"{0} {1} {2} {3}", _street, _city, _postcoad, _suburb); }
+        }
+        private string _imageURL;
+        public string ImageURL
+        {
+            get { return _imageURL; }
+            set
+            {
+                _imageURL = value;
+                RaisePropertyChanged(() => ImageURL);
+            }
         }
     }
 }

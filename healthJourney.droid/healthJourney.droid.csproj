@@ -137,9 +137,6 @@
     <AndroidResource Include="Resources\layout\comm_advice_topic.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\layout1.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
     <AndroidResource Include="Resources\layout\profile_main.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -156,6 +153,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\postTopicLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\thoughtlayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

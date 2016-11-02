@@ -1,111 +1,491 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
-        android:text="Set your own goals"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:id="@+id/textView1" />
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+<!--Author: Lisa-Marie Assmann | n9533818-->
     <LinearLayout
-        android:orientation="vertical"
-        android:minWidth="25dp"
-        android:minHeight="25dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/exercise_btn_section"
-        android:layout_marginBottom="0.0dp">
-        <Button
-            android:text="Exercise"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:text="Set your own goals"
+            android:textAppearance="?android:attr/textAppearanceLarge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/exerciseBtn" />
-        <TextView xmlns:tools="http://schemas.android.com/tools"
-            android:text="This area contains the exercises"
-            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center_horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="#ffffff"
+            android:background="#e3647d"
+            android:id="@+id/textView1" />
+    <!--Beginning of the section where the user can set the exercise goal-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25dp"
+            android:minHeight="25dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/exercise"
-            android:phoneNumber="true"
-            android:visibility="gone" />
+            android:id="@+id/exercise_btn_section"
+            android:layout_marginBottom="0.0dp">
+            <Button
+                android:text="Exercise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/exerciseBtn" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25dp"
+                android:minHeight="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/exercise_section"
+                android:layout_marginBottom="0.0dp"
+                android:visibility="gone">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25dp"
+                    android:minHeight="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+                    <TextView
+                        android:text="Exercise 1: Description of Exercise 1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_weight="0.85"
+                        android:id="@+id/exercise1" />
+                    <Button
+                        android:text="Select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:id="@+id/exercise1SelectBtn"
+                        local:MvxBind="Click Ex1Select" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25dp"
+                    android:minHeight="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+                    <TextView
+                        android:text="Exercise 2: Description of Exercise 2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_weight="0.85"
+                        android:id="@+id/exercise2" />
+                    <Button
+                        android:text="Select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:id="@+id/exercise2SelectBtn"
+                        local:MvxBind="Click Ex2Select" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25dp"
+                    android:minHeight="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+                    <TextView
+                        android:text="Exercise 3: Description of Exercise 3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_weight="0.85"
+                        android:id="@+id/exercise3" />
+                    <Button
+                        android:text="Select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:id="@+id/exercise3SelectBtn"
+                        local:MvxBind="Click Ex3Select" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25dp"
+                    android:minHeight="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+                    <TextView
+                        android:text="Exercise 4: Description of Exercise 4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_weight="0.85"
+                        android:id="@+id/exercise4" />
+                    <Button
+                        android:text="Select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:id="@+id/exercise4SelectBtn"
+                        local:MvxBind="Click Ex4Select" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    <!--End of the section exercise goal-->
+    <!--Beginning of the section where the user can set the diet goal-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25dp"
+            android:minHeight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/diet_btn_section"
+            android:layout_marginBottom="0.0dp">
+            <Button
+                android:text="Diet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dietBtn" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25dp"
+                android:minHeight="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diet_section"
+                android:layout_marginBottom="0.0dp"
+                android:visibility="gone">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25dp"
+                    android:minHeight="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+                    <TextView
+                        android:text="Diet 1: Description of diet 1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_weight="0.85"
+                        android:id="@+id/diet1" />
+                    <Button
+                        android:text="Select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:id="@+id/diet1SelectBtn"
+                        local:MvxBind="Click Diet1Select" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25dp"
+                    android:minHeight="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+                    <TextView
+                        android:text="Diet 2: Description of diet 2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_weight="0.85"
+                        android:id="@+id/diet2" />
+                    <Button
+                        android:text="Select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:id="@+id/diet2SelectBtn"
+                        local:MvxBind="Click Diet2Select" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25dp"
+                    android:minHeight="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+                    <TextView
+                        android:text="Diet 3: Description of diet 3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_weight="0.85"
+                        android:id="@+id/diet3" />
+                    <Button
+                        android:text="Select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:id="@+id/diet3SelectBtn"
+                        local:MvxBind="Click Diet3Select" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25dp"
+                    android:minHeight="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+                    <TextView
+                        android:text="Diet 4: Description of diet 4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_weight="0.85"
+                        android:id="@+id/diet4" />
+                    <Button
+                        android:text="Select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:id="@+id/diet4SelectBtn"
+                        local:MvxBind="Click Diet4Select" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    <!--End of the section diet goal-->
+    <!--Beginning of the section where the user can set the sleep plan goals-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25dp"
+            android:minHeight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sleep_btn_section"
+            android:layout_marginBottom="0.0dp">
+            <Button
+                android:text="Sleep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sleepBtn" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25dp"
+                android:minHeight="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sleep_section"
+                android:layout_marginBottom="0.0dp"
+                android:visibility="gone">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25dp"
+                    android:minHeight="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1">
+                    <TextView
+                        android:text="Sleep Plan 1: Description of sleep plan 1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_weight="0.85"
+                        android:id="@+id/sleep1" />
+                    <Button
+                        android:text="Select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:id="@+id/sleep1SelectBtn"
+                        local:MvxBind="Click Sleep1Select" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25dp"
+                    android:minHeight="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+                    <TextView
+                        android:text="Sleep Plan 2: Description of sleep plan 2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_weight="0.85"
+                        android:id="@+id/sleep2" />
+                    <Button
+                        android:text="Select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:id="@+id/sleep2SelectBtn"
+                        local:MvxBind="Click Sleep2Select" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25dp"
+                    android:minHeight="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+                    <TextView
+                        android:text="Sleep Plan 3: Description of sleep plan 3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_weight="0.85"
+                        android:id="@+id/sleep3" />
+                    <Button
+                        android:text="Select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:id="@+id/sleep3SelectBtn"
+                        local:MvxBind="Click Sleep3Select" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25dp"
+                    android:minHeight="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+                    <TextView
+                        android:text="Sleep Plan 4: Description of sleep plan 4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_weight="0.85"
+                        android:id="@+id/sleep4" />
+                    <Button
+                        android:text="Select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:id="@+id/sleep4SelectBtn"
+                        local:MvxBind="Click Sleep4Select" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    <!--End of the section sleep plan goal-->
+    <!--Beginning of the section where the user can set the lifestyle goal-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25dp"
+            android:minHeight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lifestyle_btn_section"
+            android:layout_marginBottom="0.0dp">
+            <Button
+                android:text="Lifestyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lifestyleBtn" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25dp"
+                android:minHeight="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lifestyle"
+                android:layout_marginBottom="0.0dp"
+                android:visibility="gone">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25dp"
+                    android:minHeight="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+                    <TextView
+                        android:text="Lifestyle Tip 1: Description of lifestyle tip 1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_weight="0.85"
+                        android:id="@+id/lifestyle1" />
+                    <Button
+                        android:text="Select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:id="@+id/lifestyle1SelectBtn"
+                        local:MvxBind="Click Life1Select" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25dp"
+                    android:minHeight="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+                    <TextView
+                        android:text="Lifestyle Tip 2: Description of lifestyle tip 2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_weight="0.85"
+                        android:id="@+id/lifestyle2" />
+                    <Button
+                        android:text="Select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:id="@+id/lifestyle2SelectBtn"
+                        local:MvxBind="Click Life2Select" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25dp"
+                    android:minHeight="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+                    <TextView
+                        android:text="Lifestyle Tip 3: Description of lifestyle tip 3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_weight="0.85"
+                        android:id="@+id/lifestyle3" />
+                    <Button
+                        android:text="Select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:id="@+id/lifestyle3SelectBtn"
+                        local:MvxBind="Click Life3Select" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25dp"
+                    android:minHeight="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+                    <TextView
+                        android:text="Lifestyle Tip 4: Description of lifestyle tip 4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_weight="0.85"
+                        android:id="@+id/lifestyle4" />
+                    <Button
+                        android:text="Select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:id="@+id/lifestyle4SelectBtn"
+                        local:MvxBind="Click Life4Select" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
+<!--End of the section lifestyle goal-->
+<!--Beginning of the navigation bar-->
     <LinearLayout
-        android:orientation="vertical"
-        android:minWidth="25dp"
-        android:minHeight="25dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/diet_btn_section"
-        android:layout_marginBottom="0.0dp">
-        <Button
-            android:text="Diet"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/dietBtn" />
-        <TextView xmlns:tools="http://schemas.android.com/tools"
-            android:text="This area contains the diet plan"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/diet"
-            android:phoneNumber="true"
-            android:visibility="gone" />
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="vertical"
-        android:minWidth="25dp"
-        android:minHeight="25dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/sleep_btn_section"
-        android:layout_marginBottom="0.0dp">
-        <Button
-            android:text="Sleep"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/sleepBtn" />
-        <TextView xmlns:tools="http://schemas.android.com/tools"
-            android:text="This area contains the sleep plan"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/sleep"
-            android:phoneNumber="true"
-            android:visibility="gone" />
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="vertical"
-        android:minWidth="25dp"
-        android:minHeight="25dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/lifestyle_btn_section"
-        android:layout_marginBottom="0.0dp">
-        <Button
-            android:text="Lifestyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/lifestyleBtn" />
-        <TextView xmlns:tools="http://schemas.android.com/tools"
-            android:text="This area contains the lifestyle"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/lifestyle"
-            android:phoneNumber="true"
-            android:visibility="gone" />
-    </LinearLayout>
-    <LinearLayout
+        android:layout_height="70dp"
         android:orientation="horizontal"
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="match_parent"
-        android:layout_height="200px"
-        android:id="@+id/linearLayout2"
-        android:layout_gravity="bottom"
+        android:layout_weight="0"
         android:background="#5e5e5e">
         <Button
             android:text="community"
@@ -118,13 +498,15 @@
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="0.34"
-            android:id="@+id/healthJourney" />
+            android:id="@+id/healthJourney"
+            local:MvxBind="Click GoToMain" />
         <Button
             android:text="profile"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="0.33"
             android:id="@+id/profile"
-            android:background="#e3647d" />
+            local:MvxBind="Click GoToProfile" />
     </LinearLayout>
+<!--End of the navigation bar-->
 </LinearLayout>

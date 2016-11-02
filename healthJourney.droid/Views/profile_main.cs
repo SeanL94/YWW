@@ -34,41 +34,32 @@ namespace healthJourney.droid.Views
             };
             Button showDetailbtn = FindViewById<Button>(Resource.Id.userDetailsBtn);
             TextView userDetails = FindViewById<TextView>(Resource.Id.user_details);
+            Button showHistorybtn = FindViewById<Button>(Resource.Id.userHistoryBtn);
+            TextView userHistory = FindViewById<TextView>(Resource.Id.user_history);
+            //Dropdown of the contact details button
             showDetailbtn.Click += delegate
             {
                 if (userDetails.Visibility == ViewStates.Gone)
                 {
                     userDetails.Visibility = ViewStates.Visible;
+                    userHistory.Visibility = ViewStates.Gone;
                 }
                 else
                 {
                     userDetails.Visibility = ViewStates.Gone;
                 };
             };
-            Button showHistorybtn = FindViewById<Button>(Resource.Id.userHistoryBtn);
-            TextView userHistory = FindViewById<TextView>(Resource.Id.user_history);
+           //Dropdown of the illness history button
             showHistorybtn.Click += delegate
             {
                 if (userHistory.Visibility == ViewStates.Gone)
                 {
                     userHistory.Visibility = ViewStates.Visible;
+                    userDetails.Visibility = ViewStates.Gone;
                 }
                 else
                 {
                     userHistory.Visibility = ViewStates.Gone;
-                };
-            };
-            Button showGroupsbtn = FindViewById<Button>(Resource.Id.userGroupsBtn);
-            TextView userSocial = FindViewById<TextView>(Resource.Id.user_social);
-            showGroupsbtn.Click += delegate
-            {
-                if (userSocial.Visibility == ViewStates.Gone)
-                {
-                    userSocial.Visibility = ViewStates.Visible;
-                }
-                else
-                {
-                    userSocial.Visibility = ViewStates.Gone;
                 };
             };
         }

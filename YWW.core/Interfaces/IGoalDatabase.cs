@@ -12,5 +12,6 @@ namespace YWW.core.Interfaces
         Task<IEnumerable<Goals>> GetGoals();
         Task<int> InsertGoals(Goals goal);
         Task<int> UpdateGoals(Goals goal);
+        Task<int> SetStatus(int status);
     }
 }

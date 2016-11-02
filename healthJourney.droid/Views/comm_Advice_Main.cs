@@ -32,17 +32,6 @@ namespace healthJourney.droid.Views
                 StartActivity(typeof(comm_Main));
             };
 
-            //LinearLayout topicLayout = FindViewById<LinearLayout>(Resource.Id.topicLayout1);
-            //topicLayout.Click += delegate {
-            //    StartActivity(typeof(comm_Advice_Topic));
-            //};
-
         }
-        //protected override void OnResume()
-        //{
-        //    var vm = (PostTopicViewModel)ViewModel;
-        //    vm.OnResume();
-        //    base.OnResume();
-        //}
     }
 }

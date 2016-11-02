@@ -9,14 +9,18 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using YWW.core.ViewModels;
+using MvvmCross.Core.ViewModels;
+using MvvmCross.Droid.Views;
 /**
- * Author Jia Xin Chan 9601902
- * 
- **/
+* Author Jia Xin Chan 9601902
+* 
+**/
 namespace healthJourney.droid.Views
 {
+    [MvxViewFor(typeof(ThoughtMainViewModel))]
     [Activity(Label = "comm_Sharing_Main")]
-    public class comm_Sharing_Main : Activity
+    public class comm_Sharing_Main : MvxActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {

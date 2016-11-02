@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -18,7 +19,7 @@
             android:layout_height="match_parent"
             android:id="@+id/bkBtn" />
         <TextView
-            android:text="Professional Advices"
+            android:text="Professional Advice"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
@@ -41,7 +42,7 @@
             android:id="@+id/topicLayout1"
             android:padding="3.0dp">
             <ImageView
-                android:src="@drawable/profilepic2"
+                android:src="@drawable/profilepic3"
                 android:layout_width="50.0dp"
                 android:layout_height="60.0dp"
                 android:id="@+id/profilePic2"
@@ -59,14 +60,16 @@
                     android:textColor="@android:color/background_dark"
                     android:textStyle="bold"
                     android:paddingLeft="10.0dp"
-                    android:paddingTop="3.0dp" />
+                    android:paddingTop="3.0dp"
+                    local:MvxBind="Text SubjectTitle, Mode=TwoWay" />
                 <TextView
                     android:text="16th August 2016 16:32:04"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/headerTxt1"
                     android:textColor="@android:color/darker_gray"
-                    android:paddingLeft="10.0dp" />
+                    android:paddingLeft="10.0dp"
+                    local:MvxBind="Text PostDateTime, Mode=TwoWay" />
             </LinearLayout>
         </LinearLayout>
     <!-- End of Topic Bar-->
@@ -79,7 +82,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/userInformationLayout">
             <ImageView
-                android:src="@drawable/profilepic2"
+                android:src="@drawable/profilepic3"
                 android:layout_width="60.0dp"
                 android:layout_height="60.0dp"
                 android:id="@+id/usrPic2"
@@ -90,7 +93,7 @@
                 android:layout_height="match_parent"
                 android:id="@+id/ustInfoTxtLayout">
                 <TextView
-                    android:text="User_91264"
+                    android:text="Johanna Doe"
                     android:layout_width="fill_parent"
                     android:layout_height="30.0dp"
                     android:textStyle="bold"
@@ -116,7 +119,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/PostDetailTxt"
             android:textColor="@android:color/background_dark"
-            android:padding="5.0dp" />
+            android:padding="5.0dp"
+            local:MvxBind="Text Contents, Mode=TwoWay" />
         <TextView
             android:text="Post By 16th August 2016      16:32:04"
             android:layout_width="fill_parent"
@@ -124,7 +128,8 @@
             android:id="@+id/headerTxt1"
             android:textColor="@android:color/darker_gray"
             android:paddingLeft="10.0dp"
-            android:paddingTop="5.0dp" />
+            android:paddingTop="5.0dp"
+            local:MvxBind="Text PostDateTime, Mode=TwoWay" />
     <!--End of Post contents part-->
     <!--User Comment Box-->
         <LinearLayout
@@ -153,7 +158,7 @@
                     android:paddingTop="3.0dp"
                     android:textStyle="bold" />
                 <TextView
-                    android:text="Hi User_91264, it is normal to be tension and worrying after the treatment. (Some other comments)"
+                    android:text="Hi Johanna Doe, our professional team will provide feedback on your query soon."
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
