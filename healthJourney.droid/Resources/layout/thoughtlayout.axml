@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-  <!-- Author Jia Xin Chan 9601902 -->
+<!-- Author Jia Xin Chan 9601902 -->
 <!-- This section is first user post page -->
     <LinearLayout
         android:orientation="vertical"
