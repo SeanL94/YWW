@@ -1,5 +1,6 @@
 ﻿using SQLite.Net.Attributes;
 using System;
+//Author: Lisa-Marie | n9533818
 
 namespace YWW.core.Models
 {

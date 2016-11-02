@@ -9,12 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using YWW.core.Interfaces;
 using YWW.core.Models;
+//Author: Lisa-Marie | n9533818
 
 namespace YWW.core.ViewModels
 {
     public class HealthPlanViewModel : MvxViewModel
     {
-        public ICommand GoToMain { get; private set; }
+        //initialising all the button commands I used in the health plan page
+        public ICommand GoToMain { get; private set; } 
         public ICommand GoToProfile { get; private set; }
         public ICommand Ex1Select { get; private set; }
         public ICommand Ex2Select { get; private set; }
@@ -34,7 +36,7 @@ namespace YWW.core.ViewModels
         public ICommand Life4Select { get; private set; }
 
 
-
+        //initialising the toast event and the strings for toast notification
         public delegate void MyEventAction(string msg);
         public event MyEventAction Event;
         private string selectEx1 = "You selected exercise 1.";
@@ -54,30 +56,35 @@ namespace YWW.core.ViewModels
         private string selectLife3 = "You selected lifestyle advice 3.";
         private string selectLife4 = "You selected lifestyle advice 4.";
 
+        //initialising the goal database
         private IGoalDatabase goalDatabase;
         public HealthPlanViewModel(IGoalDatabase goalDatabase)
         {
             this.goalDatabase = goalDatabase;
+            //getting status information from database. not working right now because we don't really saving the goals in the database so it's always empty
             GetStat();
+            //MvxCommand to go to the FirstView
             GoToMain = new MvxCommand(() =>
             {
                 ShowViewModel<FirstViewModel>();
             });
+            //MvxCommand to go to the ProfileMainView
             GoToProfile = new MvxCommand(() =>
             {
                 ShowViewModel<ProfileMainViewModel>();
             });
+            //MvxCommand to set status of the Goal Exercise 1 the other goals are implemented the same way 
             Ex1Select = new MvxCommand(() =>
             {
                 if (GoalStatus == 0)
                 {
-                    //SetStat(1);
-                    Event(selectEx1);
+                    //SetStat(1); should set the status to exercise 1. it's not working because the database is empty since it doesn't stors the goals
+                    Event(selectEx1); //Event call to show message
                 }
                 else
                 {
-                    //SetStat(1);
-                    Event(selectEx1);
+                    //SetStat(1); should set the status to exercise 1. it's not working because the database is empty since it doesn't stors the goals
+                    Event(selectEx1);//Event call to show message
                 }
             });
             Ex2Select = new MvxCommand(() =>
@@ -282,6 +289,7 @@ namespace YWW.core.ViewModels
             get { return _goalStatus; }
             set { SetProperty(ref _goalStatus, value); }
         }
+        //methode to get goal status from db
         public async void GetStat()
         {
             var goal = await goalDatabase.GetGoals();
@@ -290,6 +298,7 @@ namespace YWW.core.ViewModels
                 GoalStatus = g.GoalStatus;
             }
         }
+        //methode to set goal status and update db
         public async void SetStat(int stat)
         {
             await goalDatabase.SetStatus(stat);

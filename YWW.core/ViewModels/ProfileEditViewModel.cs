@@ -8,22 +8,26 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using YWW.core.Interfaces;
 using YWW.core.Models;
+//Author: Lisa-Marie | n9533818
 
 namespace YWW.core.ViewModels
 {
     public class ProfileEditViewModel : MvxViewModel
     {
+        //initialising user database and save button
         private IUserDatabase localdb;
         public ICommand Save { get; private set; }
         public ProfileEditViewModel(IUserDatabase db)
         {
             localdb = db;
+            //MvxCommand to save user information in db and going to ProfileMain 
             Save = new MvxCommand(() =>
             {
                 InsertUser();
                 ShowViewModel<ProfileMainViewModel>();
             });
         }
+        //creating new user
         public async void InsertUser()
         {
             var newUser = (new User
@@ -41,6 +45,7 @@ namespace YWW.core.ViewModels
                 Suburb = Suburb,
                 ImageURL = ImageURL
             });
+            //If the database is empty create a new one otherwise call the update methode
             if (localdb.Equals(null))
                 await localdb.CreateUser(newUser);
             else

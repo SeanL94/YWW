@@ -6,164 +6,165 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF">
-  <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="0dip"
-    android:layout_weight="1"
-    android:orientation="vertical">
-    <!-- This section is the porfile section-->
+  <!--Author: Lisa-Marie Assmann | n9533818-->
     <LinearLayout
-        android:orientation="horizontal"
-        android:minWidth="25dp"
-        android:minHeight="25dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#9EC0F6"
-        android:id="@+id/profile_section">
-      <ImageView
-          android:src="@android:drawable/ic_menu_gallery"
-          android:layout_width="200.0dp"
-          android:layout_height="200.0dp"
-          android:id="@+id/profileImg"
-          local:MvxBind="{'ImageUrl':{'Path':'ImgSrc'}}" />
-      <!-- This section is for porfile information-->
-      <!-- End of profile information section -->
-      <LinearLayout
-          android:orientation="vertical"
-          android:minWidth="25dp"
-          android:minHeight="25dp"
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:id="@+id/profile_info">
-        <TextView
-            android:text="Johanna Doe"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="left"
-            android:textColor="#000000"
-            android:id="@+id/user_name"
-            local:MvxBind="Text FirstName + ' ' + LastName" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="left"
-            android:textColor="#000000"
-            local:MvxBind="Text Birthday"
-            android:id="@+id/textView2" />
-        <TextView
-            android:text="Hobbies"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical">
+    <!-- This section is the porfile section-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25dp"
+            android:minHeight="25dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#000000"
-            android:gravity="left"
-            android:id="@+id/user_hobbys"
-            local:MvxBind="Text Hobbies" />
-        <TextView
-            android:text="Intressts"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#000000"
-            android:gravity="left"
-            android:id="@+id/user_interests"
-            local:MvxBind="Text Interests" />
-        <Button
-            android:text="Edit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/profileEditBtn"
-            local:MvxBind="Click GoToEdit" />
-      </LinearLayout>
-    </LinearLayout>
+            android:background="#9EC0F6"
+            android:id="@+id/profile_section">
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="200.0dp"
+                android:layout_height="200.0dp"
+                android:id="@+id/profileImg"
+                local:MvxBind="{'ImageUrl':{'Path':'ImgSrc'}}" />
+        <!-- This section is for porfile information-->
+        <!-- End of profile information section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25dp"
+                android:minHeight="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/profile_info">
+                <TextView
+                    android:text="Johanna Doe"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textColor="#000000"
+                    android:id="@+id/user_name"
+                    local:MvxBind="Text FirstName + ' ' + LastName" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textColor="#000000"
+                    local:MvxBind="Text Birthday"
+                    android:id="@+id/textView2" />
+                <TextView
+                    android:text="Hobbies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:gravity="left"
+                    android:id="@+id/user_hobbys"
+                    local:MvxBind="Text Hobbies" />
+                <TextView
+                    android:text="Intressts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:gravity="left"
+                    android:id="@+id/user_interests"
+                    local:MvxBind="Text Interests" />
+                <Button
+                    android:text="Edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profileEditBtn"
+                    local:MvxBind="Click GoToEdit" />
+            </LinearLayout>
+        </LinearLayout>
     <!-- End of profile section-->
     <!-- This section is the content section with different options to choose from-->
-    <LinearLayout
-        android:orientation="vertical"
-        android:minWidth="25dp"
-        android:minHeight="25dp"
-        android:weightSum="5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-      <LinearLayout
-          android:orientation="vertical"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:id="@+id/detail_btn_section"
-          android:layout_marginTop="10.0dp"
-          android:layout_marginBottom="10.0dp">
-        <Button
-            android:text="Contact Details"
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25dp"
+            android:minHeight="25dp"
+            android:weightSum="5"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/userDetailsBtn" />
-        <TextView
-            android:hint="This area contains the contacts details of the user"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="#000000"
-            android:textColorHint="#000000"
-            android:gravity="center_horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/user_details"
-            local:MvxBind="Text Address"
-            android:visibility="gone" />
-      </LinearLayout>
-      <LinearLayout
-          android:orientation="vertical"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:id="@+id/history_btn_section"
-          android:layout_marginBottom="10.0dp">
-        <Button
-            android:text="Illness History"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/userHistoryBtn" />
-        <TextView
-            android:hint="This area contains the illnes history of the user"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#000000"
-            android:textColorHint="#000000"
-            android:gravity="center_horizontal"
-            android:id="@+id/user_history"
-            local:MvxBind="Text IllnesHistory"
-            android:visibility="gone" />
-      </LinearLayout>
-      <LinearLayout
-          android:orientation="vertical"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:id="@+id/group_btn_section"
-          android:layout_marginBottom="10.0dp">
-        <Button
-            android:text="Post how you feel today"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            local:MvxBind="Click GoToPost"
-            android:id="@+id/userGroupsBtn" />
-      </LinearLayout>
-      <LinearLayout
-          android:orientation="vertical"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:id="@+id/plan_btn_section"
-          android:layout_marginBottom="10.0dp">
-        <Button
-            android:text="Your Health Plan"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/userPlanBtn"
-            local:MvxBind="Click GoToHealthPlan" />
-      </LinearLayout>
-    </LinearLayout>
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/detail_btn_section"
+                android:layout_marginTop="10.0dp"
+                android:layout_marginBottom="10.0dp">
+                <Button
+                    android:text="Contact Details"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/userDetailsBtn" />
+                <TextView
+                    android:hint="This area contains the contacts details of the user"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_details"
+                    local:MvxBind="Text Address"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/history_btn_section"
+                android:layout_marginBottom="10.0dp">
+                <Button
+                    android:text="Illness History"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/userHistoryBtn" />
+                <TextView
+                    android:hint="This area contains the illnes history of the user"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/user_history"
+                    local:MvxBind="Text IllnesHistory"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/group_btn_section"
+                android:layout_marginBottom="10.0dp">
+                <Button
+                    android:text="Post how you feel today"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    local:MvxBind="Click GoToPost"
+                    android:id="@+id/userGroupsBtn" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/plan_btn_section"
+                android:layout_marginBottom="10.0dp">
+                <Button
+                    android:text="Your Health Plan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/userPlanBtn"
+                    local:MvxBind="Click GoToHealthPlan" />
+            </LinearLayout>
+        </LinearLayout>
     <!-- End of content section-->
-  </LinearLayout>
+    </LinearLayout>
 <!--This section implements the navigation bar at the bottom of the page-->
     <LinearLayout
         android:layout_width="match_parent"

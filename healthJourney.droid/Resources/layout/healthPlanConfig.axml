@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF">
+  <!--Author: Lisa-Marie Assmann | n9533818-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dip"
@@ -19,6 +20,7 @@
             android:gravity="center_horizontal"
             android:background="#e3647d"
             android:id="@+id/textView1" />
+      <!--Beginning of the section where the user can set the exercise goal-->
         <LinearLayout
             android:orientation="vertical"
             android:minWidth="25dp"
@@ -131,6 +133,8 @@
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
+      <!--End of the section exercise goal-->
+      <!--Beginning of the section where the user can set the diet goal-->
         <LinearLayout
             android:orientation="vertical"
             android:minWidth="25dp"
@@ -243,6 +247,8 @@
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
+      <!--End of the section diet goal-->
+      <!--Beginning of the section where the user can set the sleep plan goals-->
         <LinearLayout
             android:orientation="vertical"
             android:minWidth="25dp"
@@ -355,6 +361,8 @@
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
+      <!--End of the section sleep plan goal-->
+      <!--Beginning of the section where the user can set the lifestyle goal-->
         <LinearLayout
             android:orientation="vertical"
             android:minWidth="25dp"
@@ -468,6 +476,8 @@
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+  <!--End of the section lifestyle goal-->
+  <!--Beginning of the navigation bar-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
@@ -495,4 +505,5 @@
             android:id="@+id/profile"
             local:MvxBind="Click GoToProfile" />
     </LinearLayout>
+  <!--End of the navigation bar-->
 </LinearLayout>

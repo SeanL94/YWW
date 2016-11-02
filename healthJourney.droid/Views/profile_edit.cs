@@ -7,7 +7,10 @@ using Android.Widget;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Droid.Views;
 using YWW.core.ViewModels;
-
+/**
+* Author Lisa-Marie Assmann 9533818
+* 
+**/
 namespace healthJourney.droid.Views
 {
     [MvxViewFor(typeof(ProfileEditViewModel))]

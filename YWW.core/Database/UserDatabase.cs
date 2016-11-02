@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using YWW.core.Interfaces;
 using YWW.core.Models;
 using static YWW.core.Models.User;
+//Author: Lisa-Marie | n9533818
 
 namespace YWW.core.Database
 {

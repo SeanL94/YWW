@@ -6,14 +6,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using YWW.core.Interfaces;
+//Author: Lisa-Marie | n9533818
 
 namespace YWW.core.ViewModels
 {
     public class ProfileMainViewModel : MvxViewModel
     {
+        //Initialising all ICommands of ProfileMain page and user database
         public ICommand GoToEdit { get; private set; }
         public ICommand GoToHealthPlan { get; private set; }
-        //public ICommand GoToCommunity { get; private set; }
         public ICommand GoToMain { get; private set; }
         public ICommand GoToProfile { get; private set; }
         public ICommand GoToPost { get; private set; }
@@ -21,27 +22,34 @@ namespace YWW.core.ViewModels
         public ProfileMainViewModel(IUserDatabase userDatabase)
         {
             this.userDatabase = userDatabase;
+            //getting the user information from the database
             getUserInfo();
+            //If a user exists the illnes history/ information about the attending doctor should be desplayed. 
             if (FirstName != null)
             {
                 IllnesHistory = FirstName + " fought breast cancer for 5 years and finaly beat last year. You have come a long way and we will help you to get even more better. Attending doctor is Dr. ...";
             }
+            //Navigate to profile edit page
             GoToEdit = new MvxCommand(() =>
             {
                 ShowViewModel<ProfileEditViewModel>();
             });
+            //Navigate to health plan page
             GoToHealthPlan = new MvxCommand(() =>
             {
                 ShowViewModel<HealthPlanViewModel>();
             });
+            //Navigate to first view
             GoToMain = new MvxCommand(() =>
             {
                 ShowViewModel<FirstViewModel>();
             });
+            //Navigate to profile main page
             GoToProfile = new MvxCommand(() =>
             {
                 ShowViewModel<ProfileMainViewModel>();
             });
+            //Navigate to thought post page
             GoToPost = new MvxCommand(() =>
             {
                 ShowViewModel<ThoughtViewModel>();
@@ -224,7 +232,7 @@ namespace YWW.core.ViewModels
             get { return _illnesHistory; }
             set { SetProperty(ref _illnesHistory, value); }
         }
-
+        //methode to get the user information from the database
         public async void getUserInfo()
         {
             var user = await userDatabase.GetUser();

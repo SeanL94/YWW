@@ -13,7 +13,10 @@ using MvvmCross.Core.ViewModels;
 using Android.Util;
 using MvvmCross.Droid.Views;
 using YWW.core.ViewModels;
-
+/**
+* Author Lisa-Marie Assmann 9533818
+* 
+**/
 namespace healthJourney.droid.Views
 {
 
@@ -44,50 +47,66 @@ namespace healthJourney.droid.Views
 
             Button exercisebtn = FindViewById<Button>(Resource.Id.exerciseBtn);
             LinearLayout exerciseDetails = FindViewById<LinearLayout>(Resource.Id.exercise_section);
+            Button dietbtn = FindViewById<Button>(Resource.Id.dietBtn);
+            LinearLayout dietDetails = FindViewById<LinearLayout>(Resource.Id.diet_section);
+            Button sleepbtn = FindViewById<Button>(Resource.Id.sleepBtn);
+            LinearLayout sleepDetails = FindViewById<LinearLayout>(Resource.Id.sleep_section);
+            Button lifestylebtn = FindViewById<Button>(Resource.Id.lifestyleBtn);
+            LinearLayout lifestyleDetails = FindViewById<LinearLayout>(Resource.Id.lifestyle);
+            //Dropdown of exercise button
             exercisebtn.Click += delegate
             {
                 if (exerciseDetails.Visibility == ViewStates.Gone)
                 {
                     exerciseDetails.Visibility = ViewStates.Visible;
+                    lifestyleDetails.Visibility = ViewStates.Gone;
+                    dietDetails.Visibility = ViewStates.Gone;
+                    sleepDetails.Visibility = ViewStates.Gone;
                 }
                 else
                 {
                     exerciseDetails.Visibility = ViewStates.Gone;
                 };
             };
-            Button dietbtn = FindViewById<Button>(Resource.Id.dietBtn);
-            LinearLayout dietDetails = FindViewById<LinearLayout>(Resource.Id.diet_section);
+            //Dropdown of diet button
             dietbtn.Click += delegate
             {
                 if (dietDetails.Visibility == ViewStates.Gone)
                 {
                     dietDetails.Visibility = ViewStates.Visible;
+                    exerciseDetails.Visibility = ViewStates.Gone;
+                    lifestyleDetails.Visibility = ViewStates.Gone;
+                    sleepDetails.Visibility = ViewStates.Gone;
                 }
                 else
                 {
                     dietDetails.Visibility = ViewStates.Gone;
                 };
             };
-            Button sleepbtn = FindViewById<Button>(Resource.Id.sleepBtn);
-            LinearLayout sleepDetails = FindViewById<LinearLayout>(Resource.Id.sleep_section);
+            //Dropdown of sleep button
             sleepbtn.Click += delegate
             {
                 if (sleepDetails.Visibility == ViewStates.Gone)
                 {
                     sleepDetails.Visibility = ViewStates.Visible;
+                    exerciseDetails.Visibility = ViewStates.Gone;
+                    dietDetails.Visibility = ViewStates.Gone;
+                    lifestyleDetails.Visibility = ViewStates.Gone;
                 }
                 else
                 {
                     sleepDetails.Visibility = ViewStates.Gone;
                 };
             };
-            Button lifestylebtn = FindViewById<Button>(Resource.Id.lifestyleBtn);
-            LinearLayout lifestyleDetails = FindViewById<LinearLayout>(Resource.Id.lifestyle);
+            //Dropdown of lifestyle button
             lifestylebtn.Click += delegate
             {
                 if (lifestyleDetails.Visibility == ViewStates.Gone)
                 {
                     lifestyleDetails.Visibility = ViewStates.Visible;
+                    exerciseDetails.Visibility = ViewStates.Gone;
+                    dietDetails.Visibility = ViewStates.Gone;
+                    sleepDetails.Visibility = ViewStates.Gone;
                 }
                 else
                 {
