@@ -11,7 +11,8 @@
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="460.0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
         android:id="@+id/ViewSliderSection"
         android:background="#FFFFFF"
         android:layout_gravity="bottom"
@@ -20,7 +21,8 @@
     <!-- The community sharing image button-->
         <Button
             android:layout_width="match_parent"
-            android:layout_height="230.0dp"
+            android:layout_height="0dip"
+            android:layout_weight="0.5"
             android:id="@+id/sharingBtn"
             android:background="@drawable/comm_sharing_pic"
             android:text="Community Sharings"
@@ -30,7 +32,8 @@
     <!-- The professional advices image button-->
         <Button
             android:layout_width="match_parent"
-            android:layout_height="230.0dp"
+            android:layout_height="0dip"
+            android:layout_weight="0.5"
             android:id="@+id/adviceBtn"
             android:background="@drawable/professional_advice"
             android:text="Professional Advices"
@@ -40,13 +43,9 @@
     </LinearLayout>
 <!--This section implements the navigation bar at the bottom of the page-->
     <LinearLayout
-        android:orientation="horizontal"
-        android:minWidth="25px"
-        android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="200px"
-        android:id="@+id/linearLayout2"
-        android:layout_gravity="bottom"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
         android:background="#5e5e5e">
         <Button
             android:text="community"

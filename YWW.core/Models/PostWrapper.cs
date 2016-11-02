@@ -14,26 +14,9 @@ namespace YWW.core.Models
         public PostWrapper(Post post)
         {
             SubjectTitle = post.SubjectTitle;
-            Contents = post.Contents; 
+            Contents = post.Contents;
+            PostDateTime = post.PostDateTime;
         }
-
-        Post _post;
-        PostTopicViewModel _parent;
-
-        public PostWrapper(Post post, PostTopicViewModel parent)
-        {
-            _post = post;
-            _parent = parent;
-        }
-        public IMvxCommand SelectTopicCommand
-        {
-            get
-            {
-                return new MvxCommand(() => _parent.SelectPost(_post));
-            }
-        }
-
-        public Post Post { get { return _post; } }
 
     }
 }

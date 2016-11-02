@@ -18,17 +18,6 @@ namespace YWW.core.ViewModels
             thoughtButton = new MvxCommand(InsertThought);
         }
 
-        private string image;
-        public string Image
-        {
-            get { return image; }
-            set
-            {
-                image = value;
-                RaisePropertyChanged(() => Image);
-            }
-        }
-
         private string _content;
         public string Content
         {
@@ -44,7 +33,6 @@ namespace YWW.core.ViewModels
         public async void InsertThought()
         {
             DateTime now = DateTime.Now.ToLocalTime();
-            string temp = this.Image;
            var newThought = (new Thought
             {
                 AuthorID = "1",

@@ -32,10 +32,6 @@ namespace healthJourney.droid.Views
                 StartActivity(typeof(comm_Main));
             };
 
-            //LinearLayout topicBar1 = FindViewById<LinearLayout>(Resource.Id.topicBar1);
-            //topicBar1.Click += delegate {
-            //    StartActivity(typeof(comm_Advice_Topic));
-            //};
         }
     }
 }

@@ -25,7 +25,7 @@ namespace healthJourney.droid.Views
         {
             base.OnCreate(savedInstanceState);
             RequestWindowFeature(WindowFeatures.NoTitle);
-            SetContentView(Resource.Layout.health_plan_config);
+            SetContentView(Resource.Layout.healthPlanConfig);
 
             Button commBtn = FindViewById<Button>(Resource.Id.community);
             commBtn.Click += delegate {

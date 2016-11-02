@@ -10,7 +10,6 @@ namespace YWW.core.ViewModels
     {
         private readonly IThoughtDatabase thoughtDatabase;
         private ObservableCollection<ThoughtWrapper> thoughts = new ObservableCollection<ThoughtWrapper>();
-        
 
         public ThoughtMainViewModel(IThoughtDatabase thoughtDatabase)
         {
