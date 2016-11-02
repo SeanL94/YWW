@@ -49,10 +49,10 @@ namespace YWW.core.ViewModels
             if (SearchTerm != "")
             {
                 Thoughts.Clear();
-                var posts = await thoughtDatabase.GetThoughts();
+                var thoughts = await thoughtDatabase.GetThoughts();
                 foreach (var thought in thoughts)
                 {
-                    if (Regex.IsMatch("Johanna Doe", "(" + SearchTerm + ")+")) // regex to match the search term
+                    if (Regex.IsMatch(thought.Contents, "(" + SearchTerm + ")+") || Regex.IsMatch("Johanna Doe", "(" + SearchTerm + ")+")) // regex to match the search term
                     {
                         Thoughts.Add(new ThoughtWrapper(thought));
                     }
