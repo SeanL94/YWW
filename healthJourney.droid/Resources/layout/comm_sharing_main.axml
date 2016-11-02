@@ -38,6 +38,8 @@
             android:layout_width="300.0dp"
             android:layout_height="match_parent"
             android:hint="Search.."
+            android:textColor="#000000"
+            android:textColorHint="#000000"
             android:id="@+id/seachTxt"
             local:MvxBind="Text SearchTerm" />
         <Button

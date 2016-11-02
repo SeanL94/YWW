@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF">
-  <!--Author: Lisa-Marie Assmann | n9533818-->
+<!--Author: Lisa-Marie Assmann | n9533818-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dip"
@@ -37,34 +37,39 @@
                 android:layout_height="match_parent"
                 android:id="@+id/profile_info">
                 <TextView
-                    android:text="Johanna Doe"
+                    android:hint="User name"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="left"
                     android:textColor="#000000"
+                    android:textColorHint="#000000"
                     android:id="@+id/user_name"
                     local:MvxBind="Text FirstName + ' ' + LastName" />
                 <TextView
+                    android:hint="Birthday"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="left"
                     android:textColor="#000000"
+                    android:textColorHint="#000000"
                     local:MvxBind="Text Birthday"
                     android:id="@+id/textView2" />
                 <TextView
-                    android:text="Hobbies"
+                    android:hint="Hobbies"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="#000000"
+                    android:textColorHint="#000000"
                     android:gravity="left"
                     android:id="@+id/user_hobbys"
                     local:MvxBind="Text Hobbies" />
                 <TextView
-                    android:text="Intressts"
+                    android:hint="Intressts"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="#000000"
+                    android:textColorHint="#000000"
                     android:gravity="left"
                     android:id="@+id/user_interests"
                     local:MvxBind="Text Interests" />
