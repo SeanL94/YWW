@@ -7,7 +7,7 @@
     android:background="#FFFFFF"
     android:minWidth="25px"
     android:minHeight="25px">
-  <!--Author: Lisa-Marie Assmann | n9533818-->
+<!--Author: Lisa-Marie Assmann | n9533818-->
     <TextView
         android:text="Edit your profile"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -22,19 +22,19 @@
         android:layout_height="0dip"
         android:layout_weight="1"
         android:orientation="vertical">
-      <!--Beginning of profile edit section-->
+    <!--Beginning of profile edit section-->
         <LinearLayout
             android:orientation="horizontal"
             android:minWidth="25dp"
             android:minHeight="25dp"
             android:layout_width="match_parent"
-            android:layout_height="115.5dp"
+            android:layout_height="wrap_content"
             android:id="@+id/profile_edit_section">
-          <!--Selecting image form file and displaing it-->
+        <!--Selecting image form file and displaing it-->
             <ImageView
                 android:src="@android:drawable/ic_menu_gallery"
-                android:layout_width="200.0dp"
-                android:layout_height="200.0dp"
+                android:layout_width="150.0dp"
+                android:layout_height="150.0dp"
                 android:id="@+id/profileImg"
                 local:MvxBind="{'ImageUrl':{'Path':'ImgSrc'}}" />
             <TextView
@@ -45,7 +45,7 @@
                 android:gravity="center_horizontal"
                 android:id="@+id/pictureView" />
         </LinearLayout>
-      <!--Section to input user information-->
+    <!--Section to input user information-->
         <LinearLayout
             android:orientation="vertical"
             android:minWidth="25dp"
@@ -79,7 +79,6 @@
                 android:id="@+id/birthday_section">
                 <TextView
                     android:text="Your Birthday: "
-                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="#000000"
@@ -95,7 +94,6 @@
                     local:MvxBind="Text Day, Mode=OneWayToSource" />
                 <TextView
                     android:text="/"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="#000000"
@@ -111,7 +109,6 @@
                     local:MvxBind="Text Month, Mode=OneWayToSource" />
                 <TextView
                     android:text="/"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="#000000"
@@ -143,8 +140,7 @@
                 android:textColorHint="#000000"
                 local:MvxBind="Text Interests, Mode=OneWayToSource" />
             <TextView
-                android:text="Your Birthday: "
-                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Your Address: "
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#000000"
@@ -208,8 +204,8 @@
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-  <!--End of profile input section-->
-  <!--button to save information to the database-->
+<!--End of profile input section-->
+<!--button to save information to the database-->
     <Button
         android:text="Save"
         android:layout_width="match_parent"
