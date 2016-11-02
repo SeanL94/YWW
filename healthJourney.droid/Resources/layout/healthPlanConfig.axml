@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF">
-  <!--Author: Lisa-Marie Assmann | n9533818-->
+<!--Author: Lisa-Marie Assmann | n9533818-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dip"
@@ -18,9 +18,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="#ffffff"
             android:background="#e3647d"
             android:id="@+id/textView1" />
-      <!--Beginning of the section where the user can set the exercise goal-->
+    <!--Beginning of the section where the user can set the exercise goal-->
         <LinearLayout
             android:orientation="vertical"
             android:minWidth="25dp"
@@ -133,8 +136,8 @@
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-      <!--End of the section exercise goal-->
-      <!--Beginning of the section where the user can set the diet goal-->
+    <!--End of the section exercise goal-->
+    <!--Beginning of the section where the user can set the diet goal-->
         <LinearLayout
             android:orientation="vertical"
             android:minWidth="25dp"
@@ -177,7 +180,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="0.15"
                         android:id="@+id/diet1SelectBtn"
-                        local:MvxBind="Click Diet1Select"/>
+                        local:MvxBind="Click Diet1Select" />
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="horizontal"
@@ -199,7 +202,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="0.15"
                         android:id="@+id/diet2SelectBtn"
-                        local:MvxBind="Click Diet2Select"/>
+                        local:MvxBind="Click Diet2Select" />
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="horizontal"
@@ -221,7 +224,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="0.15"
                         android:id="@+id/diet3SelectBtn"
-                        local:MvxBind="Click Diet3Select"/>
+                        local:MvxBind="Click Diet3Select" />
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="horizontal"
@@ -243,12 +246,12 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="0.15"
                         android:id="@+id/diet4SelectBtn"
-                        local:MvxBind="Click Diet4Select"/>
+                        local:MvxBind="Click Diet4Select" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-      <!--End of the section diet goal-->
-      <!--Beginning of the section where the user can set the sleep plan goals-->
+    <!--End of the section diet goal-->
+    <!--Beginning of the section where the user can set the sleep plan goals-->
         <LinearLayout
             android:orientation="vertical"
             android:minWidth="25dp"
@@ -291,7 +294,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="0.15"
                         android:id="@+id/sleep1SelectBtn"
-                        local:MvxBind="Click Sleep1Select"/>
+                        local:MvxBind="Click Sleep1Select" />
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="horizontal"
@@ -313,7 +316,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="0.15"
                         android:id="@+id/sleep2SelectBtn"
-                        local:MvxBind="Click Sleep2Select"/>
+                        local:MvxBind="Click Sleep2Select" />
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="horizontal"
@@ -335,7 +338,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="0.15"
                         android:id="@+id/sleep3SelectBtn"
-                        local:MvxBind="Click Sleep3Select"/>
+                        local:MvxBind="Click Sleep3Select" />
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="horizontal"
@@ -357,12 +360,12 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="0.15"
                         android:id="@+id/sleep4SelectBtn"
-                        local:MvxBind="Click Sleep4Select"/>
+                        local:MvxBind="Click Sleep4Select" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-      <!--End of the section sleep plan goal-->
-      <!--Beginning of the section where the user can set the lifestyle goal-->
+    <!--End of the section sleep plan goal-->
+    <!--Beginning of the section where the user can set the lifestyle goal-->
         <LinearLayout
             android:orientation="vertical"
             android:minWidth="25dp"
@@ -405,7 +408,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="0.15"
                         android:id="@+id/lifestyle1SelectBtn"
-                        local:MvxBind="Click Life1Select"/>
+                        local:MvxBind="Click Life1Select" />
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="horizontal"
@@ -427,7 +430,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="0.15"
                         android:id="@+id/lifestyle2SelectBtn"
-                        local:MvxBind="Click Life2Select"/>
+                        local:MvxBind="Click Life2Select" />
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="horizontal"
@@ -449,7 +452,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="0.15"
                         android:id="@+id/lifestyle3SelectBtn"
-                        local:MvxBind="Click Life3Select"/>
+                        local:MvxBind="Click Life3Select" />
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="horizontal"
@@ -471,13 +474,13 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="0.15"
                         android:id="@+id/lifestyle4SelectBtn"
-                        local:MvxBind="Click Life4Select"/>
+                        local:MvxBind="Click Life4Select" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-  <!--End of the section lifestyle goal-->
-  <!--Beginning of the navigation bar-->
+<!--End of the section lifestyle goal-->
+<!--Beginning of the navigation bar-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
@@ -505,5 +508,5 @@
             android:id="@+id/profile"
             local:MvxBind="Click GoToProfile" />
     </LinearLayout>
-  <!--End of the navigation bar-->
+<!--End of the navigation bar-->
 </LinearLayout>
