@@ -3,7 +3,10 @@ using System.Collections.ObjectModel;
 using System.Windows.Input;
 using YWW.core.Interfaces;
 using YWW.core.Models;
-
+/**
+* Author Jia Xin Chan 9601902
+* 
+**/
 namespace YWW.core.ViewModels
 {
     public class ThoughtMainViewModel : MvxViewModel
@@ -25,6 +28,7 @@ namespace YWW.core.ViewModels
 
         public async void GetThoughts()
         {
+            Thoughts.Clear();
             var thoughts = await thoughtDatabase.GetThoughts();
             foreach (var thought in thoughts)
             {

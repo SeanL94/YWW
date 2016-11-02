@@ -1,10 +1,15 @@
 ﻿using Android.Graphics;
 using MvvmCross.Core.ViewModels;
 using System;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Windows.Input;
 using YWW.core.Interfaces;
 using YWW.core.Models;
-
+/**
+* Author Jia Xin Chan 9601902
+* 
+**/
 namespace YWW.core.ViewModels
 {
     public class ThoughtViewModel : MvxViewModel
@@ -29,13 +34,28 @@ namespace YWW.core.ViewModels
             }
         }
 
+        private string myImage;
+        public string Image
+        {
+            get
+            {
+                return myImage;
+            }
+            set
+            {
+                myImage = value;
+                RaisePropertyChanged(() => Image);
+            }
+        }
+
 
         public async void InsertThought()
         {
             DateTime now = DateTime.Now.ToLocalTime();
+            string temp = Image;
            var newThought = (new Thought
             {
-                AuthorID = "1",
+               AuthorID = "1",
                ThoughtDateTime = now,
                Contents = this.Content
            });

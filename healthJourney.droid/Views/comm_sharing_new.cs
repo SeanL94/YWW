@@ -53,6 +53,7 @@ namespace healthJourney.droid.Views
 
            
     }
+        // Method for get photo from gallery
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
         {
             base.OnActivityResult(requestCode, resultCode, data);

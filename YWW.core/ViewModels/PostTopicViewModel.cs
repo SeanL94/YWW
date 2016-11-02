@@ -4,7 +4,10 @@ using System.Text.RegularExpressions;
 using System.Windows.Input;
 using YWW.core.Interfaces;
 using YWW.core.Models;
-
+/**
+* Author Jia Xin Chan 9601902
+* 
+**/
 namespace YWW.core.ViewModels
 {
     public class PostTopicViewModel : MvxViewModel
@@ -18,6 +21,7 @@ namespace YWW.core.ViewModels
         {
             this.postDatabase = postDatabase;
             GetPosts();
+            // select topic and view to topic details
             SelectTopicCommand = new MvxCommand<Post>(selectedPost =>
             {
                 SelectPost(selectedPost);
@@ -27,7 +31,7 @@ namespace YWW.core.ViewModels
 
         public async void SelectPost(Post selectedPost)
         {
-            ShowViewModel<PostContentViewModel>(selectedPost );
+            ShowViewModel<PostContentViewModel>(selectedPost);
         }
         public ObservableCollection<PostWrapper> Posts
         {
@@ -53,7 +57,7 @@ namespace YWW.core.ViewModels
                 var posts = await postDatabase.GetPosts();
                 foreach (var post in posts)
                 {
-                    if (Regex.IsMatch(post.SubjectTitle, "(" + SearchTerm + ")+"))
+                    if (Regex.IsMatch(post.SubjectTitle, "(" + SearchTerm + ")+")) // regex to match the search term
                     {
                         Posts.Add(new PostWrapper(post));
                     }
