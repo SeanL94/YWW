@@ -39,12 +39,14 @@
             android:layout_height="match_parent"
             android:hint="Search.."
             android:id="@+id/seachTxt"
+            local:MvxBind="Text SearchTerm"
             android:background="@android:drawable/editbox_background" />
         <Button
             android:text="Search"
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
-            android:id="@+id/searchBtn" />
+            android:id="@+id/searchBtn" 
+            local:MvxBind="Click SearchBtn"/>
     </LinearLayout>
 <!-- END of Search Bar-->
 <!-- This section is the scrollable user post page -->

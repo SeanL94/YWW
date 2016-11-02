@@ -1,5 +1,6 @@
 ﻿using MvvmCross.Core.ViewModels;
 using System.Collections.ObjectModel;
+using System.Text.RegularExpressions;
 using System.Windows.Input;
 using YWW.core.Interfaces;
 using YWW.core.Models;
@@ -13,12 +14,12 @@ namespace YWW.core.ViewModels
     {
         private readonly IThoughtDatabase thoughtDatabase;
         private ObservableCollection<ThoughtWrapper> thoughts = new ObservableCollection<ThoughtWrapper>();
-
+        public ICommand SearchBtn { get; private set; }
         public ThoughtMainViewModel(IThoughtDatabase thoughtDatabase)
         {
             this.thoughtDatabase = thoughtDatabase;
             GetThoughts();
-           
+            SearchBtn = new MvxCommand(SearchThoughts);
         }
         public ObservableCollection<ThoughtWrapper> Thoughts
         {
@@ -34,6 +35,34 @@ namespace YWW.core.ViewModels
             {
                 Thoughts.Add(new ThoughtWrapper(thought));
             }
+        }
+
+        private string _searchTerm;
+        public string SearchTerm
+        {
+            get { return this._searchTerm; }
+            set { this.RaiseAndSetIfChanged(ref this._searchTerm, value); }
+        }
+
+        public async void SearchThoughts()
+        {
+            if (SearchTerm != "")
+            {
+                Thoughts.Clear();
+                var posts = await thoughtDatabase.GetThoughts();
+                foreach (var thought in thoughts)
+                {
+                    if (Regex.IsMatch("Johanna Doe", "(" + SearchTerm + ")+")) // regex to match the search term
+                    {
+                        Thoughts.Add(new ThoughtWrapper(thought));
+                    }
+                }
+            }
+            else
+            {
+                GetThoughts();
+            }
+
         }
 
 
