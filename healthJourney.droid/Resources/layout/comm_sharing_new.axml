@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:local="http://schemas.android.com/apk/res-auto"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -35,13 +35,13 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:id="@+id/postingDetailsLayout">
         <ImageView
             android:src="@android:drawable/ic_menu_gallery"
             android:layout_width="50.0dp"
             android:layout_height="50.0dp"
-            android:id="@+id/postImg"
-            local:MvxBind="{'ImageUrl':{'Path':'ImgSrc'}}"/>
+            android:id="@+id/postImg" />
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="170.0dp"
@@ -49,7 +49,8 @@
             android:padding="10.0dp"
             android:hint="Enter your thoughts here.."
             android:textColor="@android:color/background_dark"
-            android:textColorHint="@android:color/darker_gray" />
+            android:textColorHint="@android:color/darker_gray"
+            local:MvxBind="Text Content" />
     </LinearLayout>
 <!-- END of posting content -->
 <!-- This section is for post privacy, Eg public or private-->
@@ -88,7 +89,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#e3647d"
-        android:id="@+id/postBtn" 
-        local:MvxBind="Click thoughtButton"/>
+        android:id="@+id/postBtn"
+        local:MvxBind="Click thoughtButton" />
 <!--END of logo and button -->
 </LinearLayout>

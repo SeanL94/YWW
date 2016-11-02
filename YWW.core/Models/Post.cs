@@ -7,12 +7,6 @@ namespace YWW.core.Models
     public class Post
     {
         public Post() {
-            AuthorID = "1";
-            Type = "admin";
-            Categories = "Advices";
-            Privacy = "public";
-            Contents = "Testing";
-            SubjectTitle = "Testing Subject";
         }
         public Post(Post post)
         {

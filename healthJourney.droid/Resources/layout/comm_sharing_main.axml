@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -49,13 +50,22 @@
 <!-- This section is the scrollable user post page -->
     <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="370.0dp">
+        android:layout_height="370.0dp"
+        android:layout_weight="1">
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="550.0dp"
+            
             android:id="@+id/postingScrollableLayout">
+            <MvxListView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="40dp"
+                local:MvxBind="ItemsSource Thoughts"
+                local:MvxItemTemplate="@layout/thoughtlayout" />
         <!-- This section is first user post page -->
+        <!--
             <LinearLayout
                 android:orientation="vertical"
                 android:minWidth="25px"
@@ -66,7 +76,9 @@
                 android:gravity="bottom"
                 android:background="#FFFFFF"
                 android:layout_marginTop="0.0dp">
-            <!-- This section is the user header include user info -->
+            -->
+        <!-- This section is the user header include user info -->
+        <!--
                 <LinearLayout
                     android:orientation="horizontal"
                     android:minWidth="25px"
@@ -74,13 +86,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="50.0dp"
                     android:id="@+id/top_userInfoLayout">
-                <!-- This section is for the top user profile picture -->
+                -->
+        <!-- This section is for the top user profile picture -->
+        <!--
                     <ImageView
                         android:layout_width="50.0dp"
                         android:layout_height="match_parent"
                         android:id="@+id/top_usrProfilePic"
                         android:background="@drawable/profilepic" />
-                <!-- This section is for the user info section, including top username and the love count bar -->
+                -->
+        <!-- This section is for the user info section, including top username and the love count bar -->
+        <!--
                     <LinearLayout
                         android:orientation="vertical"
                         android:minWidth="25px"
@@ -88,7 +104,9 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:id="@+id/top_usrInfoTxtLayout">
-                    <!-- This section is for user name -->
+                    -->
+        <!-- This section is for user name -->
+        <!--
                         <TextView
                             android:text="Johanna Doe"
                             android:textAppearance="?android:attr/textAppearanceSmall"
@@ -98,7 +116,9 @@
                             android:textSize="20.0dp"
                             android:textStyle="bold"
                             android:textColor="@android:color/background_dark" />
-                    <!-- This section is for the love count -->
+                    -->
+        <!-- This section is for the love count -->
+        <!--
                         <TextView
                             android:text="1, 435, 123 people loved it!"
                             android:layout_width="match_parent"
@@ -108,8 +128,12 @@
                             android:textColor="@android:color/background_dark" />
                     </LinearLayout>
                 </LinearLayout>
-            <!-- END of user info section -->
-            <!-- The Post Image and button -->
+            -->
+        <!-- END of user info section -->
+        <!--
+            -->
+        <!-- The Post Image and button -->
+        <!--
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="250.0dp"
@@ -156,8 +180,12 @@
                             android:layout_marginTop="10.0dp" />
                     </LinearLayout>
                 </FrameLayout>
-            <!-- END of post image -->
-            <!-- This section is for the user post text content -->
+            -->
+        <!-- END of post image -->
+        <!--
+            -->
+        <!-- This section is for the user post text content -->
+        <!--
                 <AbsoluteLayout
                     android:minWidth="25px"
                     android:minHeight="25px"
@@ -192,8 +220,12 @@
                         android:paddingLeft="5.0dp"
                         android:paddingRight="5.0dp" />
                 </LinearLayout>
-            <!-- END of user post text content -->
-            <!-- This section is for the comment part -->
+            -->
+        <!-- END of user post text content -->
+        <!--
+            -->
+        <!-- This section is for the comment part -->
+        <!--
                 <LinearLayout
                     android:orientation="vertical"
                     android:minWidth="25px"
@@ -201,7 +233,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="80.0dp"
                     android:id="@+id/wholeCommentLayout">
-                <!-- The first comment user -->
+                -->
+        <!-- The first comment user -->
+        <!--
                     <LinearLayout
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
@@ -228,8 +262,12 @@
                             android:paddingLeft="5.0dp"
                             android:paddingRight="5.0dp" />
                     </LinearLayout>
-                <!-- End of first comment user -->
-                <!-- The second comment user -->
+                -->
+        <!-- End of first comment user -->
+        <!--
+                -->
+        <!-- The second comment user -->
+        <!--
                     <LinearLayout
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
@@ -256,12 +294,20 @@
                             android:paddingLeft="5.0dp"
                             android:paddingRight="5.0dp" />
                     </LinearLayout>
-                <!-- END of second comment user-->
+                -->
+        <!-- END of second comment user-->
+        <!--
                 </LinearLayout>
-            <!-- END of comment part-->
+            -->
+        <!-- END of comment part-->
+        <!--
             </LinearLayout>
+        -->
         <!-- END of first user post -->
+        <!--
+        -->
         <!-- Second post-->
+        <!--
             <LinearLayout
                 android:orientation="vertical"
                 android:minWidth="25px"
@@ -272,7 +318,9 @@
                 android:gravity="bottom"
                 android:background="#FFFFFF"
                 android:layout_marginTop="0.0dp">
-            <!-- This section is the user header include user info -->
+            -->
+        <!-- This section is the user header include user info -->
+        <!--
                 <LinearLayout
                     android:orientation="horizontal"
                     android:minWidth="25px"
@@ -280,13 +328,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="50.0dp"
                     android:id="@+id/top_userInfoLayout2">
-                <!-- This section is for the top user profile picture -->
+                -->
+        <!-- This section is for the top user profile picture -->
+        <!--
                     <ImageView
                         android:layout_width="50.0dp"
                         android:layout_height="match_parent"
                         android:id="@+id/top_usrProfilePic2"
                         android:background="@drawable/profilepic" />
-                <!-- This section is for the user info section, including top username and the love count bar -->
+                -->
+        <!-- This section is for the user info section, including top username and the love count bar -->
+        <!--
                     <LinearLayout
                         android:orientation="vertical"
                         android:minWidth="25px"
@@ -312,9 +364,15 @@
                             android:textColor="@android:color/background_dark" />
                     </LinearLayout>
                 </LinearLayout>
-            <!-- END of user info section -->
-            <!-- This section is for the image of the post -->
-            <!-- The Post Image and button -->
+            -->
+        <!-- END of user info section -->
+        <!--
+            -->
+        <!-- This section is for the image of the post -->
+        <!--
+            -->
+        <!-- The Post Image and button -->
+        <!--
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="250.0dp"
@@ -361,8 +419,12 @@
                             android:layout_marginTop="10.0dp" />
                     </LinearLayout>
                 </FrameLayout>
-            <!-- END of post image -->
-            <!-- This section is for the user post text content -->
+            -->
+        <!-- END of post image -->
+        <!--
+            -->
+        <!-- This section is for the user post text content -->
+        <!--
                 <LinearLayout
                     android:orientation="vertical"
                     android:minWidth="25px"
@@ -391,8 +453,12 @@
                         android:paddingLeft="5.0dp"
                         android:paddingRight="5.0dp" />
                 </LinearLayout>
-            <!-- END of user post text content -->
-            <!-- This section is for the comment part -->
+            -->
+        <!-- END of user post text content -->
+        <!--
+            -->
+        <!-- This section is for the comment part -->
+        <!--
                 <LinearLayout
                     android:orientation="vertical"
                     android:minWidth="25px"
@@ -453,8 +519,11 @@
                             android:paddingRight="5.0dp" />
                     </LinearLayout>
                 </LinearLayout>
-            <!-- END of comment part-->
+            -->
+        <!-- END of comment part-->
+        <!--
             </LinearLayout>
+        -->
         <!-- END of second user post -->
         </LinearLayout>
     <!-- END of user posts -->
@@ -462,12 +531,9 @@
 <!--  END of scrollable section-->
 <!--This section implements the navigation bar at the bottom of the page-->
     <LinearLayout
-        android:orientation="horizontal"
-        android:minWidth="25px"
-        android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="200px"
-        android:id="@+id/btmTabLayout"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
         android:background="#5e5e5e">
         <ImageButton
             android:layout_width="0dip"

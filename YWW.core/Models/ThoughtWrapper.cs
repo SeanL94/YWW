@@ -9,14 +9,14 @@ using YWW.core.ViewModels;
 
 namespace YWW.core.Models
 {
-    public class PostWrapper : Post
+    public class ThoughtWrapper : Thought
     {
-        public PostWrapper(Post post)
+        public ThoughtWrapper(Thought thought)
         {
-            SubjectTitle = post.SubjectTitle;
-            Contents = post.Contents;
-            PostDateTime = post.PostDateTime;
-        }
+            
+            Contents = thought.Contents;
 
+        }
+        
     }
 }

@@ -12,10 +12,10 @@
         android:id="@+id/topicLayout1"
         android:padding="3.0dp">
         <ImageView
-            android:src="@drawable/profilepic2"
+            android:src="@drawable/profilepic3"
             android:layout_width="50.0dp"
             android:layout_height="50.0dp"
-            android:id="@+id/profilePic1" />
+            android:id="@+id/profilePic3" />
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="fill_parent"

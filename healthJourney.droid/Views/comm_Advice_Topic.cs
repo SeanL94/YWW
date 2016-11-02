@@ -11,12 +11,14 @@ using Android.Views;
 using Android.Widget;
 using MvvmCross.Droid.Views;
 using YWW.core.ViewModels;
+using MvvmCross.Core.ViewModels;
 /**
 * Author Jia Xin Chan 9601902
 * 
 **/
 namespace healthJourney.droid.Views
 {
+    [MvxViewFor(typeof(PostContentViewModel))]
     [Activity(Label = "comm_Advice_Topic")]
     public class comm_Advice_Topic : MvxActivity
     {
