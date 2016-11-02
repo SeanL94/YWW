@@ -3,7 +3,10 @@ using System;
 using System.Windows.Input;
 using YWW.core.Interfaces;
 using YWW.core.Models;
-
+/**
+* Author Jia Xin Chan 9601902
+* 
+**/
 namespace YWW.core.ViewModels
 {
     public class PostContentViewModel : MvxViewModel
@@ -16,6 +19,7 @@ namespace YWW.core.ViewModels
         }
         public void Init(Post selectedPost)
         {
+            // post from the selected post from PostTopicViewModel
             Contents = selectedPost.Contents;
             PostDateTime = selectedPost.PostDateTime.ToString();
             SubjectTitle = selectedPost.SubjectTitle;

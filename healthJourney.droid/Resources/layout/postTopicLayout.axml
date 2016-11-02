@@ -4,6 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+  <!-- Author Jia Xin Chan 9601902 -->
 <!-- This section is for topic records in row-->
     <LinearLayout
         android:orientation="horizontal"

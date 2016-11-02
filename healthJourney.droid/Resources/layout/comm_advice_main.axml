@@ -38,13 +38,13 @@
             android:layout_width="300.0dp"
             android:layout_height="match_parent"
             android:hint="Search.."
-            android:id="@+id/seachTxt" 
-            local:MvxBind="Text SearchTerm"/>
+            android:id="@+id/seachTxt"
+            local:MvxBind="Text SearchTerm" />
         <Button
             android:text="Search"
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
-            android:id="@+id/searchBtn" 
+            android:id="@+id/searchBtn"
             local:MvxBind="Click SearchBtn" />
     </LinearLayout>
 <!-- END of search bar -->

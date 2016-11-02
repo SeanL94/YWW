@@ -3,7 +3,10 @@ using System;
 using System.Windows.Input;
 using YWW.core.Interfaces;
 using YWW.core.Models;
-
+/**
+* Author Jia Xin Chan 9601902
+* 
+**/
 namespace YWW.core.ViewModels
 {
     public class InsertPostViewModel : MvxViewModel
@@ -11,8 +14,6 @@ namespace YWW.core.ViewModels
         
         private readonly IPostDatabase postDatabase;
         public ICommand postButton { get; private set; }
-        
-
         public InsertPostViewModel(IPostDatabase postDatabase)
         {
             this.postDatabase = postDatabase;
@@ -32,6 +33,7 @@ namespace YWW.core.ViewModels
             set { this.RaiseAndSetIfChanged(ref this._subject, value); }
         }
 
+        // to check the post privacy
         private bool? _isToggleChecked;
         public bool? IsToggleChecked
         {
@@ -44,6 +46,8 @@ namespace YWW.core.ViewModels
                 RaisePropertyChanged(() => IsToggleChecked);
             }
         }
+
+        // Method to set privacy depends on the previous isToggled function
         public string getPrivacy()
         {
             if(IsToggleChecked == null)
