@@ -47,7 +47,7 @@ namespace YWW.core.ViewModels
                 {
                     SetGoal = 1;
                 }
-                ShowViewModel<ProgressEntryViewModel>(new { SetGoal });
+                ShowViewModel<ProgressEntryViewModel>(SetGoal);
             });
             Ex2Select = new MvxCommand(() =>
             {
@@ -59,7 +59,7 @@ namespace YWW.core.ViewModels
                 {
                     SetGoal = 2;
                 }
-                ShowViewModel<ProgressEntryViewModel>(new { SetGoal });
+                ShowViewModel<ProgressEntryViewModel>(SetGoal);
             });
             Ex3Select = new MvxCommand(() =>
             {
@@ -71,7 +71,7 @@ namespace YWW.core.ViewModels
                 {
                     SetGoal = 3;
                 }
-                ShowViewModel<ProgressEntryViewModel>(new { SetGoal });
+                ShowViewModel<ProgressEntryViewModel>(SetGoal);
             });
             Ex4Select = new MvxCommand(() =>
             {
@@ -83,7 +83,7 @@ namespace YWW.core.ViewModels
                 {
                     SetGoal = 4;
                 }
-                ShowViewModel<ProgressEntryViewModel>(new { SetGoal });
+                ShowViewModel<ProgressEntryViewModel>(SetGoal);
             });
         }
     }

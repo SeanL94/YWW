@@ -27,7 +27,7 @@
         android:minWidth="25dp"
         android:minHeight="25dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:id="@+id/profile_info">
       <TextView
           android:text="Johanna Doe"
@@ -83,6 +83,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:id="@+id/detail_btn_section"
         android:layout_marginTop="10.0dp"
@@ -107,6 +108,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:id="@+id/history_btn_section"
         android:layout_marginBottom="10.0dp">
@@ -131,6 +133,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:id="@+id/group_btn_section"
         android:layout_marginBottom="10.0dp">
@@ -144,6 +147,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:id="@+id/plan_btn_section"
         android:layout_marginBottom="10.0dp">
